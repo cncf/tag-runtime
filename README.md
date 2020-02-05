@@ -77,7 +77,7 @@ Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an e
 ### SIG Chairs
 * Quinton Hoole ([@quinton-hoole](https://github.com/quinton-hoole)), Facebook [Chair - term: 1/20/2020 - 1/20/2022]
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten [Chair - term: 1/20/2020 - 1/20/2022]
-* TBD
+* Diane Feddema ([@dfeddema](https://github.com/dfeddema)), Red Hat [Chair - term: 2/4/2020 - 2/4/2022]
 
 ### SIG Tech Leads
 
