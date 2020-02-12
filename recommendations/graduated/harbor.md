@@ -44,32 +44,33 @@ http://bit.ly/harbor-graduation-dd
 Formal requirements are [here](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc).
 
 1. Adheres to TOC Principles and Cloud Native Definition
-* TBD - Check off or list any exceptions or concerns
+* [x] Yes
 2. Used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
-* TBD - Check off or list any exceptions or concerns
+* [x] Yes (many production users are listed in the tech-DD)
 3. Have a healthy number of committers, from at least two organizations.
-* TBD - Check off or list any exceptions or concerns
+* [x] Yes ([6 organizations have maintainers](https://github.com/goharbor/community/blob/master/MAINTAINERS.md))
 4. Demonstrate a substantial ongoing flow of commits and merged contributions.
-* TBD - Check off or list any exceptions or concerns
+* [x] [Yes](https://harbor.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-2y&to=now&var-period=w&var-repogroups=All)
 5. Have a clear versioning scheme.
-* TBD - Check off or list any exceptions or concerns
+* [x] [Yes](https://github.com/goharbor/harbor/blob/master/RELEASES.md)
 6. Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.
-* TBD - Check off or list any exceptions or concerns
+* [x] Yes ([Silver Badge achieved](https://bestpractices.coreinfrastructure.org/en/projects/2095))
 7. Have completed an independent and third party security audit with results published of similar scope and quality as provided examples, All critical vulnerabilities need to be addressed before graduation.
-* TBD - Check off or list any exceptions or concerns
+* [x] Yes ([Audit by Cure53](https://github.com/goharbor/harbor/blob/master/docs/security/Harbor_Security_Audit_Oct2019.pdf))
 8. Explicitly define a project governance and committer process.
-* TBD - Check off or list any exceptions or concerns
+* [x] [Yes](https://github.com/goharbor/community/blob/master/GOVERNANCE.md)
 9. Have a public list of project adopters for at least the primary repo.
-* TBD - Check off or list any exceptions or concerns
+* [x] [Yes](https://github.com/goharbor/harbor/blob/master/ADOPTERS.md)
 10. Any other substantive concerns expressed by SIGs or TOC members 
-* TBD - Check off or list any exceptions or concerns
+* None
 
 ### Summary of what was reviewed, and by who
-* Reviewer: TBD
+* Reviewer: Michael Michael (Harbor Maintainer, Director of Product Management at VMware)
+* Approver: Ricardo Aravena (CNCF SIG-Runtime Chair)
 
 ### List of any substantive concerns
-* TBD
+* None
 
 ### Recommendation to TOC
-[ ] Graduate
+[x] Graduate
 [ ] Not Graduate (Reason(s): )
