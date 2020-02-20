@@ -142,3 +142,20 @@ Second, KEDA acts as a Kubernetes metrics server to expose rich event data like 
 # Formal Requirements
 
 Sponsors: TBD
+
+# Other Considerations
+
+## Cloud Native
+
+**KEDA** aligns closely with the Cloud Native Computing Foundation (CNCF) mission, and is an important piece for serverless capabilities on Kubernetes.  Our hope is to align and help foster and grow an inclusive community with the CNCF.
+
+## Project and Code Quality
+
+- CI/CD: GitHub Actions with nightly e2e tests (live cluster, live event sources) and tests per PR.
+- Deployment: Helm chart, operator SDK, or local script. ([docs](https://keda.sh/deploy/))
+- Docs: Built with Hugo and uses Netlify to generate previews in PRs
+- Design documents: https://keda.sh/concepts/overview/
+- Benefit from CNCF:
+  - Vendor neutral home for this serverless capabilities
+  - Enhances other CNCF projects with serverless event-driven scale
+  - Important capability for serverless workloads within open governance / CNCF.
