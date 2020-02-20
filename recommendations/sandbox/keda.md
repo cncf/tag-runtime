@@ -2,7 +2,7 @@
 
 ## Acceptance to CNCF Sandbox
 
-**Authors:** Jeff Hollan (@jeffhollan), Tom Kerkhove (@TomKerkhove)
+**Authors:** Jeff Hollan (@jeffhollan), Tom Kerkhove (@TomKerkhove), Anirudh Garg (@anirudhgarg)
 
 ## Background
 
