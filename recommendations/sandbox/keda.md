@@ -143,6 +143,10 @@ Second, KEDA acts as a Kubernetes metrics server to expose rich event data like 
 
 Sponsors: TBD
 
+# CNCF IP Policy
+
+_Will be provided by @anirudhgarg_
+
 # Other Considerations
 
 ## Cloud Native
