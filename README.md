@@ -87,7 +87,12 @@ Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an e
 
 ### SIG members
 <details><summary>Click to view list</summary>
-- John Doe ([@jdoe](https://github.com/djoe)), CompanyX
+
+* Michael Michael ([@michmike](https://github.com/michmike)), VMware
+* Tom Kerkhove ([@tomkerkhove](https://github.com/)), Codit
+* Jeff Hollan ([@jeffhollan](https://github.com/jeffhollan)), Microsoft
+* Anirudh Garg ([@anirudhgarg](https://github.com/anirudhgarg)), Microsoft
+
 </details>
 
-JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
+JOIN OUR MEETINGS REGULARLY OR CONTRIBUTE, THEN ADD YOURSELF VIA PULL REQUEST
