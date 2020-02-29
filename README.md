@@ -56,6 +56,7 @@ Meeting ID: 989 072 1462
 
 Find your local number: https://zoom.us/u/alwlmxlNn
 
+Meeting invites are on the [CNCF Public calendar](https://www.cncf.io/community/calendar/).
 ## In person meetings
 
 Please let us know if you are attending or helping to organize an in-person meetup.
