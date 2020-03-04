@@ -44,7 +44,7 @@ http://bit.ly/harbor-graduation-dd
 Formal requirements are [here](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc).
 
 1. Adheres to TOC Principles and Cloud Native Definition
-* [x] Yes
+* [x] Yes, Note: The project has its [Guiding Principles](https://github.com/goharbor/community/blob/master/GUIDING_PRINCIPLES.md) but doesn’t explicitly state alignment with TOC Principles other than “Yes” here.
 2. Used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 * [x] Yes (many production users are listed in the tech-DD)
 3. Have a healthy number of committers, from at least two organizations.
@@ -62,7 +62,7 @@ Formal requirements are [here](https://github.com/cncf/toc/blob/master/process/g
 9. Have a public list of project adopters for at least the primary repo.
 * [x] [Yes](https://github.com/goharbor/harbor/blob/master/ADOPTERS.md)
 10. Any other substantive concerns expressed by SIGs or TOC members 
-* None
+* SIG-Storage concerns regarding Postgresql setup not being HA by default.
 
 ### Summary of what was reviewed, and by who
 * Reviewer: Michael Michael (Harbor Maintainer, Director of Product Management at VMware)
@@ -72,5 +72,4 @@ Formal requirements are [here](https://github.com/cncf/toc/blob/master/process/g
 * None
 
 ### Recommendation to TOC
-[x] Graduate
-[ ] Not Graduate (Reason(s): )
+For Runtime specific related components the recommendation is Graduation. However, SIG-Storage has expressed some concerns about Harbor requiring Postgresql to store user data and its default installation not being highly available. For example, having master-slave or master-master configurations, or an alternative highly available datastore. Also, pending the SIG-Security assessment for security components and SIG-App-Delivery for the Helm Chart. (We can update this excerpt after the relevant SIGs have assessed)
