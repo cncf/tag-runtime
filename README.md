@@ -26,7 +26,7 @@ Example CNCF projects within the scope of SIG-Runtime
 
 # Governance
 
-- (Add charter here when approved)
+* [Charter](https://github.com/cncf/toc/blob/master/sigs/runtime-charter.md)
 
 ## Communications
 
