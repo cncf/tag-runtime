@@ -15,14 +15,14 @@ SIG-Runtime objective is to enable widespread and successful execution of the fu
 
 Example CNCF projects within the scope of SIG-Runtime
 
-* Kubernetes
-* Containerd
-* Harbor
-* Dragonfly
-* Virtual Kubelet
-* CRI-O
-* KubeEdge
-* KubeVirt
+* [Kubernetes](https://kubernetes.io/)
+* [Containerd](https://containerd.io/)
+* [Harbor](https://goharbor.io/)
+* [Dragonfly](https://d7y.io/en-us/)
+* [Virtual Kubelet](https://virtual-kubelet.io/)
+* [CRI-O](https://cri-o.io/)
+* [KubeEdge](https://kubeedge.io/en/)
+* [KubeVirt](https://kubevirt.io/)
 
 # Governance
 
@@ -93,6 +93,7 @@ Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an e
 * Tom Kerkhove ([@tomkerkhove](https://github.com/)), Codit
 * Jeff Hollan ([@jeffhollan](https://github.com/jeffhollan)), Microsoft
 * Anirudh Garg ([@anirudhgarg](https://github.com/anirudhgarg)), Microsoft
+* Erick Carty ([@ebcarty](https://github.com/ebcarty))
 
 </details>
 
