@@ -23,6 +23,8 @@ Example CNCF projects within the scope of SIG-Runtime
 * [CRI-O](https://cri-o.io/)
 * [KubeEdge](https://kubeedge.io/en/)
 * [KubeVirt](https://kubevirt.io/)
+* [KEDA](https://keda.sh/)
+* [Volcano](https://volcano.sh/)
 
 # Governance
 
