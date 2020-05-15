@@ -26,8 +26,6 @@ The Metal³ project provides bare metal host management for Kubernetes. Also, a 
 
 The project is in active status with maintainers from Ericsson, Mirantis and Red Hat. It also has committers from the following organizations: AT&T, Dell EMC, Ericsson, Fujitsu, Mirantis and Red Hat. The two main components of the project have these commit author numbers:
 
-
-
 *   baremetal-operator has 38 commit authors
 *   cluster-api-provider-metal3 has 20 commit authors
 
@@ -35,8 +33,6 @@ The project is in active status with maintainers from Ericsson, Mirantis and Red
 ## Future Plans
 
 At a high level:
-
-
 
 *   Focus more on production use cases and the required quality.
 *   Maturing cluster-api support and staying current with cluster-api API changes.
@@ -61,7 +57,7 @@ Metal<sup>3</sup> is defined as a project that allows users to deploy bare-metal
 
 ## Value-add to the CNCF ecosystem
 
-**_Does the project have a clear value add to the current project ecosystem? How does it relate to other projects with overlapping capabilities? _**
+**_Does the project have a clear value add to the current project ecosystem? How does it relate to other projects with overlapping capabilities?_**
 
 Metal<sup>3</sup> fills a gap in the CNCF project ecosystem. Currently, there are no CNCF projects that allow users to provision bare-metal machines either with Kubernetes or as standalone. Also, this would be a good complement to the Kubernetes ecosystem for those users that would like to provision bare-metal nodes. 
 
@@ -75,7 +71,7 @@ A unique use case would be provisioning bare-metal nodes to allow Kubernetes to 
 
 ## Alignment with other CNCF projects
 
-**_Does the project align and actively collaborate with other CNCF projects? _**
+**_Does the project align and actively collaborate with other CNCF projects?_**
 
 Metal<sup>3</sup> aligns with other SIG-Runtime projects.
 
@@ -90,32 +86,21 @@ Metal<sup>3</sup> aligns with other SIG-Runtime projects.
 
 Metal<sup>3</sup> falls within the SIG-Runtime scope because one of SIG-Runtime’s focus is mechanisms or projects that allow the use of cloud native workloads and bare-metal machines are used to run those cloud native workloads.
 
-
 ## High level architecture
 
 This is the original high level architecture diagram:
 
-
-
 ![high_level_arch](https://github.com/metal3-io/metal3-docs/blob/master/images/high-level-arch.png "High Level Arch")
-
 
 Bare-metal operator components diagram:
 
-
-
-![OperatorComponents](https://user-images.githubusercontent.com/7659560/82079853-68764c00-9698-11ea-9654-b0e85bc247de.png)
-
-
+![OperatorComponents](https://user-images.githubusercontent.com/7659560/82083728-0c62f600-969f-11ea-96c7-7d7776f7c593.png)
 
 Cluster API Integration + Bootstrap cluster:
 
-
 ![ClusterAPIIntegration](https://user-images.githubusercontent.com/7659560/82079935-86dc4780-9698-11ea-941e-8b07bb297f34.png)
 
-
 Cluster API Provider:
-
 
 ![ClusterAPIProvider](https://user-images.githubusercontent.com/7659560/82080162-e63a5780-9698-11ea-9d80-6c69133f454f.png)
 
@@ -351,11 +336,9 @@ Dependencies for cluster-api-provider-metal3
 
 **_Does the project meet the definition of Cloud Native?  The CNCF charter states:_**
 
+_“Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach._
 
-    _“Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach._
-
-
-    _“These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.”_
+_“These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.”_
 
 Metal<sup>3</sup> fits into the Cloud Native ecosystem because:
 
@@ -437,7 +420,7 @@ Whether or not belonging to a sponsoring organisation, everybody has the right t
 
 ## Vendor Independence
 
-**_Is the project reasonably independent from the sponsoring vendor? Are all communication channels and project resources hosted just for this project or with other CNCF projects/resources? Is all code that is part of the project hosted and part of the CNCF managed orgs and repos?  Are all defaults for upstream reporting either unset or community hosted infrastructure (i.e. doesn’t point to vendor hosted SaaS control plane or analytics server for usage data)? Is all project naming independent of vendors?  _**
+**_Is the project reasonably independent from the sponsoring vendor? Are all communication channels and project resources hosted just for this project or with other CNCF projects/resources? Is all code that is part of the project hosted and part of the CNCF managed orgs and repos?  Are all defaults for upstream reporting either unset or community hosted infrastructure (i.e. doesn’t point to vendor hosted SaaS control plane or analytics server for usage data)? Is all project naming independent of vendors?_**
 
 All parts of Metal<sup>3</sup> are provided open-source and are hosted on GitHub. All code is released under the Apache 2.0 license.
 
@@ -471,7 +454,6 @@ Metal<sup>3 </sup>is currently being used as a preview in Red Hat’s OpenShift 
 **Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.**
 
 
-
 *   The Metal<sup>3</sup> operator has a total of [39 committers](https://github.com/metal3-io/baremetal-operator/graphs/contributors) and 5 have made significant commits
 *   The Metal<sup>3</sup> cluster API provider has [18 committers](https://github.com/metal3-io/cluster-api-provider-metal3) and 7 committers have made significant commits. 
 
@@ -479,7 +461,6 @@ Metal<sup>3 </sup>is currently being used as a preview in Red Hat’s OpenShift 
 ## Substantial ongoing flow of commits
 
 See:
-
 
 
 *   For the Metal<sup>3</sup> operator [https://github.com/metal3-io/baremetal-operator/graphs/commit-activity](https://github.com/metal3-io/baremetal-operator/graphs/commit-activity). 3 to 5 weekly commits on average.
@@ -498,12 +479,10 @@ The Metal<sup>3 </sup>cluster API component uses the [semver](https://semver.org
 SIG-Runtime recommends to accept the Metal<sup>3</sup> project into the CNCF:
 
 
-
 *   The Metal<sup>3</sup> project fulfills all the formal criteria for Sandbox
 *   The Metal<sup>3</sup> fills a gap in the Kubernetes and cloud native ecosystem of provisioning bare metal machines and Kubernetes nodes 
 
 SIG-Runtime also recommend some action items to advance the project further:
-
 
 
 *   It is already in the future of Metal<sup>3</sup>’s plans: emphasis on a variety of different production environments.
