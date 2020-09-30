@@ -24,6 +24,9 @@ Example CNCF projects within the scope of SIG-Runtime
 * [KubeVirt](https://kubevirt.io/)
 * [KEDA](https://keda.sh/)
 * [Volcano](https://volcano.sh/)
+* [K3s](https://k3s.io/)
+* [Metal3-io](https://metal3.io/)
+* [OpenYurt](https://openyurt.io/en-us/)
 
 # Governance
 
@@ -41,7 +44,7 @@ Anyone is welcome to join our open discussions of SIG-Runtime projects and share
 The CNCF SIG-Runtime group meets twice a month on the 1st and 3rd Thu of each month at 8am (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/1k7VNetgbuDNyIs_87GLQRH2W5SLgjgOhB6pDyv89MYk/)
-* [Meeting Link: zoom.us/my/cncfsigruntime](https://zoom.us/my/cncfsigruntime)
+* [Meeting Link: zoom.us/my/cncfsigruntime](https://zoom.us/my/cncfsigruntime), Passcode: 77777
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -53,7 +56,7 @@ Dial by your location:
 * 877 369 0926 US Toll-free
 * 855 880 1246 US Toll-free
 
-Meeting ID: 989 072 1462
+Meeting ID: 989 072 1462, Passcode: 77777
 
 Find your local number: https://zoom.us/u/alwlmxlNn
 
