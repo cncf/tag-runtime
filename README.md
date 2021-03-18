@@ -41,7 +41,7 @@ Anyone is welcome to join our open discussions of SIG-Runtime projects and share
 
 ## Meeting times
 
-The CNCF SIG-Runtime group meets twice a month on the 1st and 3rd Thu of each month at 8am (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
+The CNCF SIG-Runtime group meets twice a month on the 1st and 3rd Thu of each month at 8am (USA Pacific, see your timezone [here](https://time.is/compare/0800_18_Mar_2021_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/1k7VNetgbuDNyIs_87GLQRH2W5SLgjgOhB6pDyv89MYk/)
 * [Meeting Link: zoom.us/my/cncfsigruntime](https://zoom.us/my/cncfsigruntime), Passcode: 77777
