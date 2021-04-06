@@ -66,6 +66,9 @@ Meeting invites are on the [CNCF Public calendar](https://www.cncf.io/community/
 Please let us know if you are attending or helping to organize an in-person meetup.
 Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an event.
 
+## Working Groups
+
+* [Container Orchestrated Device Working Group](https://github.com/cncf/sig-runtime/blob/master/wg/COD.md)
 
 ## Related groups
 
