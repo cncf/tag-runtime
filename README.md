@@ -84,7 +84,8 @@ Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an e
 | Name                | Email                    |  GitHub                                            | Company                                 |
 |---------------------|--------------------------|----------------------------------------------------|-----------------------------------------|
 | Alena Prokharchyk   | `aprokharchyk@apple.com` | [@alena1108](https://github.com/alena1108)         | [Apple](https://apple.com)              |
-| Brendan Burns       | `bburns@microsoft.com`   | [@brendandburns](https://github.com/brendandburns) | [Microsoft](https://www.microsoft.com/) |   
+| Ricardo Rocha       | `ricardo.rocha@cern.ch`  | [@rochaporto](https://github.com/rochaporto).      | [CERN](https://www.cern.ch)             | 
+| Davanum Srinivas    | `davanum@gmail.com`      | [@dims](https://github.com/dims).                  | [VMware](https://www.vmware.com)        |   
 
 ### Chairs, in alphabetical order
 
