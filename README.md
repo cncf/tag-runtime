@@ -1,4 +1,4 @@
-# CNCF Special Interest Group for Runtime (SIG-Runtime)
+# CNCF Technical Advisory Group for Runtime (TAG-Runtime)
 
 ## Quick links
 
@@ -8,11 +8,11 @@
 
 ## Objective
 
-SIG-Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments.
+TAG-Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments.
 
 ## Scope
 
-Example CNCF projects within the scope of SIG-Runtime
+Example CNCF projects within the scope of TAG-Runtime
 
 * [Kubernetes](https://kubernetes.io/)
 * [Containerd](https://containerd.io/)
@@ -34,17 +34,17 @@ Example CNCF projects within the scope of SIG-Runtime
 
 ## Communications
 
-Anyone is welcome to join our open discussions of SIG-Runtime projects and share news related to the group's objectives. We also encourage project teams to share progress updates or post questions in these channels:
+Anyone is welcome to join our open discussions of TAG-Runtime projects and share news related to the group's objectives. We also encourage project teams to share progress updates or post questions in these channels:
 
-* [Email list](https://lists.cncf.io/g/cncf-sig-runtime)
-* [CNCF Slack](https://slack.cncf.io/) #sig-runtime channel
+* [Email list](https://lists.cncf.io/g/cncf-tag-runtime)
+* [CNCF Slack](https://slack.cncf.io/) #tag-runtime channel
 
 ## Meeting times
 
-The CNCF SIG-Runtime group meets twice a month on the 1st and 3rd Thu of each month at 8am (USA Pacific, see your timezone [here](https://time.is/compare/0800_18_Mar_2021_in_PT)):
+The CNCF TAG-Runtime group meets twice a month on the 1st and 3rd Thu of each month at 8am (USA Pacific, see your timezone [here](https://time.is/compare/0800_18_Mar_2021_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/1k7VNetgbuDNyIs_87GLQRH2W5SLgjgOhB6pDyv89MYk/)
-* [Meeting Link: zoom.us/my/cncfsigruntime](https://zoom.us/my/cncfsigruntime), Passcode: 77777
+* [Meeting Link: zoom.us/my/cncftagruntime](https://zoom.us/my/cncftagruntime), Passcode: 77777
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
