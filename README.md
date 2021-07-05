@@ -30,7 +30,7 @@ Example CNCF projects within the scope of TAG-Runtime
 
 # Governance
 
-* [Charter](https://github.com/cncf/toc/blob/master/sigs/runtime-charter.md)
+* [Charter](https://github.com/cncf/toc/blob/main/tags/runtime-charter.md)
 
 ## Communications
 
