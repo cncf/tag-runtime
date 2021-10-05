@@ -44,9 +44,9 @@ A secondary deliverable is a golang interface, with a package that can be re-use
 
 # General Information
 
-## Stakeholder SIG
+## Stakeholder TAG
 
-SIG Runtime
+TAG Runtime
 
 ## Meetings
 
@@ -56,8 +56,8 @@ SIG Runtime
 
 ## WG Chairs
 
-* Renaud Gaubert ([@RenaudWasTaken](https://github.com/RenaudWasTaken)), NVIDIA
 * Alexander Kanevskiy ([@kad](https://gihub.com/kad)), Intel
+* Evan Lezar ([@elezar](https://github.com/elezar)), NVIDIA
 
 ## WG Members
 
@@ -68,13 +68,17 @@ SIG Runtime
 * Mike Brown, IBM
 * Mrunal Patel
 
+## WG Emeretus chair
+
+* Renaud Gaubert ([@RenaudWasTaken](https://github.com/RenaudWasTaken)), NVIDIA
+
 ## Slack
 
-#sig-runtime
+#tag-runtime
 
 ## Mailing List
 
-https://lists.cncf.io/g/cncf-sig-runtime
+https://lists.cncf.io/g/cncf-tag-runtime
 
 # Related Information
  
