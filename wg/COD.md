@@ -67,6 +67,7 @@ TAG Runtime
 * Marek Counts 
 * Mike Brown, IBM
 * Mrunal Patel
+* Kevin Klues ([@klueska](https://gihub.com/klueska)), NVIDIA
 
 ## WG Emeretus chair
 
