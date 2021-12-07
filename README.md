@@ -64,17 +64,17 @@ Meeting invites are on the [CNCF Public calendar](https://www.cncf.io/community/
 ## In person meetings
 
 Please let us know if you are attending or helping to organize an in-person meetup.
-Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an event.
+Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an event.
 
 ## Working Groups
 
-* [Container Orchestrated Device Working Group](https://github.com/cncf/sig-runtime/blob/master/wg/COD.md)
+* [Container Orchestrated Device Working Group](https://github.com/cncf/tag-runtime/blob/master/wg/COD.md)
 
 ## Related groups
 
 * [Kubernetes SIG-Node](https://github.com/kubernetes/community/tree/master/sig-node)
 * [Other Kubernetes SIGs](https://github.com/kubernetes/community)
-* [Other CNCF SIGs](https://github.com/cncf) (SIG-Security, SIG-Network, SIG-App-Delivery)
+* [Other CNCF TAGs](https://github.com/cncf) (TAG-Security, TAG-Network, TAG-App-Delivery)
 
 ## History
 
@@ -98,14 +98,14 @@ Create a [github issue](https://github.com/cncf/sig-runtime/issues/new) for an e
 | Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     | 1/20/2020 - 1/20/2022 |
 | Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [Rakuten](https://rakuten.com/)       | 1/20/2020 - 1/20/2022 |
 
-### SIG Tech Leads
+### TAG Tech Leads
 
 | Name                | Email                     | CNCF Slack         | GitHub                                         | Company                                 | Tech Lead Term        | 
 |---------------------|---------------------------|--------------------|------------------------------------------------|-----------------------------------------|---------------------|
 | Klaus Ma            | `klaus1982.cn@gmail.com`  | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Huawei](https://huawei.com)            | 1/20/2020 - 1/20/2022 |
 
 
-### SIG members
+### TAG members
 
 JOIN OUR MEETINGS REGULARLY OR CONTRIBUTE, THEN ADD YOURSELF VIA PULL REQUEST
 
