@@ -100,9 +100,10 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 ### TAG Tech Leads
 
-| Name                | Email                     | CNCF Slack         | GitHub                                         | Company                                 | Tech Lead Term        | 
-|---------------------|---------------------------|--------------------|------------------------------------------------|-----------------------------------------|---------------------|
-| Klaus Ma            | `klaus1982.cn@gmail.com`  | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Huawei](https://huawei.com)            | 1/20/2020 - 1/20/2022 |
+| Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 | Tech Lead Term        | 
+|---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|-----------------------|
+| Klaus Ma            | `klaus1982.cn@gmail.com`        | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Huawei](https://huawei.com)            | 1/20/2020 - 1/20/2022 |
+| Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              | 1/12/2022 - 1/12/2024 |
 
 
 ### TAG members
