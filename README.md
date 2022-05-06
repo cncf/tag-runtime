@@ -88,7 +88,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                    |  GitHub                                            | Company                                 |
 |---------------------|--------------------------|----------------------------------------------------|-----------------------------------------|
-| Alena Prokharchyk   | `aprokharchyk@apple.com` | [@alena1108](https://github.com/alena1108)         | [Apple](https://apple.com)              |
+| Richard Hartmann    | `aprokharchyk@apple.com` | [@RichiH](https://github.com/RichiH)               | [Grafana Labs](https://grafana.com/)    |
 | Ricardo Rocha       | `ricardo.rocha@cern.ch`  | [@rochaporto](https://github.com/rochaporto).      | [CERN](https://www.cern.ch)             | 
 | Davanum Srinivas    | `davanum@gmail.com`      | [@dims](https://github.com/dims).                  | [VMware](https://www.vmware.com)        |   
 
@@ -96,7 +96,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                  | CNCF Slack         | GitHub                                             | Company                               | Chair Term            |
 |---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|-----------------------|
-| Diane Feddema       | `dfeddema@redhat.com`  | `@Diane Feddema`   | [@dfeddema](https://github.com/dfeddema)           | [Red Hat](https://redhat.com)         | 2/4/2020 - 2/4/2022.  |
+| Diane Feddema       | `dfeddema@redhat.com`  | `@Diane Feddema`   | [@dfeddema](https://github.com/dfeddema)           | [Red Hat](https://redhat.com)         | 2/4/2020 - 2/4/2022   |
 | Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     | 1/20/2020 - 1/20/2022 |
 | Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [Rakuten](https://rakuten.com/)       | 1/20/2020 - 1/20/2022 |
 
