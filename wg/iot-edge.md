@@ -35,7 +35,7 @@ The following is a list of well-known CNCF projects used in edge-computing solut
 - K3s
 - WasmEdge
 
-The list is not exhaustive. Please submit a PR to add your edge-focused CNCF project or reach out to the #wg-iot-edge channel on Kubernetes Slack.
+The list is not exhaustive. Please submit a PR to add your edge-focused CNCF project or reach out to the [#wg-iot-edge](https://kubernetes.slack.com/messages/wg-iot-edge) channel on Kubernetes Slack.
 
 ## Operations
 ### TOC Liaison
