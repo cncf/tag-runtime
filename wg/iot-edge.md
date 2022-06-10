@@ -38,10 +38,13 @@ The following is a list of well-known CNCF projects used in edge-computing solut
 The list is not exhaustive. Please submit a PR to add your edge-focused CNCF project or reach out to the [#wg-iot-edge](https://kubernetes.slack.com/messages/wg-iot-edge) channel on Kubernetes Slack.
 
 ## Operations
+This WORKING GROUP follows the [standard operating guidelines](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#operating-model) provided
+by the TOC unless otherwise stated here.
+
 ### TAG Liaison
 - [Ricardo Aravena](https://github.com/raravena80), TruEra 
 
-### TAG Liaisons
+### TOC Liaisons
 - [Richard Hartmann](https://github.com/RichiH), Grafana Labs
 - [Ricardo Rocha](https://github.com/rochaporto), CERN
 - [Davanum Srinivas](https://github.com/dims), VMware
