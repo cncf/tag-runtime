@@ -98,7 +98,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 |---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|-----------------------|
 | Diane Feddema       | `dfeddema@redhat.com`  | `@Diane Feddema`   | [@dfeddema](https://github.com/dfeddema)           | [Red Hat](https://redhat.com)         | 2/4/2020 - 2/4/2022   |
 | Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     | 1/20/2020 - 1/20/2022 |
-| Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [Rakuten](https://rakuten.com/)       | 1/20/2020 - 1/20/2022 |
+| Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [TruEra](https://truera.com/)       | 1/20/2020 - 1/20/2022 |
 
 ### TAG Tech Leads
 
