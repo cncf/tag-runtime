@@ -39,7 +39,7 @@ The list is not exhaustive. Please submit a PR to add your edge-focused CNCF pro
 
 ## Operations
 ### TOC Liaison
-- [Ricardo Aravena](https://github.com/raravena80), Rakuten 
+- [Ricardo Aravena](https://github.com/raravena80), TruEra 
 
 ### Chairs
 - [Kate Goldenring](https://github.com/kate-goldenring), Microsoft
