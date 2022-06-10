@@ -89,23 +89,23 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 | Name                | Email                    |  GitHub                                            | Company                                 |
 |---------------------|--------------------------|----------------------------------------------------|-----------------------------------------|
 | Richard Hartmann    | `aprokharchyk@apple.com` | [@RichiH](https://github.com/RichiH)               | [Grafana Labs](https://grafana.com/)    |
-| Ricardo Rocha       | `ricardo.rocha@cern.ch`  | [@rochaporto](https://github.com/rochaporto).      | [CERN](https://www.cern.ch)             | 
-| Davanum Srinivas    | `davanum@gmail.com`      | [@dims](https://github.com/dims).                  | [VMware](https://www.vmware.com)        |   
+| Ricardo Rocha       | `ricardo.rocha@cern.ch`  | [@rochaporto](https://github.com/rochaporto).      | [CERN](https://www.cern.ch)             |
+| Davanum Srinivas    | `davanum@gmail.com`      | [@dims](https://github.com/dims).                  | [VMware](https://www.vmware.com)        |
 
 ### Chairs, in alphabetical order
 
-| Name                | Email                  | CNCF Slack         | GitHub                                             | Company                               | Chair Term            |
-|---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|-----------------------|
-| Diane Feddema       | `dfeddema@redhat.com`  | `@Diane Feddema`   | [@dfeddema](https://github.com/dfeddema)           | [Red Hat](https://redhat.com)         | 2/4/2020 - 2/4/2022   |
-| Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     | 1/20/2020 - 1/20/2022 |
-| Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [Rakuten](https://rakuten.com/)       | 1/20/2020 - 1/20/2022 |
+| Name                | Email                  | CNCF Slack         | GitHub                                             | Company                               |
+|---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|
+| Diane Feddema       | `dfeddema@redhat.com`  | `@Diane Feddema`   | [@dfeddema](https://github.com/dfeddema)           | [Red Hat](https://redhat.com)         |
+| Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     |
+| Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [TruEra](https://truera.com/)         |
 
 ### TAG Tech Leads
 
-| Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 | Tech Lead Term        | 
-|---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|-----------------------|
-| Klaus Ma            | `klaus1982.cn@gmail.com`        | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Huawei](https://huawei.com)            | 1/20/2020 - 1/20/2022 |
-| Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              | 1/12/2022 - 1/12/2024 |
+| Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 |
+|---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|
+| Klaus Ma            | `klaus1982.cn@gmail.com`        | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Huawei](https://huawei.com)            |
+| Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              |
 
 
 ### TAG members
