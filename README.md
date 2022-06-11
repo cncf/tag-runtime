@@ -104,7 +104,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 |
 |---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|
-| Klaus Ma            | `klaus1982.cn@gmail.com`        | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Huawei](https://huawei.com)            |
+| Klaus Ma            | `klaus@xflops.cn`               | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Nvidia](https://nvidia.com)            |
 | Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              |
 
 
