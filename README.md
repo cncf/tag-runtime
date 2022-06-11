@@ -88,7 +88,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                    |  GitHub                                            | Company                                 |
 |---------------------|--------------------------|----------------------------------------------------|-----------------------------------------|
-| Richard Hartmann    | `aprokharchyk@apple.com` | [@RichiH](https://github.com/RichiH)               | [Grafana Labs](https://grafana.com/)    |
+| Richard Hartmann    | `richih@richih.org`      | [@RichiH](https://github.com/RichiH)               | [Grafana Labs](https://grafana.com/)    |
 | Ricardo Rocha       | `ricardo.rocha@cern.ch`  | [@rochaporto](https://github.com/rochaporto).      | [CERN](https://www.cern.ch)             |
 | Davanum Srinivas    | `davanum@gmail.com`      | [@dims](https://github.com/dims).                  | [VMware](https://www.vmware.com)        |
 
