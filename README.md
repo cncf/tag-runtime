@@ -71,6 +71,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 ## Working Groups
 
 * [Container Orchestrated Device Working Group](https://github.com/cncf/tag-runtime/blob/master/wg/COD.md)
+* [IoT Edge Working Group](https://github.com/cncf/tag-runtime/blob/master/wg/iot-edge.md)
 
 ## Related groups
 
