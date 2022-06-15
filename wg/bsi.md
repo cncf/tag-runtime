@@ -46,11 +46,11 @@ Batch system specifications, including:
 
 This Working Group will be reaching out and requesting/receiving feedback from other communities and working groups on a regular basis (not limited to):
 
-[Volcano](https://volcano.sh/)
-[Kubernetes](https://kubernetes.io/)
-[YuniKorn](https://yunikorn.apache.org/)
-[Kubernetes WG Batch](https://github.com/kubernetes/community/blob/master/wg-batch/charter.md)
-Etc.
+- [Volcano](https://volcano.sh/)
+- [Kubernetes](https://kubernetes.io/)
+- [YuniKorn](https://yunikorn.apache.org/)
+- [Kubernetes WG Batch](https://github.com/kubernetes/community/blob/master/wg-batch/charter.md)
+- Etc.
 
 ## Operations
 
