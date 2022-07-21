@@ -62,7 +62,8 @@ by the TOC unless otherwise stated here.
 
 ## Communities
 
-- Meeting Schedule: Twice a month on the 1st and 3rd Thu at 
+- Meeting Schedule: Twice a month on the 1st and 3rd Thu at 8am PDT/PST
+- [Meeting Invite](https://calendar.google.com/event?action=TEMPLATE&tmeid=aTBka2F2aWt2ZTM0aTZuaG40MXRhdH[…]UwMDAwWiBhbGV4QGdyLW9zcy5pbw&tmsrc=alex%40gr-oss.io&scp=ALL)
 - Mailing list: cncf-tag-runtime@lists.cncf.io 
 - Slack channel:  https://cloud-native.slack.com/archives/C02Q5DFF3MM 
 
