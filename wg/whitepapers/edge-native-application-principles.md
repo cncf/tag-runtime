@@ -1,26 +1,29 @@
 # Edge Native Application Principles
+
 Draft publish date: October 24, 2022
 
 ## Objective
-The term "Edge Native" has been mentioned in many places including industry blogs, such as, [Gartner](https://blogs.gartner.com/thomas_bittman/2020/04/17/cloud-native-isnt-edge-native/), [Macrometa](https://www.macrometa.com/blog/edge-native-is-not-cloud-native), and [FutureCIO](https://futurecio.tech/cloud-native-versus-edge-native-know-the-difference/). Organizations such as the [State of the Edge](https://github.com/State-of-the-Edge/glossary/blob/master/edge-glossary.md#edge-native-application) and the [Linux Foundation](https://www.lfedge.org/wp-content/uploads/2020/07/LFedge_Whitepaper.pdf) (LF) have also discussed edge native applications, but there has not been a focus on edge native principles. 
 
-This white paper focuses on edge native applications and how the principles are defined. 
+The term "Edge Native" has been mentioned in many places including industry blogs, such as, [Gartner](https://blogs.gartner.com/thomas_bittman/2020/04/17/cloud-native-isnt-edge-native/), [Macrometa](https://www.macrometa.com/blog/edge-native-is-not-cloud-native), and [FutureCIO](https://futurecio.tech/cloud-native-versus-edge-native-know-the-difference/). Organizations such as the [State of the Edge](https://github.com/State-of-the-Edge/glossary/blob/master/edge-glossary.md#edge-native-application) and the [Linux Foundation](https://www.lfedge.org/wp-content/uploads/2020/07/LFedge_Whitepaper.pdf) (LF) have also discussed edge native applications, but there has not been a focus on edge native principles.
+
+This white paper focuses on edge native applications and how the principles are defined.
 
 ## What is Edge?
 
 Edge computing is a paradigm which brings data processing closer to the source, for example, robot control in a factory.
 
-Over the next five years edge computing will become more ubiquitous as the industry will see a growth of [38.9% from 2022 to 2030](https://www.grandviewresearch.com/industry-analysis/edge-computing-market). Companies are seeing the following benefits of having computing power at the edge: 
+Over the next five years edge computing will become more ubiquitous as the industry will see a growth of [38.9% from 2022 to 2030](https://www.grandviewresearch.com/industry-analysis/edge-computing-market). Companies are seeing the following benefits of having computing power at the edge:
+
 - Reduced latency
 - Bandwidth management
 - Increased privacy for sensitive data
 - Uninterrupted operations with unreliable networks
- 
+
 Various definitions of edge computing exist, but the one this paper will focus on is based on geographical presence of data processing resources. Geo-based edge is classified into multiple categories depending on the distance from the user. The below diagram shows the categories as defined by [Linux Foundation Edge Whitepaper](https://www.lfedge.org/wp-content/uploads/2020/07/LFedge_Whitepaper.pdf).
 
 ![Summary of edge continuum](https://i.imgur.com/yhNbawO.png)
 
-Edge native principles share a number of similarities with cloud native; however, they also have  some key differences. The next sections outline these similarities and differences. 
+Edge native principles share a number of similarities with cloud native; however, they also have  some key differences. The next sections outline these similarities and differences.
 
 ## Cloud Native vs Edge Native
 
@@ -36,8 +39,9 @@ This broad mission remains applicable to edge applications as [The Open Glossary
 
 When cloud native use cases venture out of traditional clouds to incorporate data and events at edge locations, new tools and techniques are evolving in keeping with the goal of delivering loosely coupled systems that are resilient, manageable, and observable while also managing the unique characteristics of the edge.
 
-## Similarities in Edge Native compared to Cloud Native 
-Many cloud native principles apply to edge native. This section describes these similarities. 
+## Similarities in Edge Native compared to Cloud Native
+
+Many cloud native principles apply to edge native. This section describes these similarities.
 
 |                Attributes               |                                                                                                      Cloud Native & Edge Native                                                                                                     |
 |:---------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -46,8 +50,8 @@ Many cloud native principles apply to edge native. This section describes these 
 | Manageability                           | Interfaces and tooling options are provided to manage apps and resources at a large scale. The platform also has a plug-in mechanism to provide baseline network connectivity, services and management features.                    |
 | Agnostic language and framework support | Apps and services can be implemented and hosted, using a variety of popular languages and frameworks.                                                                                                                               |
 
-
 ## Differences in Edge Native compared to Cloud Native
+
 The broad mission of edge native and cloud native shares similarities, yet there are distinct differences between the two. Developers need to be aware of the differences.
 
 |              Attributes              |                                                                                    Cloud Native                                                                                   |                                                                                                                                         Edge Native                                                                                                                                        |
@@ -65,15 +69,18 @@ The broad mission of edge native and cloud native shares similarities, yet there
 | Interacting with external resources  | Applications rarely need to interact with local hardware resources.                                                                                                               | Services deployed at the edge often need to interact with the local environment: cameras, sensors, actuators, users, and more.                                                                                                                                                             |
 
 ## Edge Native Applications
+
 Edge native applications are applications and services written for the edge. They are written in a way that accounts for the above similarities and differences. The core principles for these applications are discussed below.
+
 ## Edge Native Principles
-Edge native applications should follow the following principles to fulfill the mission of cloud native discussed earlier in the paper. 
+
+Edge native applications should follow the following principles to fulfill the mission of cloud native discussed earlier in the paper.
 
 | Principle                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hardware aware                                       | Rather than having homogenous hardware platforms, developers need to be aware of a wider variety of hardware and interfaces.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | External device connectivity                         | Applications must know how to connect to the devices in their environment and be aware of the capability changes at runtime. For example, they must respond to dis/connecting sensors to the edge server after initial configuration or new devices entering the network. Capability is not static rather includes the environment, so orchestrators should be able to reconcile capability changes to application state.                                                                                                                                                                                                                                                                         |
-| Aware of variable-connectivity                       | Async “shadow devices”, queueing and caches are techniques frequently used to adapt to connectivity limitations. “Pull” mechanisms may be required to overcome scale and network connectivity issues where the edge pulls configuration from a central site. Airgapped operation is sometimes a requirement. See Differences Table above for security discussion. Example: ML app in the cloud may not be getting all the data from the edge at all times.                                                                                                                                                                                                                                        |
+| Aware of variable-connectivity                       | Applications must adapt to network connectivity that is unreliable or even unavailable (air gapped) by using mechanisms such as asynchronous communication , queueing and caches. “Pull” mechanisms may be required to overcome scale, network connectivity and security issues where the edge pulls configuration from a central site.                                                                                                                                                                                                                                     |
 | Centrally observable                                 | While both edge and cloud native applications need to be centrally observable, edge native apps have unique considerations. Edge native app instances may be deployed at a massive scale of instances and face constrained staff or field support. For these reasons, techniques such as distributed data collection and centralized aggregation, a combination of open loop (human observable / actionable) and closed loop automation (machine actionable) are required. Observability covers metrics, logs, digital twins, alerting (events and alarms) and health monitoring.                                                                                                                 |
 | Infrastructure and platform management at scale      | Infrastructure and platform management at scale is important for edge applications thus requiring declarative intent-based mechanisms. Furthermore, there might be unique requirements such as device onboarding, limitations on horizontal scaling, managing bare metal environments and more. At a platform level, deploying or managing the Kubernetes or virtualization layers, various plugins is also a concern; all while keeping the platform layer as vendor neutral as possible to enable application portability.                                                                                                                                                                      |
 | Application management at scale                      | The number of applications and the number of instances of these applications can be very large on the edge, requiring automation ranging from declarative placement and configuration intent, automated service assurance via closed loop automation, and aggregated management views across multiple application instances. Applications may also have realtime needs which means the linkage between applications and infrastructure/platform (e.g. use of GPUs, DPUs, FPGAs, CPU architectures, kernel optimizations, Kubernetes plugins) may be tighter than with cloud applications; in other words, application orchestration may trigger infrastructure/platform orchestration underneath. |
@@ -97,19 +104,20 @@ The CNCF IoT Edge Working Group has regular meetings, a mailing list, and a Slac
 
 ## Working List of Edge Native Open Source Projects and Initiatives
 
-As a part of this paper, the CNCF IoT Edge Working Group is collecting a working list of open source projects that help application developers achieve the edge native application principles outlined in this paper. 
+As a part of this paper, the CNCF IoT Edge Working Group is collecting a working list of open source projects that help application developers achieve the edge native application principles outlined in this paper.
 
-The list can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1dfa3lUvLuCrzmTH1w1TLeXxU-gy6QfbsE_ZXd1h4zTI/edit#gid=0) or through the QR code. To get edit access to add a project, join the [IoT Edge Working Group Google group](https://groups.google.com/forum/#!forum/kubernetes-wg-iot-edge). 
+The list can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1dfa3lUvLuCrzmTH1w1TLeXxU-gy6QfbsE_ZXd1h4zTI/edit#gid=0) or through the QR code. To get edit access to add a project, join the [IoT Edge Working Group Google group](https://groups.google.com/forum/#!forum/kubernetes-wg-iot-edge).
 
 ![QR code to list of edge native projects](https://i.imgur.com/sToDBW9.png)
 
 ## Contributors
 
 ### Authors
-Amar Kapadia, Aarna Networks    
-Brandon Wick, Aarna Networks    
-Dejan Bosanac, Red Hat    
-Joel Roberts, Cisco    
+
+Amar Kapadia, Aarna Networks
+Brandon Wick, Aarna Networks
+Dejan Bosanac, Red Hat
+Joel Roberts, Cisco
 Kate Goldenring, Fermyon  
 Natalie Fisher, VMware  
 Ravi Chunduru, Verizon  
@@ -117,15 +125,16 @@ Steven Wong, VMware
 Tomoya Fujita, Sony US Lab  
 
 ### Reviewers
-Frédéric Desbiens, Eclipse Foundation  
-Mark Abrams, SUSE  
-Prakash Ramchandran, eOTF  
+
+Frédéric Desbiens, Eclipse Foundation
+Mark Abrams, SUSE
+Prakash Ramchandran, eOTF
 
 ## References
 
 Linux Foundation Edge  Whitepaper: https://www.lfedge.org/wp-content/uploads/2020/07/LFedge_Whitepaper.pdf
 
-Open Glossary of Edge Computing [v2.1.0] State of the Edge: https://github.com/State-of-the-Edge/glossary/blob/master/edge-glossary.md#edge-native-application 
+Open Glossary of Edge Computing [v2.1.0] State of the Edge: https://github.com/State-of-the-Edge/glossary/blob/master/edge-glossary.md#edge-native-application
 
 Cloud Native Computing Foundation (CNCF) Charter: https://github.com/cncf/foundation/blob/main/charter.md
 
@@ -136,8 +145,4 @@ Macrometa ‘Edge Native is not Cloud Native’: https://www.macrometa.com/blog/
 Future CIO ‘Cloud-Native versus Edge-Native: know the difference’: https://futurecio.tech/cloud-native-versus-edge-native-know-the-difference/
 
 Edge Computing Market Size, Share & Trends Analysis Report By Component (Hardware, Software, Services, Edge-managed Platforms), By Application, By Industry Vertical, By Region, And Segment Forecasts, 2022 - 2030
-https://www.grandviewresearch.com/industry-analysis/edge-computing-market 
-
-
-
-
+https://www.grandviewresearch.com/industry-analysis/edge-computing-market
