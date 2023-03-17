@@ -11,8 +11,6 @@ This white paper focuses on edge native applications and how the principles are 
 ## What is Edge?
 
 Edge computing is a paradigm which brings data processing closer to the source, for example, robot control in a factory.
-
-Edge computing is a paradigm which brings data processing closer to the source, for example, robot control in a factory.
 Over the next five years edge computing will become more ubiquitous as the industry is estimated to grow [38.9% from 2022 to 2030](https://www.grandviewresearch.com/industry-analysis/edge-computing-market). Companies are seeing the following benefits of having computing power at the edge:
 
 - Reduced latency
