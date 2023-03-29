@@ -117,7 +117,7 @@ JOIN OUR MEETINGS REGULARLY OR CONTRIBUTE, THEN ADD YOURSELF VIA PULL REQUEST
 <details><summary>Click to view list</summary>
 
 * Michael Michael ([@michmike](https://github.com/michmike)), VMware
-* Tom Kerkhove ([@tomkerkhove](https://github.com/)), Microsoft
+* Tom Kerkhove ([@tomkerkhove](https://github.com/tomkerkhove)), Microsoft
 * Jeff Hollan ([@jeffhollan](https://github.com/jeffhollan)), Snowflake
 * Anirudh Garg ([@anirudhgarg](https://github.com/anirudhgarg)), Microsoft
 * Erick Carty ([@ebcarty](https://github.com/ebcarty))
