@@ -122,4 +122,6 @@ JOIN OUR MEETINGS REGULARLY OR CONTRIBUTE, THEN ADD YOURSELF VIA PULL REQUEST
 * Anirudh Garg ([@anirudhgarg](https://github.com/anirudhgarg)), Microsoft
 * Erick Carty ([@ebcarty](https://github.com/ebcarty))
 * Renaud Gaubert ([@RenaudWasTaken](https://github.com/RenaudWasTaken)), Nvidia
+* Nikhita Raghunath ([@nikhita](https://github.com/nikhita)), VMware
+* Heba Elayoty ([@helayoty](https://github.com/helayoty)), Microsoft
 </details>
