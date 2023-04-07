@@ -78,7 +78,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 * [Kubernetes SIG-Node](https://github.com/kubernetes/community/tree/master/sig-node)
 * [Other Kubernetes SIGs](https://github.com/kubernetes/community)
-* [Other CNCF TAGs](https://github.com/cncf) (TAG-Security, TAG-Network, TAG-App-Delivery)
+* [Other CNCF TAGs](https://github.com/cncf) (TAG-Security, TAG-Network, TAG-runtime)
 
 ## History
 
