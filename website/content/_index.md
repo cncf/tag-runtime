@@ -1,18 +1,16 @@
 ---
-title: "CNCF TAG App Delivery"
+title: "CNCF TAG Runtime"
 toc_hide: true
 ---
 
 <div class="row mt-5 mb-3">
     <div class="col-lg-6">
         <div class="lead">
-        TAG App Delivery supports projects and initiatives related to delivering
-        cloud-native applications, including building, packaging, deploying,
-        managing, and operating them.
+        TAG Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments.
         </div>
     </div>
     <div class="col-lg-6">
-        <img src="/images/tag-app-delivery-horizontal-color.svg" alt="Tag App Delivery logo" style="max-width: 300px;">
+        <img src="/images/tag-runtime_icon-color.svg" alt="Tag App Delivery logo" style="max-width: 300px;">
     </div>
 </div>
 

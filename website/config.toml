@@ -48,7 +48,7 @@ anchor = "smart"
 [languages]
 [languages.en]
 title = "CNCF TAG Runtime"
-description = "TAG Runtime focuses on enabling projects and initiatives related to delivering cloud-native applications, including building, deploying, managing, and operating them."
+description = "TAG Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
