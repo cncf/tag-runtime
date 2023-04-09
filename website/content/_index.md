@@ -19,32 +19,30 @@ The TAG produces guidance for and gathers feedback from cloud app users and
 developers and provides guidance and coordination to CNCF projects in the TAG's
 technical domains.
 
-- [TAG Charter](https://github.com/cncf/toc/blob/main/tags/app-delivery.md)
-- [Community events](https://community.cncf.io/tag-app-delivery/)
-- Slack channel: [#tag-app-delivery](https://cloud-native.slack.com/messages/CL3SL0CP5)
+- [TAG Charter](https://github.com/cncf/toc/blob/main/tags/runtime-charter.md)
+- [Community events](https://community.cncf.io/tag-runtime/)
+- Slack channel: [#tag-runtime](https://cloud-native.slack.com/messages/CPBE97SMU)
     - [Invite yourself to the CNCF Slack](https://slack.cncf.io/)
-- [Mailing list](https://lists.cncf.io/g/cncf-tag-app-delivery/topics)
+- [Mailing list](https://lists.cncf.io/g/cncf-runtime/topics)
 
 <p class="mt-5"><img src="/images/man-using-laptop.jpg" alt="Man working on computer"></p>
 
 
 ## Meetings
 
-1st and 3rd Wednesday of each month at 16:00 UTC ([convert to your local
-time](https://dateful.com/convert/utc?t=16)).
+1st and 3rd Thursday of each month at 8:00 PT ([convert to your local
+time](https://dateful.com/convert/pacific-time-pt?t=08)).
 
 Meetings are listed on the [main CNCF calendar](https://www.cncf.io/calendar/)
-as well as the [CNCF Community Calendar](https://community.cncf.io/tag-app-delivery/).
+as well as the [CNCF Community Calendar](https://community.cncf.io/tag-runtime/).
 
-* [Agenda and Notes](https://docs.google.com/document/d/1OykvqvhSG4AxEdmDMXilrupsX2n1qCSJUWwTc3I7AOs/edit#)
-* [Zoom Meeting](https://zoom.us/j/7276783015) (Passcode: 77777)
-* [Recordings of previous meetings](https://www.youtube.com/playlist?list=PLj6h78yzYM2OHd1Ht3jiZuucWzvouAAci)
+* [Agenda and Notes](https://bit.ly/cncf-tag-runtime-meeting-notes)
+* [Zoom Meeting](https://zoom.us/j/9890721462?pwd=N2xyRkZaN2JWZkNmS3EzbE1HVnhEQT09) (Passcode: 77777)
+* [Recordings of previous meetings](https://www.youtube.com/@cncftagruntime173/videos)
 
 ## Leads
 
-- [Alois Reitbauer](https://github.com/AloisReitbauer) (Chair)
-- [Jennifer Strejevitch](https://github.com/jenniferstrej) (Chair)
-- [Hongchao Deng](https://github.com/hongchaodeng) (Chair)
-- [Alex Jones](https://github.com/alexsjones) (TL)
-- [Thomas Schuetz](https://github.com/thschue) (TL)
-- [Josh Gavant](https://github.com/joshgav) (TL)
+- [Ricardo Aravena](https://github.com/raravena80) (Chair)
+- [Quinton Hoole](https://github.com/quinton-hoole) (Chair)
+- [Alexander Kanevskiy](https://github.com/kad) (TL)
+- [Klaus Ma](https://github.com/k82cn) (TL)
