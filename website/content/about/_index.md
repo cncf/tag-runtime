@@ -1,11 +1,11 @@
 ---
-title: About TAG App Delivery
+title: About TAG Runtime
 linkTitle: About
 toc_hide: true
 menu:
   main:
     weight: 20
-description: Projects and initatives maintained by TAG App Delivery
+description: Projects and initatives maintained by TAG Runtime
 ---
 
 ## Working Groups
@@ -14,8 +14,7 @@ The TAG establishes working groups (WGs) to accomplish specific projects and ini
 
 | Working Group | Chairs            | Meeting Time                          |
 |---------------|-------------------|---------------------------------------|
-| [Platforms](wg-platforms.md) | [Platforms chairs](wg-platforms/#chairs) | [Platforms meetings](wg-platforms/#meetings) |
-| [GitOps](https://github.com/cncf/tag-app-delivery/tree/main/gitops-wg) | [gitops-wg/CHAIRS.md](./gitops-wg/CHAIRS.md) | [gitops-wg/README.md#meetings](./gitops-wg/README.md#meetings) |
-| [Air Gapped](https://github.com/cncf/tag-app-delivery/tree/main/air-gapped-wg)         |   | Inactive |
-| [Operator](https://github.com/cncf/tag-app-delivery/tree/main/operator-wg) | | Inactive |
+| [Container Orchestrated Devices](https://github.com/cncf/tag-runtime/blob/main/wg/COD.md) | [COD Chairs](https://github.com/cncf/tag-runtime/blob/main/wg/COD.md#wg-chairs) | [Meetings](https://github.com/cncf/tag-runtime/blob/main/wg/COD.md#meetings) |
+| [Batch System Initiative](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md) | [BSI Chairs](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md#operations) | [Meetings](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md#communities) |
+| [IoT Edge](https://github.com/cncf/tag-runtime/blob/main/wg/iot-edge.md) | [IoT Edge Chairs](ihttps://github.com/cncf/tag-runtime/blob/main/wg/iot-edge.md#chairs) | [Meetings](ihttps://github.com/cncf/tag-runtime/blob/main/wg/iot-edge.md#communication) |
 
