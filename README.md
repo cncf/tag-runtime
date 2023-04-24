@@ -29,6 +29,7 @@ Example CNCF projects within the scope of TAG-Runtime
 * [K3s](https://k3s.io/)
 * [Metal3-io](https://metal3.io/)
 * [OpenYurt](https://openyurt.io/en-us/)
+* [Karmada](https://karmada.io/)
 
 # Governance
 
