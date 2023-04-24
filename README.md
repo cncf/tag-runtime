@@ -88,17 +88,16 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 ### TOC Liaisons
 
-| Name                | Email                    |  GitHub                                            | Company                                 |
-|---------------------|--------------------------|----------------------------------------------------|-----------------------------------------|
-| Richard Hartmann    | `richih@richih.org`      | [@RichiH](https://github.com/RichiH)               | [Grafana Labs](https://grafana.com/)    |
-| Ricardo Rocha       | `ricardo.rocha@cern.ch`  | [@rochaporto](https://github.com/rochaporto).      | [CERN](https://www.cern.ch)             |
-| Davanum Srinivas    | `davanum@gmail.com`      | [@dims](https://github.com/dims).                  | [VMware](https://www.vmware.com)        |
+| Name                | Email                    |  GitHub                                              | Company                                 |
+|---------------------|--------------------------|------------------------------------------------------|-----------------------------------------|
+| Nikhita Raghunath   | `cathy.h.zhang@intel.com`| [@nikhita](https://github.com/nikhita)               | [VMware](https://www.vmware.com)        |
+| Cathy Zhang         | `davanum@gmail.com`      | [@cathyhongzhang](https://github.com/cathyhongzhang) | [Intel](https://www.intel.com)          |
+| Richard Hartmann    | `richih@richih.org`      | [@RichiH](https://github.com/RichiH)                 | [Grafana Labs](https://grafana.com/)    |
 
 ### Chairs, in alphabetical order
 
 | Name                | Email                  | CNCF Slack         | GitHub                                             | Company                               |
 |---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|
-| Diane Feddema       | `dfeddema@redhat.com`  | `@Diane Feddema`   | [@dfeddema](https://github.com/dfeddema)           | [Red Hat](https://redhat.com)         |
 | Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     |
 | Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [TruEra](https://truera.com/)         |
 
