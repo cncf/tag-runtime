@@ -101,6 +101,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 |---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|
 | Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     |
 | Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [TruEra](https://truera.com/)         |
+| Heba Elayoty        | `hebaelayoty@gmail.com`| `@Heba`            | [@helayoty](https://github.com/helayoty)           | [Microsoft](https://www.microsoft.com)|
 
 ### TAG Tech Leads
 
