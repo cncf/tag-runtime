@@ -89,11 +89,11 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 ### TOC Liaisons
 
-| Name                | Email                    |  GitHub                                              | Company                                 |
-|---------------------|--------------------------|------------------------------------------------------|-----------------------------------------|
-| Nikhita Raghunath   | `cathy.h.zhang@intel.com`| [@nikhita](https://github.com/nikhita)               | [VMware](https://www.vmware.com)        |
-| Cathy Zhang         | `davanum@gmail.com`      | [@cathyhongzhang](https://github.com/cathyhongzhang) | [Intel](https://www.intel.com)          |
-| Richard Hartmann    | `richih@richih.org`      | [@RichiH](https://github.com/RichiH)                 | [Grafana Labs](https://grafana.com/)    |
+| Name                | Email                       |  GitHub                                              | Company                                 |
+|---------------------|-----------------------------|------------------------------------------------------|-----------------------------------------|
+| Nikhita Raghunath   | `nikhitaraghunath@gmail.com`| [@nikhita](https://github.com/nikhita)               | [VMware](https://www.vmware.com)        |
+| Cathy Zhang         | `cathy.h.zhang@intel.com`   | [@cathyhongzhang](https://github.com/cathyhongzhang) | [Intel](https://www.intel.com)          |
+| Richard Hartmann    | `richih@richih.org`         | [@RichiH](https://github.com/RichiH)                 | [Grafana Labs](https://grafana.com/)    |
 
 ### Chairs, in alphabetical order
 
