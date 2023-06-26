@@ -9,33 +9,4 @@ repository:
 
   # A URL with more information about the repository
   homepage: https://cncf.io/projects
-  
-  # Collaborators: give specific users access to this repository.
-  # see /governance/roles.md for details on write access policy
-  # note that the permissions below may provide wider access than needed for
-  # a specific role, and we trust these individuals to act according to their
-  # role. If there are questions, please contact one of the chairs.
-collaborators:
-  # TOC Liasons
-  - username: rochaporto
-    permission: admin
 
-  - username: alena1108
-    permission: admin
- 
-  - username: dims
-    permission: admin
-
-  # SIG Chairs 
-  - username: raravena80
-    permission: admin
-
-  - username: quinton-hoole
-    permission: admin
-    
-  - username: dfeddema
-    permission: admin
-    
-  - username: k82cn
-    permission: push
-    
