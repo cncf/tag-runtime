@@ -126,4 +126,5 @@ JOIN OUR MEETINGS REGULARLY OR CONTRIBUTE, THEN ADD YOURSELF VIA PULL REQUEST
 * Nikhita Raghunath ([@nikhita](https://github.com/nikhita)), VMware
 * Heba Elayoty ([@helayoty](https://github.com/helayoty)), Microsoft
 * Alexander Jung ([@nderjung](https://github.com/nderjung)), Unikraft
+* Rajas Kakodkar ([@rajaskakodkar](https://github.com/rajaskakodkar)), VMWare
 </details>
