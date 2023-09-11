@@ -14,16 +14,15 @@ But from a user perspective, the current support for batch workloads is widely d
 one batch system to another and requires a comprehensive migration between them. 
 It’s necessary to build a specification for batch workloads in the cloud native ecosystem, 
 and help related projects figure out their scopes and interaction. The users and communities can 
-follow this specification to work with projects in CNCF, e.g. Kubernetes, Volcano, Armada, MCAD, 
-or even out of CNCF, e.g. YuniKorn, and so on.
+follow this specification to work with projects in CNCF, e.g. Kubernetes, Volcano, Armada, 
+or even out of CNCF, e.g. YuniKorn and MCAD and others.
   
 ## Goal:
 
 The Cloud Native Batch System Initiative Working Group aims to define
 batch system specifications in the cloud native ecosystem for different batch projects,
 and related CRDs, gRPC, client libraries for projects. Those outputs will help related projects
-to figure out their scopes, and identify the different scenarios for different projects, e.g. tranditional HPC vs.
-HPC on Cloud.
+to figure out their scopes, and identify the different scenarios for different projects, e.g. traditional HPC vs. HPC on Cloud.
    
 ## In Scope:
 
@@ -63,7 +62,7 @@ by the TOC unless otherwise stated here.
 ## Communities
 
 - Meeting Schedule: Twice a month on the 1st and 3rd Thu at 8am PDT/PST
-- [Meeting Invite](https://calendar.google.com/event?action=TEMPLATE&tmeid=aTBka2F2aWt2ZTM0aTZuaG40MXRhdH[…]UwMDAwWiBhbGV4QGdyLW9zcy5pbw&tmsrc=alex%40gr-oss.io&scp=ALL)
+- [Meeting Invite](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=aTBka2F2aWt2ZTM0aTZuaG40MXRhdHM2dHNfMjAyMzA5MTFUMTUwMDAwWiBjXzY1MjRkNjA2OWI0YjczZDY1NGE2ZGFkYmFjNmQzMWRhMmU3NzZkOWNhMGRkZGY4OGFiMTJlMjZiODc1NzBhODJAZw&tmsrc=c_6524d6069b4b73d654a6dadbac6d31da2e776d9ca0dddf88ab12e26b87570a82%40group.calendar.google.com&scp=ALL)
 - Mailing list: cncf-tag-runtime@lists.cncf.io 
 - Slack channel:  https://cloud-native.slack.com/archives/C02Q5DFF3MM 
 
