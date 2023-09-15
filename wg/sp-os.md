@@ -57,26 +57,24 @@ Following is a list of popular open-source projects that are in the container OS
 This WORKING GROUP follows the [standard operating guidelines](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#operating-model) provided by the TOC unless otherwise stated here.
 
 ## TAG Liaison
-- TBD
+- [Rajas Kakodkar](https://github.com/rajaskakodkar)
 
 ## TOC Liaison
 - [Nikhita Raghunath](https://github.com/nikhita)
 
 ## Chairs
-- TBD
+- [Danielle Tal](https://github.com/miao0miao)
+- [Sean McGinnis](https://github.com/stmcginnis)
 
 ## Technical Leaders
-- TBD
+- [Thilo Fromm](https://github.com/t-lo)
 
 ## Communication
 
-Community Meeting (Pacific Time): TBD
-
-Meeting Notes and Agenda: TBD
-
-CNCF Slack: #wg-sp-os
-
-Mailing list: TBD
+- **Community Meeting:** Biweekly, 1st and 3rd Thursday of the Month at 2:00 PM UTC [(convert to your timezone)](https://dateful.com/convert/coordinated-universal-time-utc?t=2pm)
+- **Meeting Notes and Agenda:** [Click here](https://docs.google.com/document/d/1MeFwrnOeleTazqmZe16p0fEFLiLPgtCIAAOFIatWNsg/)
+- **CNCF Slack:** [#wg-sp-os](https://communityinviter.com/apps/cloud-native/cncf)
+- **Mailing list:** https://lists.cncf.io/g/cncf-tag-runtime
 
 ## Document Reviewed and Contributed by
 - [Ettore Di Giacinto](https://github.com/mudler)
