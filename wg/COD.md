@@ -19,17 +19,17 @@ From a vendor’s perspective, each plugin mechanism has a different set of capa
 
 The Container Orchestrated Workging Group aims to improve the support of Devices in the cloud native space. 
 
-# Projects
+## Projects
  
-## Project #1: Container Device Interface
+### [Container Device Interface](https://github.com/cncf-tags/container-device-interface)
  
 The Container Device Interface (CDI) is the first project the group focuses on and is a specification, for container runtimes, to support third party devices through a commonly understood plugin system (based on the CNI model).
  
-### Concrete Deliverables
+#### Concrete Deliverables
 The main deliverable for CDI is a specification that runtimes can implement to enable containers to become device aware.
 A secondary deliverable is a golang interface, with a package that can be re-used to merge the specification as well as a validation schema.
  
-### Target User Stories
+#### Target User Stories
 
 (Consistent UX) As a user, my experience across runtimes should be fairly consistent
 (Standard Interface) As a plugin author, I should be focusing on my plugin’s features not adding support for similar runtimes
@@ -37,16 +37,16 @@ A secondary deliverable is a golang interface, with a package that can be re-use
 (Ease of Deployment) Solve the difficulties faced by users in the cloud-native space
 (Consistency) As a user, my experience interacting with runtimes should be fairly consistent
  
-### Slides
+#### Slides
 
 [Container Device Interface Slides](https://docs.google.com/presentation/d/1UXgKYx5AA9ThYYLDswHsXFDL7TrNzVcac8zjlMIfEDs/)
 
 
-# General Information
+## General Information
 
 ## Stakeholder TAG
 
-TAG Runtime
+- TAG Runtime
 
 ## Meetings
 
