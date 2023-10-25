@@ -57,10 +57,11 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 ## Working Groups
 
-* [Container Orchestrated Device Working Group](https://github.com/cncf/tag-runtime/blob/master/wg/COD.md)
-* [IoT Edge Working Group](https://github.com/cncf/tag-runtime/blob/master/wg/iot-edge.md)
-* [Batch Working Group](https://github.com/cncf/tag-runtime/blob/master/wg/bsi.md)
+* [Container Orchestrated Device Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/COD.md)
+* [IoT Edge Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/iot-edge.md)
+* [Batch Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md)
 * [Wasm Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/wasm.md)
+* [Special Purpose Operating System Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/sp-os.md)
 
 ## Related groups
 
@@ -115,5 +116,6 @@ JOIN OUR MEETINGS REGULARLY OR CONTRIBUTE, THEN ADD YOURSELF VIA PULL REQUEST
 * Nikhita Raghunath ([@nikhita](https://github.com/nikhita)), VMware
 * Heba Elayoty ([@helayoty](https://github.com/helayoty)), Microsoft
 * Alexander Jung ([@nderjung](https://github.com/nderjung)), Unikraft
-* Rajas Kakodkar ([@rajaskakodkar](https://github.com/rajaskakodkar)), VMWare
+* Rajas Kakodkar ([@rajaskakodkar](https://github.com/rajaskakodkar)), VMware
+* Sean McGinnis ([@stmcginnis](https://github.com/stmcginnis)), AWS
 </details>
