@@ -100,8 +100,8 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 
 ## Communication
 
-- **Community Meeting** (Pacific Time): Weekly, Tuesdays at 5:00 pm CEST - [details](https://tockify.com/cncf.public.events/detail/609/1687273200000?search=wasm) -
-- **Meeting Notes and Agenda**: [Click here](https://docs.google.com/document/d/1d6PvdCuKbSdcuXG2M9fBSDQPTPfHYA0PPDTM2plbH3I/edit#heading=h.cthb8ncah3pb)
+- **Community Meeting** (Pacific Time): Fortnightly, Tuesdays at 5:00 pm CEST - [Calendar](https://tockify.com/cncf.public.events/monthly?search=Wasm%20WG)
+- **Meeting Notes and Agenda**: [Click here](https://docs.google.com/document/d/1d6PvdCuKbSdcuXG2M9fBSDQPTPfHYA0PPDTM2plbH3I)
 - **CNCF Slack**: [#wg-wasm](https://cloud-native.slack.com/archives/C056EDRH4PJ)
 - **Mailing list**: https://lists.cncf.io/g/cncf-tag-runtime 
 
