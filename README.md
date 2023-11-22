@@ -1,4 +1,4 @@
-<img width="200" alt="Tag-runtime" src="https://github.com/cncf/artwork/blob/master/other/tag-runtime/icon/color/tag-runtime_icon-color.png">
+<img width="200" alt="Tag-runtime" src="https://github.com/cncf/artwork/blob/main/other/tag-runtime/icon/color/tag-runtime_icon-color.png">
 
 # CNCF Technical Advisory Group for Runtime (TAG-Runtime)
 
