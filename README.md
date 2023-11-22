@@ -5,7 +5,7 @@
 ## Quick links
 
 - [Meeting Information](#meeting-times)
-- [Slack Information](#communications)
+- [Communications](#communications)
 - [Members](#members)
 
 ## Objective
@@ -39,7 +39,7 @@ Example CNCF projects within the scope of TAG-Runtime
 
 Anyone is welcome to join our open discussions of TAG-Runtime projects and share news about the group's objectives. We also encourage project teams to share progress updates or post questions on these channels:
 
-* [Email list](https://lists.cncf.io/g/cncf-tag-runtime)
+* [Mailing list](https://lists.cncf.io/g/cncf-tag-runtime)
 * [#tag-runtime](https://cloud-native.slack.com/archives//CPBE97SMU) on [CNCF Slack](https://slack.cncf.io/)
 
 ## Meeting times
