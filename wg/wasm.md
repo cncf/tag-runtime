@@ -91,6 +91,7 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 ### WG Chairs
 - [David Justice](https://github.com/devigned)
 - [Danielle Lancashire](https://github.com/endocrimes)
+- [Taylor Thomas](https://github.com/thomastaylor312)
 
 
 ### WG Technical Leaders
