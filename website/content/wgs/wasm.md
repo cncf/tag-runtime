@@ -83,7 +83,6 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 
 ### TAG Liaison
 - [Ricardo Aravena](https://github.com/raravena80)
-- [Heba Elayoty](https://github.com/helayoty)
 
 ### TOC Liaison
 - [Nikhita Raghunath](https://github.com/nikhita)
@@ -91,6 +90,7 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 ### WG Chairs
 - [David Justice](https://github.com/devigned)
 - [Danielle Lancashire](https://github.com/endocrimes)
+- [Taylor Thomas](https://github.com/thomastaylor312)
 
 
 ### WG Technical Leaders
