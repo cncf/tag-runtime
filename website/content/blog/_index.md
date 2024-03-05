@@ -1,6 +1,6 @@
 ---
 title: Blog
-toc_hide: true
+toc_hide: false
 menu:
   main:
     weight: 40
