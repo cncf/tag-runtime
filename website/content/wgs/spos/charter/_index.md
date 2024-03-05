@@ -1,5 +1,6 @@
- # Special Purpose Operating System Working Group Charter
- 
+---
+title: Special Purpose Operating System Working Group Charter
+--- 
  ## Background
 
 Special Purpose Operating Systems are designed to run well defined workloads with minimal boilerplate of dependencies suited for niche use cases. 

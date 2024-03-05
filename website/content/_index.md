@@ -1,6 +1,9 @@
 ---
 title: "CNCF TAG Runtime"
-toc_hide: true
+toc_hide: false
+list_pages: true
+weight: 3
+description: "TEST"
 ---
 
 <div class="row mt-5 mb-3">
@@ -44,7 +47,6 @@ as well as the [CNCF Community Calendar](https://community.cncf.io/tag-runtime/)
 
 - [Ricardo Aravena](https://github.com/raravena80) (Chair)
 - [Quinton Hoole](https://github.com/quinton-hoole) (Chair)
-- [Heba Elayoty](https://github.com/helayoty) (Chair)
 - [Alexander Kanevskiy](https://github.com/kad) (TL)
 - [Klaus Ma](https://github.com/k82cn) (TL)
 - [Rajas Kakodkar](https://github.com/rajaskakodkar) (TL)

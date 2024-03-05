@@ -1,16 +1,11 @@
 ---
 title: Working Groups
 toc_hide: false
+list_pages: true
 menu:
   main:
     weight: 40
+description: "The TAG establishes working groups (WGs) to accomplish specific projects and initiatives."
 ---
 
-More information about the various TAG Runtime working groups can be found
-here:
-
-- [Batch System Initiative Working Group](batch.md)
-- [Container Orchestrated Device Working Group](COD.md)
-- [IoT Edge Working Group](iot.md)
-- [Special Purpose Operating System Working Group](spos.md)
-- [WebAssembly Working Group](wasm.md)
+More information about the various TAG Runtime working groups can be found here.
