@@ -1,6 +1,6 @@
 ---
 title: Search Results
 layout: search
-toc_hide: false
+toc_hide: true
 ---
 
