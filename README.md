@@ -62,6 +62,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 * [Batch Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md)
 * [Wasm Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/wasm.md)
 * [Special Purpose Operating System Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/sp-os.md)
+* [Cloud Native AI Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/cnaiwg.md)
 
 ## Related groups
 
