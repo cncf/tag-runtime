@@ -95,7 +95,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 |
 |---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|
-| Rajas Kakodkar      |                                 | `@rajaskakodkar`   | [@rajas](https://github.com/rajaskakodkar)     | [VMWare](https://www.vmware.com)  |
+| Rajas Kakodkar      | `rajaskakodkar16@gmail.com`                                 | `@rajaskakodkar`   | [@rajaskakodkar](https://github.com/rajaskakodkar)     | [VMWare](https://www.vmware.com)  |
 | Klaus Ma            | `klaus@xflops.cn`               | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Nvidia](https://nvidia.com)            |
 | Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              |
 
