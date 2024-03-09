@@ -1,5 +1,7 @@
-# Container Orchestrated Device Working Group Charter
-
+---
+title: Container Orchestrated Device Working Group Charter
+url: 'wg/COD/charter/'
+---
 COD, the Container Orchestrated Device Working Group, is a small group formed by passionate Container Runtime Maintainers and Device Vendors looking to solve many of the challenges Devices face in the cloud native space.
  
 * In today’s cloud native space, the support for Third Party Devices such as FPGAs, GPUs and others is fragmented, uneven and inconsistent. For example:
@@ -88,3 +90,4 @@ https://lists.cncf.io/g/cncf-tag-runtime
   * https://docs.google.com/document/d/1oE93V3SgOGWJ4O1zeD1UmpeToa0ZiiO6LqRAmZBPFWM
   * https://docs.google.com/document/d/1rBm-L1ymXIjoKNA6w2lixwBAjt9-tnbs-ee7AcLRbVE
   * https://docs.openstack.org/kuryr-kubernetes/latest/specs/rocky/npwg_spec_support.html
+

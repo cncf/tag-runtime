@@ -1,4 +1,6 @@
-# WebAssembly (Wasm) Working Group Charter
+---
+title: WebAssembly (Wasm) Working Group Charter
+---
 
 ## Background
 
@@ -83,6 +85,7 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 
 ### TAG Liaison
 - [Ricardo Aravena](https://github.com/raravena80)
+- [Heba Elayoty](https://github.com/helayoty)
 
 ### TOC Liaison
 - [Nikhita Raghunath](https://github.com/nikhita)

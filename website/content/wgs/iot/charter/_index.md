@@ -1,5 +1,7 @@
-# IoT Edge Working Group Charter
-
+---
+title: IoT Edge Working Group Charter
+weight: 1
+---
 ## Mission Statement
 
 IoT Edge Working group focuses on topics of running workloads in edge computing environments and providing support for connecting far-edge devices. Evolving from the Kubernetes IoT Edge working group, it extends the mission to include a wider set of projects. Working group's mission is to enable widespread and successful use of cloud-native technologies for IoT and Edge computing use cases. It will engage in the following activities:

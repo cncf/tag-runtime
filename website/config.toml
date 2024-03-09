@@ -17,7 +17,7 @@ enableGitInfo = true
 
 # Comment out to enable taxonomies in Docsy
 disableKinds = ["taxonomy", "taxonomyTerm"]
-
+#ignoreErrors = ["error-disable-taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -90,7 +90,7 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://runtime.cncf.io"
+url_latest_version = "https://tag-runtime.cncf.io"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "c131e8ed0e7ed4f9d"

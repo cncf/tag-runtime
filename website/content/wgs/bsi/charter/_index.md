@@ -1,4 +1,6 @@
-# Cloud Native Batch System Initiative Working Group Charter
+---
+title: Cloud Native Batch System Initiative Working Group Charter
+---
  
 ## Introduction
 
@@ -65,4 +67,3 @@ by the TOC unless otherwise stated here.
 - [Meeting Invite](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=aTBka2F2aWt2ZTM0aTZuaG40MXRhdHM2dHNfMjAyMzA5MTFUMTUwMDAwWiBjXzY1MjRkNjA2OWI0YjczZDY1NGE2ZGFkYmFjNmQzMWRhMmU3NzZkOWNhMGRkZGY4OGFiMTJlMjZiODc1NzBhODJAZw&tmsrc=c_6524d6069b4b73d654a6dadbac6d31da2e776d9ca0dddf88ab12e26b87570a82%40group.calendar.google.com&scp=ALL)
 - Mailing list: cncf-tag-runtime@lists.cncf.io 
 - Slack channel:  https://cloud-native.slack.com/archives/C02Q5DFF3MM 
-

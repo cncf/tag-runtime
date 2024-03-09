@@ -62,6 +62,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 * [Batch Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md)
 * [Wasm Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/wasm.md)
 * [Special Purpose Operating System Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/sp-os.md)
+* [Cloud Native AI Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/cnaiwg.md)
 
 ## Related groups
 
@@ -95,7 +96,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 |
 |---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|
-| Rajas Kakodkar      |                                 | `@rajaskakodkar`   | [@rajas](https://github.com/rajaskakodkar)     | [VMWare](https://www.vmware.com)  |
+| Rajas Kakodkar      | `rajaskakodkar16@gmail.com`                                 | `@rajaskakodkar`   | [@rajaskakodkar](https://github.com/rajaskakodkar)     | [VMWare](https://www.vmware.com)  |
 | Klaus Ma            | `klaus@xflops.cn`               | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Nvidia](https://nvidia.com)            |
 | Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              |
 
