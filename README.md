@@ -88,15 +88,15 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                  | CNCF Slack         | GitHub                                             | Company                               |
 |---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|
-| Quinton Hoole       | `quinton@hoole.biz`    | `@quinton-hoole`   | [@quinton-hoole](https://github.com/quinton-hoole) | [FaceBook](https://facebook.com/)     |
+| Danielle Tal        | `tdanit@gmail.com`     | `@danielle`        | [@miao0miao](https://github.com/miao0miao)         | [Microsoft](https://microsoft.com/)   |
 | Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [TruEra](https://truera.com/)         |
-| Heba Elayoty        | `hebaelayoty@gmail.com`| `@Heba`            | [@helayoty](https://github.com/helayoty)           | [Microsoft](https://www.microsoft.com)|
+| Stephen Rust        | `srust@srust.dev`      | `@srust`           | [@srust](https://github.com/srust)                 | [Akamai](https://akamai.com)|
 
 ### TAG Tech Leads
 
 | Name                | Email                           | CNCF Slack         | GitHub                                         | Company                                 |
 |---------------------|---------------------------------|--------------------|------------------------------------------------|-----------------------------------------|
-| Rajas Kakodkar      | `rajaskakodkar16@gmail.com`                                 | `@rajaskakodkar`   | [@rajaskakodkar](https://github.com/rajaskakodkar)     | [VMWare](https://www.vmware.com)  |
+| Rajas Kakodkar      | `rajaskakodkar16@gmail.com`     | `@rajaskakodkar`   | [@rajaskakodkar](https://github.com/rajaskakodkar)     | [VMWare](https://www.vmware.com)  |
 | Klaus Ma            | `klaus@xflops.cn`               | `@k82cn`           | [@k82cn](https://github.com/k82cn)             | [Nvidia](https://nvidia.com)            |
 | Alexander Kanevskiy | `alexander.kanevskiy@intel.com` | `@kad`             | [@kad](https://github.com/kad)                 | [Intel](https://intel.com)              |
 

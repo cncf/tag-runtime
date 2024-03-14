@@ -45,8 +45,9 @@ as well as the [CNCF Community Calendar](https://community.cncf.io/tag-runtime/)
 
 ## Leads
 
+- [Danielle Tal](https://github.com/miao0miao) (Chair)
 - [Ricardo Aravena](https://github.com/raravena80) (Chair)
-- [Quinton Hoole](https://github.com/quinton-hoole) (Chair)
+- [Stephen Rust](https://github.com/srust) (Chair)
 - [Alexander Kanevskiy](https://github.com/kad) (TL)
 - [Klaus Ma](https://github.com/k82cn) (TL)
 - [Rajas Kakodkar](https://github.com/rajaskakodkar) (TL)
