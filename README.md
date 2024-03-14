@@ -88,7 +88,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                  | CNCF Slack         | GitHub                                             | Company                               |
 |---------------------|------------------------|--------------------|----------------------------------------------------|---------------------------------------|
-| Danielle Tal        | ``    | `@danielle`        | [@miao0miao](https://github.com/miao0miao)         | [Microsoft](https://microsoft.com/)     |
+| Danielle Tal        | `tdanit@gmail.com`     | `@danielle`        | [@miao0miao](https://github.com/miao0miao)         | [Microsoft](https://microsoft.com/)   |
 | Ricardo Aravena     | `raravena80@gmail.com` | `@ricardo`         | [@raravena80](https://github.com/raravena80)       | [TruEra](https://truera.com/)         |
 | Stephen Rust        | `srust@srust.dev`      | `@srust`           | [@srust](https://github.com/srust)                 | [Akamai](https://akamai.com)|
 
