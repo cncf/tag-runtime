@@ -61,8 +61,9 @@ by the TOC unless otherwise stated here.
 
 ## Communities
 
-- Meeting Schedule: Twice a month on the 1st and 3rd Thu at 8am PDT/PST
+- Meeting Schedule: Twice a month on the 1st and 3rd Mondays at 8am PDT/PST
 - [Meeting Invite](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=aTBka2F2aWt2ZTM0aTZuaG40MXRhdHM2dHNfMjAyMzA5MTFUMTUwMDAwWiBjXzY1MjRkNjA2OWI0YjczZDY1NGE2ZGFkYmFjNmQzMWRhMmU3NzZkOWNhMGRkZGY4OGFiMTJlMjZiODc1NzBhODJAZw&tmsrc=c_6524d6069b4b73d654a6dadbac6d31da2e776d9ca0dddf88ab12e26b87570a82%40group.calendar.google.com&scp=ALL)
+- [Meeting Notes and More Information](https://docs.google.com/document/d/1GuZGyBkRGG0lEeiPA8q0PfvFlwUlwa5k-ZfXafCTdBY/edit#heading=h.63y814c3aujl)
 - Mailing list: cncf-tag-runtime@lists.cncf.io 
 - Slack channel:  https://cloud-native.slack.com/archives/C02Q5DFF3MM 
 
