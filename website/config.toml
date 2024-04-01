@@ -93,7 +93,7 @@ version = "0.0"
 url_latest_version = "https://tag-runtime.cncf.io"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "c131e8ed0e7ed4f9d"
+# gcs_engine_id = "c131e8ed0e7ed4f9d"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
