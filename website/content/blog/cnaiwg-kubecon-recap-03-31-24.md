@@ -96,15 +96,19 @@ Collaborating closely with the LF AI & Data Foundation, the group aims to deep d
 
 #### Initiatives Summary
 
+#### Initiatives Summary
+
+Below are some of the ideas and initiatives we have in mind for the CNAI working group:
+
 - Educate the community
-- Make it easy to start with MLOps or AI Eng
-- Workshop
-- Reference implementation(s)
-- CN AI Landscape
-- CN AI Radar (different tech verticals)
-- Collaborate with the LF AI & Data
+    - Make it easy to start with MLOps or AI Eng
+    - Workshops and webinars on the topic
+- Provide reference implementation(s)
+- Create a CN AI Landscape
+- Create a CN AI Radar (different tech verticals)
+- Collaborate with the LF AI & Data to make sure there are no duplicate efforts
 - Deep dive into different areas. i.e. training, tuning, serving
-- CN AI Model leaderboard (performance)
+- Curate a CN AI Model leaderboard (performance)
 - Event planning
 - Open to suggestions!
 
