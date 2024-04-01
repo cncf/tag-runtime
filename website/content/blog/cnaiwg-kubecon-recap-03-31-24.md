@@ -1,7 +1,9 @@
 ---
 title:  CNAI & Kubecon EU Paris 2024 Recap
 date:   2024-04-01
-author: Ricardo Aravena
+authors: 
+  - Ricardo Aravena
+  - Adel Zaalouk
 ---
 
 Some of the members of the Cloud Native AI Working Group got the chance to attend CloudNativeCon/KubeCon EU 2024 in Paris last week, One of the main topics of the conference centered around AI, how Cloud Native is a key enabler and how AI itself can continue to help Cloud Native and the open source ecosystem. This blog is a recap of some of the conference conversations and our recent publication of the Cloud Native AI Whitepaper. We will follow the same structure that was used in the white paper and fit the discussions and feedback accordingly.
@@ -28,23 +30,23 @@ The ML lifecycle involves a collaborative effort among various disciplines and r
   - **Role**: responsible for data collection, preprocessing, and storage, ensuring that high-quality, reliable data is available for training and inference.
   - **Quotes/Mottos**: “I make data science easier”, “I am the unsung hero that does all the data plumbing, after all bad data in bad data out”
 - **Data scientists** 
-  - **Role: **define the problem, explore data, select appropriate models/algorithms, train the models, and evaluate model performance. 
+  - **Role:** define the problem, explore data, select appropriate models/algorithms, train the models, and evaluate model performance. 
   - **Quotes/Mottos:** “I solve business problems”, “I don’t want to learn about infrastructure if I don’t have too”
 - **Platform engineers**
-  - **Role: **Create scalable and efficient infrastructure, including cloud platforms and distributed computing systems, to support large-scale machine learning workflows. 
-  - **Quotes/Mottos: “**I abstract complexity and build APIs to make the lives of data engineers and data scientists easier” 
+  - **Role:** Create scalable and efficient infrastructure, including cloud platforms and distributed computing systems, to support large-scale machine learning workflows. 
+  - **Quotes/Mottos:** I abstract complexity and build APIs to make the lives of data engineers and data scientists easier” 
 - **Site reliability engineers (SREs)**
-  - **Role: **focus on maintaining system reliability, monitoring performance, and implementing automated processes for deploying and monitoring machine learning models in production. 
-  - **Quotes/Mottos: “**I keep it all running 99.99999999% of the time”
-- **Hardware architects** 
-  - **Role: **contribute by designing and optimizing hardware accelerators, such as GPUs and TPUs, to improve machine learning tasks' computational efficiency and speed. 
+  - **Role:** focus on maintaining system reliability, monitoring performance, and implementing automated processes for deploying and monitoring machine learning models in production. 
+  - **Quotes/Mottos:** I keep it all running 99.99999999% of the time”
+- **Hardware architects**
+  - **Role:** contribute by designing and optimizing hardware accelerators, such as GPUs and TPUs, to improve machine learning tasks' computational efficiency and speed.
   - **Quotes/Mottos:** “I make those models run fast”
 
 This interdisciplinary collaboration to streamline the machine learning lifecycle is described in the following diagram:
 
 ![Interdisciplinary Diagram](https://github.com/cncf/tag-runtime/assets/7659560/22e0f39c-eb1c-458a-8c8c-dedcb31471c7)
 
-While not immediately clear, each persona ***connects**** *with other personas at different layers to make the entire lifecycle whole. 
+While not immediately clear, each persona ***connects*** with other personas at different layers to make the entire lifecycle whole.
 
 With an understanding of the various layers and how the personas collaborate, we are ready to cover the relationship between Cloud Native and Cloud Native AI.
 
@@ -84,7 +86,7 @@ Once we understand the ecosystem, the relationships, and the roles, we can start
 - How to monitor, observe, and signal issues for AI/ML?
 - …
 
-All of this is food for thought for the group to ***perform**** *and start drafting best practices and standards on how to tackle each and every one of these questions. Additionally, how do we do so for each of the use cases and industry verticals that plan to use cloud native tooling to build AI/ML applications? Another way of putting it is how do we focus our efforts and the cloud native AI stack to solve real problems. 
+All of this is food for thought for the group to ***perform*** and start drafting best practices and standards on how to tackle each and every one of these questions. Additionally, how do we do so for each of the use cases and industry verticals that plan to use cloud native tooling to build AI/ML applications? Another way of putting it is how do we focus our efforts and the cloud native AI stack to solve real problems. 
 
 ![Landscape Focus Picture](https://github.com/cncf/tag-runtime/assets/7659560/3a5b884c-93fc-4db7-80a0-1bfc859e9d1e)
 
@@ -95,9 +97,6 @@ The Cloud Native AI working group is at the early stages of its initiatives, foc
 Collaborating closely with the LF AI & Data Foundation, the group aims to deep dive into specific areas such as training, tuning, and serving AI models, sharing best practices, and fostering innovation. To benchmark performance and promote healthy competition, the working group intends to establish the Cloud Native AI Model leaderboard. Event planning and open collaboration with the community are also key priorities, with a willingness to consider and incorporate suggestions to further enhance its initiatives and impact in the cloud native AI ecosystem.
 
 #### Initiatives Summary
-
-#### Initiatives Summary
-
 Below are some of the ideas and initiatives we have in mind for the CNAI working group:
 
 - Educate the community
@@ -117,3 +116,5 @@ Below are some of the ideas and initiatives we have in mind for the CNAI working
 We are incredibly excited about the potential and opportunities ahead in the Cloud Native AI Working Group and the broader Cloud Native AI space. With a strong focus on education, collaboration, and innovation, we anticipate significant advancements in cloud native AI practices, making it more accessible and efficient for practitioners and organizations. The initiatives planned, such as workshops, reference implementations, AI model leaderboards, and collaboration with organizations like the LF AI & Data, are poised to drive meaningful progress and create a vibrant ecosystem of solutions.
 
 We look forward to the contributions, partnerships, and insights that will emerge, ultimately leading to transformative developments and breakthroughs in AI applications and technologies.
+
+We are fastest to find at [#wg-artificial-intelligence](https://cloud-native.slack.com/archives/C05TYJE81SR) channel on the CNCF slack.
