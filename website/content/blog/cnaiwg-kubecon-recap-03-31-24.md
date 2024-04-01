@@ -1,4 +1,8 @@
-# CNAI & Kubecon EU Paris 2024 Recap
+---
+title:  CNAI & Kubecon EU Paris 2024 Recap
+date:   2024-04-01
+author: Ricardo Aravena
+---
 
 Some of the members of the Cloud Native AI Working Group got the chance to attend CloudNativeCon/KubeCon EU 2024 in Paris last week, One of the main topics of the conference centered around AI, how Cloud Native is a key enabler and how AI itself can continue to help Cloud Native and the open source ecosystem. This blog is a recap of some of the conference conversations and our recent publication of the Cloud Native AI Whitepaper. We will follow the same structure that was used in the white paper and fit the discussions and feedback accordingly.
 
@@ -50,8 +54,6 @@ Cloud native AI represents an evolutionary step in the cloud native paradigm, ex
 
 It highlights the seamless integration of AI/ML workflows into cloud native environments, leveraging containerization, microservices architecture, and orchestration tools like Kubernetes. Cloud native AI enables organizations to deploy and manage AI/ML models more efficiently, with scalability, agility, and resource optimization benefits. By leveraging cloud native technologies, AI/ML workflows are automated, monitored, and scaled dynamically based on demand, leading to faster development cycles and improved application performance. This evolution aligns with the broader trend of modernizing IT infrastructures and leveraging cloud services to drive innovation and competitiveness in the AI space.
 
-# 
-
 ## CNCF Cloud Native AI Working Group
 
 ### Why?
@@ -63,8 +65,6 @@ Additionally, we aim to identify best practices, standards, and approaches to ta
 Establishing a common language and framework within the CNCF ecosystem for cloud native AI will simplify the job for AI practitioners, foster innovation, and accelerate the adoption of cloud native technologies in AI and the use of AI in cloud native.
 
 ![Four Pillars Diagram](https://github.com/cncf/tag-runtime/assets/7659560/ae39bb24-673d-4061-84be-5a68ef718350)
-
-# 
 
 ### Form, Storm, Norm
 
