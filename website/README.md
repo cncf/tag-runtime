@@ -18,6 +18,7 @@ To set up a local dev environment make sure you have [Hugo Extended](https://goh
 git clone git@github.com:cncf/tag-runtime.git
 cd tag-runtime
 git submodule update --init --recursive
+cd website
 npm install
 ```
 

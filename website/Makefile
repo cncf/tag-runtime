@@ -1,5 +1,5 @@
 serve:
-	cd website; hugo server \
+	hugo server \
 		--disableFastRender \
 		--buildDrafts \
 		--buildFuture \
@@ -14,13 +14,13 @@ serve:
 
 production-build:
 	git submodule update --init --recursive
-	cd website; hugo \
+	hugo \
 		--minify
 	npx -y pagefind --site website/public
 
 preview-build:
 	git submodule update --init --recursive
-	cd website; hugo \
+	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
 		--buildFuture \
