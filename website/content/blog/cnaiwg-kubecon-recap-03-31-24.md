@@ -1,9 +1,7 @@
 ---
 title:  CNAI & Kubecon EU Paris 2024 Recap
 date:   2024-04-01
-authors: 
-  - Ricardo Aravena
-  - Adel Zaalouk
+author: Ricardo Aravena, Adel Zaalouk
 ---
 
 Some of the members of the Cloud Native AI Working Group got the chance to attend CloudNativeCon/KubeCon EU 2024 in Paris last week, One of the main topics of the conference centered around AI, how Cloud Native is a key enabler and how AI itself can continue to help Cloud Native and the open source ecosystem. This blog is a recap of some of the conference conversations and our recent publication of the Cloud Native AI Whitepaper. We will follow the same structure that was used in the white paper and fit the discussions and feedback accordingly.
