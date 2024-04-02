@@ -1,6 +1,6 @@
 ---
 title: Container Orchestrated Device Working Group Charter
-url: 'wg/COD/charter/'
+url: 'wg/cod/charter/'
 ---
 COD, the Container Orchestrated Device Working Group, is a small group formed by passionate Container Runtime Maintainers and Device Vendors looking to solve many of the challenges Devices face in the cloud native space.
  
