@@ -1,7 +1,6 @@
 ---
 title: WebAssembly (Wasm) Working Group Charter
 ---
-
 ## Background
 
 WebAssembly, commonly known as Wasm, refers to a compact binary instruction format utilized by a stack-based virtual machine. Its primary purpose is to serve as a versatile compilation target for programming languages, enabling seamless deployment of applications for both client-side and server-side environments.

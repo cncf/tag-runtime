@@ -1,5 +1,5 @@
 ---
-title: Edge Native Application Principles White Paper
+title: Edge Native Application Principles Whitepaper
 ---
 Publish date: March 9, 2023 ([CNCF publication](https://www.cncf.io/reports/edge-native-applications-principles-whitepaper/)), Jan 17, 2023 (first edition), October 24, 2022 (draft)
 
