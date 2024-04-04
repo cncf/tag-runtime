@@ -1,7 +1,6 @@
 ---
 title:  "CNCF Cloud Native AI White Paper"
 pdf: https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf
-version_info: https://github.com/cncf/tag-runtime/tree/main/cloud-native-ai-whitepaper/README.md
 description: |
   Cloud Native and Artificial Intelligence are the most critical technology trends today. Cloud Native technology provides a scalable and reliable platform for running applications. Given recent advances in AI and Machine Learning, it is steadily rising as a dominant cloud workload. While Cloud Native technologies readily support certain aspects of AI/ML workloads, challenges and gaps remain, presenting opportunities to innovate and better accommodate.
   This paper presents a brief overview of the state-of-the-art AI/ML techniques, followed by what Cloud Native technologies offer, covering the next challenges and gaps before discussing evolving solutions. The paper will equip engineers and business personnel with the knowledge to understand the changing Cloud Native Artificial Intelligence ecosystem and its opportunities.
