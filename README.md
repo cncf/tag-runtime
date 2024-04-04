@@ -33,7 +33,7 @@ Example CNCF projects within the scope of TAG-Runtime
 
 # Governance
 
-* [Charter](https://github.com/cncf/toc/blob/main/tags/runtime-charter.md)
+* [Charter](https://github.com/cncf/toc/blob/main/tags/tag-charters/runtime-charter.md)
 
 ## Communications
 
@@ -57,12 +57,12 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 ## Working Groups
 
-* [Container Orchestrated Device Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/COD.md)
-* [IoT Edge Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/iot-edge.md)
-* [Batch Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/bsi.md)
-* [Wasm Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/wasm.md)
-* [Special Purpose Operating System Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/sp-os.md)
-* [Cloud Native AI Working Group](https://github.com/cncf/tag-runtime/blob/main/wg/cnaiwg.md)
+* [Container Orchestrated Device Working Group](https://github.com/cncf/tag-runtime/blob/main/wgs/cod/charter/index.md)
+* [IoT Edge Working Group](https://github.com/cncf/tag-runtime/blob/main/wgs/iotedge/charter/index.md)
+* [Batch Working Group](https://github.com/cncf/tag-runtime/blob/main/wgs/bsi/charter/index.md)
+* [Wasm Working Group](https://github.com/cncf/tag-runtime/blob/main/wgs/wasm/charter/index.md)
+* [Special Purpose Operating System Working Group](https://github.com/cncf/tag-runtime/blob/main/wgs/spos/charter/index.md)
+* [Cloud Native AI Working Group](https://github.com/cncf/tag-runtime/blob/main/wgs/cnai/charter/index.md)
 
 ## Related groups
 
