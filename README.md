@@ -82,7 +82,7 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 |---------------------|-----------------------------|------------------------------------------------------|-----------------------------------------|
 | Nikhita Raghunath   | `nikhitaraghunath@gmail.com`| [@nikhita](https://github.com/nikhita)               | [VMware](https://www.vmware.com)        |
 | Cathy Zhang         | `cathy.h.zhang@intel.com`   | [@cathyhongzhang](https://github.com/cathyhongzhang) | [Intel](https://www.intel.com)          |
-| Richard Hartmann    | `richih@richih.org`         | [@RichiH](https://github.com/RichiH)                 | [Grafana Labs](https://grafana.com/)    |
+| Davanum Srinivas    | `davanum@gmail.com`         | [@dims](https://github.com/dims)                     | [AWS](https://aws.amazon.com)           |
 
 ### Chairs, in alphabetical order
 
