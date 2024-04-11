@@ -1,8 +1,8 @@
 ---
-title: CNCF Cloud Native AI Working Group Charter
+title: Charter
 toc_hide: false
 list_pages: true
-weight: 2
+weight: 1
 ---
 # Introduction
 

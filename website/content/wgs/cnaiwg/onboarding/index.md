@@ -1,5 +1,5 @@
 ---
-title: CNCF Cloud Native AI Working Onboarding
+title: Onboarding
 toc_hide: false
 list_pages: true
 weight: 2
@@ -13,7 +13,7 @@ Start by reading the [white paper](https://tag-runtime.cncf.io/whitepapers/cloud
 
 ## Step 2: Check the Most Recent Posts on the WG Blog
 
-Review the [most recent posts](https://tag-runtime.cncf.io/blog/cnai-kubecon-eu-paris-2024-recap/) on the Cloud-Native AI blog for updates and announcements. For example:
+Review the [most recent posts](https://tag-runtime.cncf.io/blog/) on the Cloud-Native AI blog for updates and announcements. For example:
 
 ## Step 3: Explore Previous Discussions
 
