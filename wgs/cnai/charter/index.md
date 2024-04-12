@@ -1,5 +1,5 @@
 ---
-title: CNCF Cloud Native AI Working Group Charter
+title: Charter
 toc_hide: false
 list_pages: true
 weight: 1
@@ -8,7 +8,7 @@ weight: 1
 
 AI is poised to reshape the dynamics of cloud software architecture, cloud resource orchestration, and cloud native services management in ways we are still exploring. Deployment, management and monitoring of AI workloads in the cloud might be the initial undertaking many cloud stakeholders engage with other moving targets being identified and evaluated for future roadmap.
 
-It is also recognized that cloud native infrastructure is profoundly influenced by the constraints and rapid emergence of AI workloads and technologies within cloud native architectures. It is a responsibility of the WG to identify cloud functionality, performance, security and sustainability gaps brought by AI workloads, and construct mechanisms to judiciously assess and guide on this progress, focusing on enabling cloud native projects and infrastructure that support AI workloads and services. 
+It is also recognized that cloud native infrastructure is profoundly influenced by the constraints and rapid emergence of AI workloads and technologies within cloud native architectures. It is a responsibility of the WG to identify cloud functionality, performance, security and sustainability gaps brought by AI workloads, and construct mechanisms to judiciously assess and guide on this progress, focusing on enabling cloud native projects and infrastructure that support AI workloads and services.
 
 # Mission Statement
 
@@ -43,15 +43,15 @@ As a method of focusing the efforts of the WG, TAGs Runtime and Observability as
 * Form an umbrella organization beyond the CNCF
 * Establish a compliance and standards body beyond the CNCF space
 * Focus outside of cloud native technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
-* Development of new AI algorithms or models 
+* Development of new AI algorithms or models
 
 ## Example Deliverables to Community
 
 ### Educate and Inform: End Users, and projects
 
-* Whitepaper of current end user requirements, restrictions, and gaps of deploying and running AI in Cloud native space. 
+* Whitepaper of current end user requirements, restrictions, and gaps of deploying and running AI in Cloud native space.
 * Current landscape of cloud native solutions for AI workflows
-* Surveys on the evolving landscape of managing community-generated data within the realm of AI, particularly focusing on building cloud native infrastructures serving AI services. 
+* Surveys on the evolving landscape of managing community-generated data within the realm of AI, particularly focusing on building cloud native infrastructures serving AI services.
 * Reports on new trends in the AI industry and how cloud native is influenced or being influenced by them. For example, the explosion of LLM and Generative AI usage in 2023.
 * Curate a "Distinguished Speaker" series of talks and interviews that may inform the working group's collaborative workstreams, and to provide accessible educational materials for the larger community found in the CNCF to generate interest and grow working group membership.
 
@@ -94,9 +94,9 @@ TAGs Runtime and Observability are the current host of this WG, while future ext
 
 * Community Meeting (Pacific Time): Second & Fourth Thursday of the month. 10am - 11am PT
 * Zoom: [https://zoom.us/j/9890721462](https://zoom.us/j/9890721462) PW: 77777
-* Meeting Notes and Agenda: https://bit.ly/cloudnative-ai-working-group
+* Meeting Notes and Agenda: <https://bit.ly/cloudnative-ai-working-group>
 * CNCF Slack: #wg-artificial-intelligence
-* Mailing list: https://lists.cncf.io/g/cncf-tag-runtime
+* Mailing list: <https://lists.cncf.io/g/cncf-tag-runtime>
 
 # Operations
 

@@ -1,15 +1,16 @@
 ---
 title: Cloud Native AI Working Group
 toc_hide: false
-list_pages: false
-weight: 1
+list_pages: true
+weight: 3
 ---
 
-# Charter
+## Charter
 
 * [CNCF Cloud Native AI Working Group Charter](charter/)
 
-# Communications
+## Communications
+
 * Community Meeting (Pacific Time):
   * Second & Fourth Thursday of the month. 10am - 11am PT
 * Zoom: https://zoom.us/j/9890721462 PW: 77777
@@ -17,6 +18,6 @@ weight: 1
 * CNCF Slack: #wg-artificial-intelligence
 * Mailing list: https://lists.cncf.io/g/cncf-tag-runtime
 
-# Links
+## Links
 
 * [CNCF Cloud Native AI White Paper](/whitepapers/cloudnativeai/)
