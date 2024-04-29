@@ -83,12 +83,14 @@ TAGs Runtime and Observability are the current host of this WG, while future ext
 
 # WG Leadership
 
-## Tech leads (Interim)
+## Tech leads
 
-* Cathy Zhang
-* Alex Jones
-* Ricardo Aravena
-* Huamin Chen
+* [Cathy Zhang](https://github.com/cathyhongzhang)
+* [Ricardo Aravena](https://github.com/raravena80)
+* [Huamin Chen](https://github.com/rootfs)
+* [Ronald Petty](https://github.com/ronaldpetty)
+* [Adeal Zaalouk](https://github.com/zanetworker)
+* [Alex Jones](https://github.com/AlexsJones) (interim)
 
 # Communications
 
