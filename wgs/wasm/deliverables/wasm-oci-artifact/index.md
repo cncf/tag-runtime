@@ -29,7 +29,7 @@ The Wasm `config.mediaType` configuration allows for easy identification of a Wa
 
 A single layer `mediaType` of `application/wasm` was chosen since a component can be both a library and an executable and so we don't want to need to indicate a difference between components. In addition, a component can always be recomposed into a another type. Although out of scope this does allow for potential browser support in future since browser only supports `application/wasm`.
 
-```json
+```jsonc
 {
     "schemaVersion": 2,
     "mediaType": "application/vnd.oci.image.manifest.v1+json",
@@ -67,7 +67,7 @@ The configuration provides the ability to quickly identify imports, exports or w
 it ensures a runtime can validate that the component has all of the layers required to satisfy the exports. It also ensures that a Wasm runtime can reject 
 running the a component if it can not satisfy the imports.
 
-```json
+```jsonc
 {
     "created": "2015-10-31T22:22:56.015925234Z",
     // This can be set here or as an annotation
