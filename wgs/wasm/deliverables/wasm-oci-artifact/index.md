@@ -67,7 +67,7 @@ The configuration provides the ability to quickly identify imports, exports or w
 it ensures a runtime can validate that the component has all of the layers required to satisfy the exports. It also ensures that a Wasm runtime can reject 
 running the a component if it can not satisfy the imports.
 
-```
+```json
 {
     "created": "2015-10-31T22:22:56.015925234Z",
     // This can be set here or as an annotation
@@ -111,10 +111,12 @@ running the a component if it can not satisfy the imports.
 ## Implementations
 No current implementations but the following projects have interest:
 
-- runwasi/containerd
-- warg
-- spin
-- wasm-cloud
+- containerd/runwasi
+- Warg
+- Spin
+- wasmCloud
+
+Open a PR to add your project!
 
 ## Prior Discussions
 
