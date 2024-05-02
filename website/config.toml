@@ -46,7 +46,7 @@ anchor = "smart"
 # Language configuration
 
 [languages]
-[languages.en]
+[languages.en.params]
 title = "CNCF TAG Runtime"
 description = "TAG Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments."
 languageName ="English"
