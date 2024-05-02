@@ -1,5 +1,6 @@
 ---
 title: WebAssembly (Wasm) Working Group Charter
+weight: 1
 ---
 ## Background
 
