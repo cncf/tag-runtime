@@ -89,7 +89,7 @@ TAGs Runtime and Observability are the current host of this WG, while future ext
 * [Ricardo Aravena](https://github.com/raravena80)
 * [Huamin Chen](https://github.com/rootfs)
 * [Ronald Petty](https://github.com/ronaldpetty)
-* [Adeal Zaalouk](https://github.com/zanetworker)
+* [Adel Zaalouk](https://github.com/zanetworker)
 * [Alex Jones](https://github.com/AlexsJones) (interim)
 
 # Communications
