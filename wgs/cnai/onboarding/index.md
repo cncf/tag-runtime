@@ -13,11 +13,13 @@ Start by reading the [white paper](https://tag-runtime.cncf.io/whitepapers/cloud
 
 ## Step 2: Check the Most Recent Posts on the WG Blog
 
-Review the [most recent posts](https://tag-runtime.cncf.io/blog/) on the Cloud-Native AI blog for updates and announcements. For example:
+Review the [most recent posts](https://tag-runtime.cncf.io/blog/) on the Cloud-Native AI blog for updates and announcements.
 
 ## Step 3: Explore Previous Discussions
 
-Look into the [notes](https://docs.google.com/document/d/1tS6gL5qjGLaHDtAChssqJhBVm8BIpopUA3Ddzm9LHwg/edit) from previous discussions to get a sense of the group's activities and interests. Videos are also available for a deeper dive, if desired.
+* Look into the [notes](https://docs.google.com/document/d/1tS6gL5qjGLaHDtAChssqJhBVm8BIpopUA3Ddzm9LHwg/edit) from previous discussions to get a sense of the group's activities and interests. Videos are also available for a deeper dive, if desired.
+* Check the previous discussions in the [#wg-artificial-intelligence] channel on [CNCF Slack](https://slack.cncf.io/).
+
 
 ## Step 4: Identify an Existing Topic of Interest
 
