@@ -1,5 +1,5 @@
 ---
-title: 検索結果
+title: Search Results
 layout: search
 toc_hide: true
 ---
