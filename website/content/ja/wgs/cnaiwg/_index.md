@@ -1,5 +1,5 @@
 ---
-title: クラウドネイティブ AI ワーキンググループ
+title: クラウドネイティブAIワーキンググループ
 toc_hide: false
 list_pages: true
 weight: 3

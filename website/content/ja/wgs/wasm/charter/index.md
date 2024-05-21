@@ -1,5 +1,5 @@
 ---
-title: WebAssembly (Wasm) ワーキンググループチャーター
+title: WebAssembly(Wasm)ワーキンググループチャーター
 weight: 1
 ---
 ## Background

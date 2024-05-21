@@ -1,5 +1,5 @@
 ---
-title: Wasm OCI Artifact layout
+title: Wasm OCIアーティファクトレイアウト
 ---
 
 # Wasm OCI Artifact layout

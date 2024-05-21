@@ -1,5 +1,5 @@
 ---
-title: Edge Native Application Design Behaviors Whitepaper
+title: エッジネイティブアプリケーションデザインビヘイビア白書
 ---
 Landing page: https://www.cncf.io/reports/edge-native-application-design-behaviors-whitepaper/
 PDF Publication from CNCF: https://www.cncf.io/wp-content/uploads/2024/01/Edge-Native-Whitepaper_Design-Behaviors_12.2023.pdf

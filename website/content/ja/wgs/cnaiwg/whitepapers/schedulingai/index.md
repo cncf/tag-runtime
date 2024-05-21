@@ -1,5 +1,5 @@
 ---
-title:  "Scheduling AI workloads on K8s TBD"
+title: "K8sにおけるAIワークロードのスケジューリング TBD"
 pdf: TBD
 description: |
   TBD

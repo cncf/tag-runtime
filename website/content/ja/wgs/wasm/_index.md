@@ -1,5 +1,5 @@
 ---
-title: WebAssembly (WASM) ワーキンググループ
+title: WebAssembly(Wasm)ワーキンググループ
 toc_hide: false
 list_pages: true
 weight: 3
