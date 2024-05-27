@@ -1,9 +1,9 @@
 ---
-title: エッジネイティブアプリケーション原則白書
+title: エッジネイティブアプリケーションの原則についてのホワイトペーパー
 ---
 Publish date: March 9, 2023 ([CNCF publication](https://www.cncf.io/reports/edge-native-applications-principles-whitepaper/)), Jan 17, 2023 (first edition), October 24, 2022 (draft)
 
-CNCF PDF Publication: https://www.cncf.io/reports/edge-native-applications-principles-whitepaper/
+CNCF PDF Publication: https://www.cncf.io/reports/edge-native-applications-principles-whitepaper-jp/
 
 ## Objective
 
