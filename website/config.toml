@@ -2,7 +2,7 @@ baseURL = "https://tag-runtime.cncf.io/"
 title = "CNCF TAG Runtime"
 
 # Language settings
-contentDir = "content"
+contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -46,12 +46,22 @@ anchor = "smart"
 # Language configuration
 
 [languages]
-[languages.en.params]
+[languages.en]
 title = "CNCF TAG Runtime"
-description = "TAG Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+[languages.en.params]
+description = "TAG Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments."
+
+[languages.ja]
+title = "CNCF TAGランタイム"
+languageName ="日本語(Japanese)"
+contentDir= "content/ja"
+# Weight used for sorting.
+weight = 2
+[languages.ja.params]
+description = "TAG Runtime objective is to enable widespread and successful execution of the full spectrum of workload types, including both general latency-sensitive and batch, as well as more specialized categories listed as in scope, in cloud-native environments."
 
 [markup]
   [markup.goldmark]
@@ -78,13 +88,13 @@ image = "https://tag-runtime.cncf.io/images/cncf-runtime-share.jpg"
 # This menu appears only if you have at least one [params.versions] set.
 version_menu = "Releases"
 
-# Flag used in the "version-banner" partial to decide whether to display a 
+# Flag used in the "version-banner" partial to decide whether to display a
 # banner on every page indicating that this is an archived version of the docs.
 # Set this flag to "true" if you want to display the banner.
 archived_version = false
 
 # The version number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the 
+# Used in the "version-banner" partial to display a version number for the
 # current doc set.
 version = "0.0"
 
@@ -137,7 +147,7 @@ yes = 'Glad to hear it! Please <a href="https://github.com/cncf/tag-runtime/issu
 no = 'Sorry to hear that. Please <a href="https://github.com/cncf/tag-runtime/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
-# If you want this feature, but occasionally need to remove the Reading time from a single page, 
+# If you want this feature, but occasionally need to remove the Reading time from a single page,
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
 enable = false
