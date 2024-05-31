@@ -8,13 +8,13 @@ type: whitepapers
 weight: 3
 ---
 
-## Executive Summary
+## エグゼクティブサマリー
 
-Cloud Native (CN) and Artificial Intelligence (AI) are the most critical technology trends today. Cloud Native[^1] technology provides a scalable and reliable platform for running applications. Given recent advances in AI and Machine Learning (ML), it is steadily rising as a dominant cloud workload. While CN technologies readily support certain aspects of AI/ML workloads, challenges and gaps remain, presenting opportunities to innovate and better accommodate.
+クラウドネイティブ（CN）と人工知能（AI）は今日におけるもっとも重要な技術トレンドです。クラウドネイティブ[^1]技術によって、アプリケーションを動かすためのスケーラブルで信頼性の高いプラットフォームが提供されています。最近のAIや機械学習（ML）の進歩によって、最も有力なクラウドワークロードとして着実に成長しています。CN技術は、AI/MLワークロードの特定の側面については容易にサポートしていますが、課題とギャップは残っており、イノベーションの機会や、より良い順応の機会が提供されています。
 
-This paper presents a brief overview of the state-of-the-art AI/ML techniques, followed by what CN technologies offer, covering the next challenges and gaps before discussing evolving solutions. The paper will equip engineers and business personnel with the knowledge to understand the changing Cloud Native Artificial Intelligence (CNAI) ecosystem and its opportunities.
+このペーパーでは、最先端のAI/MLワークロードの簡潔な概要について提示しています。その後、CN技術によって提供されるものについて提示しています。また、発展中のソリューションの議論に先立っての、次の課題やギャップについてもカバーしています。このペーパーによって、エンジニアとビジネスパーソンの両方が、変わりつつある Cloud Native Artificial Intelligence (CNAI) のエコシステムとその機会を理解するための知識を得ることができます。
 
-We suggest a reading path depending on the reader’s background and interest. Exposure to microservices[^2] and CN technologies[^3] such as Kubernetes (K8s) is assumed. For those without experience in engineering AI systems, we recommend reading from start to finish. For those further along in their AI/ML adoption or delivery journey, per their user persona[^4], we suggest diving into the sections pertinent to the challenges they are grappling with or are interested in solving. We also share where society needs to invest in this context.
+読者のバックグラウンドや興味に応じた読み進め方を提案します。マイクロサービス[^2]や Kubernetes (K8s) などのCN技術[^3]に触れていることは仮定しています。AIシステムのエンジニアリング経験のない方は、最初から最後まで読むことを提案します。AI/MLの導入やデリバリーの遍歴がより進んでいる方は、自身の役割（ペルソナ）[^4]に応じて、取り組んでいる課題や解決に関連するセクションを読むことを提案します。また、この文脈の中で、社会がどのような領域に投資していく必要があるかについても共有します。
 
 [TOC]
 
