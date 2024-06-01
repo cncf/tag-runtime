@@ -68,7 +68,7 @@ Here are a few examples:
 
 In addition to hands-on and practical deliverables to the community, there will be initiatives to enhance accessibility to knowledge and provide further guidance. Here are a few examples
 
-* CNAI [Landscape](https://rx-m.github.io/cnai-landscape/): projects out there
+* CNAI [Landscape](https://landscape.cncf.io/?group=cnai): projects out there
 * CNAI Radar: Establish a comprehensive AI landscape that tracks the latest trends, technologies, and players in the AI field, enabling users to stay informed and competitive.
 
 ### Documentation/Guidance
