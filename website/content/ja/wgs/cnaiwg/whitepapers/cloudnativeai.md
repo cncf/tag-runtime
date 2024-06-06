@@ -18,44 +18,44 @@ weight: 3
 
 [TOC]
 
-## Introduction to Cloud Native Artificial Intelligence (CNAI)
+## Cloud Native Artificial Intelligence (CNAI) の紹介
 
-Before we get into CNAI, the coming together of Cloud Native and AI technologies, let us examine briefly the evolution of each. 
+クラウドネイティブ技術とAI技術の集合体であるCNAIについて取り上げる前に、 それぞれの発展について簡単にみていきましょう。
 
-### The Emergence of Cloud Native
+### クラウドネイティブの出現
 
-Widely known and used since 2013[^5], the term Cloud Native (CN) saw an increase in popularity with the rise of container technology from LXC[^6] to Docker[^7] to Kubernetes (K8s)[^8]. Today, Cloud Native is more broadly an aspirational target of well-balanced systems built using the microservice design pattern that promotes modular design and development with a high degree of re-usability, which also lends itself to deployability, scalability, and resilience.
+クラウドネイティブという用語は、2013年[^5]から広く知られ、使われるようになり、LXC[^6]からDocker[^7]や Kubernetes (K8s)[^8] に至るまでのコンテナ技術の発展にともなって、人気が高まっていきました。今日では、クラウドネイティブは、より広い範囲で、マイクロサービスデザインパターン（再利用性の高いモジュール設計と開発を促進し、デプロイ可能性、スケーラビリティ、回復性にも役立つ）を用いて構築されたバランスの良いシステムの意欲的な目標となっています。
 
 
 ---
 
 
-The Cloud Native Computing Foundation defines[^9] Cloud Native as:
+Cloud Native Computing Foundation はクラウドネイティブを以下のように定義しています[^9]：
 
 
-> _Cloud Native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach._
+> _クラウドネイティブ技術は、パブリッククラウド、プライベートクラウド、ハイブリッドクラウドなどの近代的でダイナミックな環境において、スケーラブルなアプリケーションを構築および実行するための能力を組織にもたらします。 このアプローチの代表例に、コンテナ、サービスメッシュ、マイクロサービス、イミュータブルインフラストラクチャ、および宣言型APIがあります。_
 >
-> _These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil._
+> _これらの手法により、回復性、管理力、および可観測性のある疎結合システムが実現します。 これらを堅牢な自動化と組み合わせることで、エンジニアはインパクトのある変更を最小限の労力で頻繁かつ予測どおりに行うことができます。_
 >
-> _The Cloud Native Computing Foundation seeks to drive the adoption of this paradigm by fostering and sustaining an ecosystem of open source, vendor-neutral projects. We democratize state-of-the-art patterns to make these innovations accessible to everyone._
+> _Cloud Native Computing Foundation は、オープンソースでベンダー中立プロジェクトのエコシステムを育成・維持して、このパラダイムの採用を促進したいと考えてます。 私たちは最先端のパターンを民主化し、これらのイノベーションを誰もが利用できるようにします。_
 
 ---
 
-Cloud Native Artificial Intelligence is an evolving extension of Cloud Native.
+Cloud Native Artificial Intelligence はクラウドネイティブの進化した拡張機能です。
 
 ---
 
-> _Cloud Native Artificial Intelligence (CNAI) refers to approaches and patterns for building and deploying AI applications and workloads using the principles of Cloud Native.  Enabling repeatable and scalable AI-focused workflows allows AI practitioners to focus on their domain._
+> _Cloud Native Artificial Intelligence (CNAI) は、クラウドネイティブの原則を用いて、AIアプリケーションやAIワークロードを構築し、デプロイするためのアプローチとパターンについて言及しています。繰り返し可能でスケーラブルなAIに特化したワークフローを使用可能にすることで、AI実践者が自身のドメインに集中できるようになります。_
 
 ---
 
-Kubernetes has evolved to become the de facto cloud operating system, with private, public, and hybrid cloud offerings. It implements a distributed orchestrator that handles network, storage, and compute resources of multiple types. Further, K8s offers an interface that enables DevOps[^10] best practices such as GitOps[^11]. Every Cloud Service Provider (CSP) has some flavor of Kubernetes as a service, facilitating access to infrastructure and a slew of support services to run various workloads, including AI/ML. 
+Kubernetesは、プライベートクラウド、パブリッククラウド、ハイブリッドクラウドの提供を備えた、事実上のクラウドオペレーティングシステムへと進化してきました。K8sは、複数の種類のネットワーク、ストレージ、計算リソースを処理する分散オーケストレーターを実装します。さらに、K8sによって、GitOps[^11]のようなDevOps[^10]のベストプラクティスを実現するインターフェースを使うことができます。全てのクラウドサービスプロバイダ（CSP）は、いくつかの種類のサービスとしてのKubernetes（インフラへのアクセスを容易にする、AI/MLを含む様々な種類のワークロードを実行する）を提供しています。
 
-### Evolution of Artificial Intelligence
+### 人工知能の進化
 
-Artificial Intelligence, first introduced as a term in 1956[^12],  is the ability of machines to simulate human intelligence. Over the decades, it has been used in applications such as speech recognition, machine translation, image processing, game playing, and even excelling as a Jeopardy player[^13]. But, AI has exploded in mindshare more recently thanks to innovations in artificial neural networks and deep learning, mainly applied to natural language understanding. There are two primary classifications of AI: discriminative and generative. 
+1956年[^12]に初めて用語として導入された人工知能とは、人間の知能を模倣する機械の能力のことです。数十年にわたって、人工知能は、音声認識、機械翻訳、画像処理、ゲームプレー、さらに優秀なJeopardyのプレイヤー[^13]などの活用に用いられてきました。しかし、近年、主に自然言語の理解のために適用される人工ニューラルネットワークやディープラーニングのおかげで、AIのマインドシェアはより大きく高まっています。AIは識別系と生成系の大きく２つに分類できます。
 
-Discriminative AI seeks to learn decision boundaries or classifications, with the knowledge captured as a “model,” which is used to predict new data. For example, classifying email as spam or not, distinguishing between images of cats and dogs, and much more. Discriminative AI is typically used for tasks where the desired output is known (e.g., via Supervised Learning, a form of machine learning). AI excels in sequence prediction, for example, guessing with a high probability what we will type next by analyzing large bodies of existing text, including our personal writing styles.
+識別系のAIは、境界や分類の決定について学習しようとしており、「モデル」として知識を習得し、それは新規のデータの予測に用いられます。例えば、Eメールがスパムか否かを分類する、猫の画像と犬の画像を区別するなどです。識別系のAIは、一般的に、望ましい出力が明らかなタスクに用いられます（例．機械学習の１つの形態である教師あり学習など）。AIはシーケンスの予測に優れており、例として、文章の大部分を書き手の癖も含めて解析することで次に入力されるものを予測するなどがあります。
 
 Generative AI learns latent structures or representations within data. It enables synthesizing new data using these structures or representations, such as creating stories, music, and visual art from word prompts.  Generative AI is used for tasks where the desired output is unknown, or the “correct” output is ill-defined. With Generative AI, AI has transcended into what humans consider creative, original, and sublime. Let us take a closer look at some of AI’s spectacular breakthroughs.
 
