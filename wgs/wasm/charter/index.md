@@ -22,6 +22,7 @@ The working group is interested in all topics related to building Wasm artifacts
 - **Interoperability** with other deployment types. Wasm workloads should be able to run in a pod alongside containers seamlessly.
 - **Security** - Understanding, documenting, and educating folks on the security considerations of their WASM and WASI workloads and how to integrate WASM runtimes into their projects safely.
 - **Wasm artifacts** - guide and document container registry storage structures to provide a basis for compatibility for container runtimes.
+- Being the voice for cloud native users in other open source Wasm communities like the W3C and [ByteCode Alliance](https://bytecodealliance.org/). Many of the WG participants are members of both communities and collaborate regularly to ensure that cloud native use cases are supported in the Wasm space.
 
 ## Deliverables
 
@@ -30,23 +31,28 @@ The working group will build collaboration, knowledge, and projects in the Wasm 
 - **Publications, presentations, and whitepapers** on interesting topics - the group will stay ahead of the current technology trends and provide material on the latest innovative topics in the space.
 - **Example architectures and demos** - provides well-documented use cases using existing projects and demos that can be used as starting points for future projects.
 - **Standards, tests, and certifications** - the working group will investigate if it is possible to certify solutions in well-defined domains against known criteria.
-- **WebAssembly ecosystem proposals** - provide updates on the different open proposals and how they benefit the ecosystem. Collaborate and align with the community on the current and new proposals. 
+- **WebAssembly ecosystem proposals** - provide updates on the different open proposals and how they benefit the ecosystem. Collaborate and align with the community on the current and new proposals.
 - **Metrics** - provides guidelines for project planning in terms of resource usage.
 - **Ecosystem updates** - provides updates on the landscape of cloud-native projects on the Wasm at conferences, in publications, and to the Runtime TAG.
 - **Vertical Use cases** - provide documentation or code implementation of cloud-native wasm use cases in certain vertical scenarios (network, database, AI, embedding a Wasm runtime, etc.)
+
+Some notable completed and ongoing work is listed below:
+
+- Collaboration with members of the ByteCode Alliance on formulating and implementing the [wasi-cloud interfaces](https://github.com/WebAssembly/wasi-cloud-core) (completed and ongoing)
+- Presentations from the various Wasm projects listed below, recorded in our meetings on [YouTube](https://www.youtube.com/@cncftagruntime173). (completed and ongoing)
+- Created a standard [OCI artifact representation](../deliverables/wasm-oci-artifact/index.md) for Wasm and initial implementations in collaboration with the [Wasm package tooling](https://github.com/bytecodealliance/governance/pull/87) efforts in the ByteCode Alliance. This includes an implementation of the [spec for Rust](https://github.com/bytecodealliance/rust-oci-wasm) involving CNCF and ByteCode Alliance maintainers. (completed and ongoing)
 
 ## Projects
 
 ### Current CNCF Wasm-centric projects
 
-The following is a list of well-known CNCF projects built by or integrates with Wasm:
+The following is a list of well-known active CNCF projects built by or integrates with Wasm:
 
 - **Runtime related**
 
     - [WasmEdge](https://wasmedge.org/)
-    - [WasmCloud](https://github.com/wasmcloud/)
+    - [wasmCloud](https://github.com/wasmcloud/)
     - [Runwasi](https://github.com/containerd/runwasi)
-    - [Krustlet](https://github.com/krustlet/krustlet)
     - [Kuasar](https://github.com/kuasar-io/kuasar) - Kubernetes Container Runtime Engine supports Wasm
     - [Dapr](https://dapr.io) - both embedded Wasm in sidecar runtime as well as Wasm SDK to access the sidecar service from Wasm apps. 
     - [crun](https://github.com/containers/crun)
@@ -95,7 +101,6 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 - [Danielle Lancashire](https://github.com/endocrimes)
 - [Taylor Thomas](https://github.com/thomastaylor312)
 
-
 ### WG Technical Leaders
 - [Angel M Miguel](https://github.com/Angelmmiguel)
 - [Kevin Hoffman](https://github.com/autodidaddict)
@@ -124,3 +129,4 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 - [Tiejun Chen](https://github.com/TiejunChina)
 - [Shivay Lamba](https://github.com/shivaylamba)
 - [Sven Pfennig](https://github.com/0xE282B0)
+- [Taylor Thomas](https://github.com/thomastaylor312)
