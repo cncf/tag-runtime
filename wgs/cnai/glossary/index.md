@@ -9,6 +9,18 @@ Defines key terms used in the Cloud Native Working Group’s writings.
 
 See also: [CNCF Glossary](https://glossary.cncf.io/)
 
+## AI for CN
+
+A class of tools integrates AI with the intent to optimize CN system management outcomes. Optimization can take different forms, from actionable advice to agentic actions.
+
+## CN for AI
+
+A of tools integrates AI tooling effectively enabling AI workloads. Effectively can mean a reduction in time, cost, and complexity when designing and hosting these workloads.
+
+## CNAI
+
+CNAI (Cloud Native Artificial Intelligence) describes the tooling and techniques around use of Cloud Native tooling in support of AI.
+
 ## LLM
 
  "LLM" stands for "Large Language Model." Large language models are artificial intelligence models trained on vast amounts of text data to understand and generate human-like text. LLMs are a subset of machine learning models specifically designed for natural language processing (NLP) tasks.
