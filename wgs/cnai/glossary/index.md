@@ -9,17 +9,17 @@ Defines key terms used in the Cloud Native Working Group’s writings.
 
 See also: [CNCF Glossary](https://glossary.cncf.io/)
 
-## AI for CN
+## AI for Cloud Native (AI for CN)
 
-A class of tools integrates AI with the intent to optimize CN system management outcomes. Optimization can take different forms, from actionable advice to agentic actions.
+A set of frameworks, concepts, and tools that democratise the use of AI in Cloud Native to improve and extend the functionality of infrastructure management. These include, agent actions, actionable advice, assistants, as well as AI platforms for managing CN systems.
 
-## CN for AI
+## Cloud Native for AI (CN for AI)
 
-A of tools integrates AI tooling effectively enabling AI workloads. Effectively can mean a reduction in time, cost, and complexity when designing and hosting these workloads.
+A class of techniques and solutions that enable the AI developers and deployers to effectively deploy, run, scale, and monitor the AI workloads on cloud infrastructure. Effectively can mean better performance, lower cost, simplified usage, etc. 
 
-## CNAI
+## Cloud Native Artificial Intelligence (CNAI)
 
-CNAI (Cloud Native Artificial Intelligence) describes the tooling and techniques around use of Cloud Native tooling in support of AI.
+CNAI describes the tooling and techniques that deploy, run, and scale AI workloads on Cloud Infrastructure.
 
 ## LLM
 
