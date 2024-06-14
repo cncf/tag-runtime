@@ -11,11 +11,11 @@ See also: [CNCF Glossary](https://glossary.cncf.io/)
 
 ## AI for Cloud Native (AI for CN)
 
-A set of frameworks, concepts, and tools that democratise the use of AI in Cloud Native to improve and extend the functionality of infrastructure management. These include, agent actions, actionable advice, assistants, as well as AI platforms for managing CN systems.
+A set of frameworks, concepts, and tools that use of AI in Cloud Native environments to improve and extend the functionality of infrastructure management. These include, agent actions, actionable advice, assistants, as well as AI platforms for managing CN systems.
 
 ## Cloud Native for AI (CN for AI)
 
-A class of techniques and solutions that enable the AI developers and deployers to effectively deploy, run, scale, and monitor the AI workloads on cloud infrastructure. Effectively can mean better performance, lower cost, simplified usage, etc. 
+A class of techniques and solutions that enable AI developers and deployers to effectively develop, deploy, run, scale, and monitor their AI workloads on cloud infrastructure. Effectively can mean better performance, lower cost, simplified usage, etc.
 
 ## Cloud Native Artificial Intelligence (CNAI)
 
