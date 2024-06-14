@@ -9,6 +9,18 @@ Defines key terms used in the Cloud Native Working Group’s writings.
 
 See also: [CNCF Glossary](https://glossary.cncf.io/)
 
+## AI for Cloud Native (AI for CN)
+
+A set of frameworks, concepts, and tools that use of AI in Cloud Native environments to improve and extend the functionality of infrastructure management. These include, agent actions, actionable advice, assistants, as well as AI platforms for managing CN systems.
+
+## Cloud Native for AI (CN for AI)
+
+A class of techniques and solutions that enable AI developers and deployers to effectively develop, deploy, run, scale, and monitor their AI workloads on cloud infrastructure. Effectively can mean better performance, lower cost, simplified usage, etc.
+
+## Cloud Native Artificial Intelligence (CNAI)
+
+CNAI describes the tooling and techniques that deploy, run, and scale AI workloads on Cloud Infrastructure.
+
 ## LLM
 
  "LLM" stands for "Large Language Model." Large language models are artificial intelligence models trained on vast amounts of text data to understand and generate human-like text. LLMs are a subset of machine learning models specifically designed for natural language processing (NLP) tasks.
