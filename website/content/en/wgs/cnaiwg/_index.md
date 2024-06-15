@@ -20,4 +20,4 @@ weight: 3
 
 ## Links
 
-* [CNCF Cloud Native AI White Paper](/whitepapers/cloudnativeai/)
+* [CNCF Cloud Native AI White Paper](whitepapers/cloudnativeai/)
