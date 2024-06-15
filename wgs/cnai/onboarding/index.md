@@ -9,7 +9,7 @@ Welcome to the CNAI working group. If you are confused, or want to contribute, h
 
 ## Step 1: Read the White Paper
 
-Start by reading the [white paper](https://tag-runtime.cncf.io/whitepapers/cloudnativeai/) on Cloud-Native AI to gain a comprehensive understanding of problems/opportunities and the foundation work done by the working group.
+Start by reading the [white paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/) on Cloud-Native AI to gain a comprehensive understanding of problems/opportunities and the foundation work done by the working group.
 
 ## Step 2: Check the Most Recent Posts on the WG Blog
 
