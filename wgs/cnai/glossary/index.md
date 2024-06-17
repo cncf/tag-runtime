@@ -19,7 +19,7 @@ A class of techniques and solutions that enable AI developers and deployers to e
 
 ## Cloud Native Artificial Intelligence (CNAI)
 
-CNAI describes the tooling and techniques that deploy, run, and scale AI workloads on Cloud Infrastructure.
+Cloud Native Artificial Intelligence (CNAI) refers to approaches and patterns for building and deploying AI applications and workloads using the principles of Cloud Native.  Enabling repeatable and scalable AI-focused workflows allows AI practitioners to focus on their domain.
 
 ## LLM
 
