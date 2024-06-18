@@ -58,18 +58,18 @@ A secondary deliverable is a golang interface, with a package that can be re-use
 
 ## WG Chairs
 
-* Alexander Kanevskiy ([@kad](https://gihub.com/kad)), Intel
+* Alexander Kanevskiy ([@kad](https://github.com/kad)), Intel
 * Evan Lezar ([@elezar](https://github.com/elezar)), NVIDIA
 
 ## WG Members
 
-* Urvashi Mohnani ([@umohnani8](https://gihub.com/umohnani8)) 
+* Urvashi Mohnani ([@umohnani8](https://github.com/umohnani8))
 * Ed Bartosh
 * Ukri Niemimuukko
 * Marek Counts 
 * Mike Brown, IBM
 * Mrunal Patel
-* Kevin Klues ([@klueska](https://gihub.com/klueska)), NVIDIA
+* Kevin Klues ([@klueska](https://github.com/klueska)), NVIDIA
 
 ## WG Emeretus chair
 
