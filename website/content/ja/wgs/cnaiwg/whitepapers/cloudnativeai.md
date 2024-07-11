@@ -2,8 +2,8 @@
 title: "CNCFクラウドネイティブAI白書"
 pdf: https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf
 description: |
-  Cloud Native and Artificial Intelligence are the most critical technology trends today. Cloud Native technology provides a scalable and reliable platform for running applications. Given recent advances in AI and Machine Learning, it is steadily rising as a dominant cloud workload. While Cloud Native technologies readily support certain aspects of AI/ML workloads, challenges and gaps remain, presenting opportunities to innovate and better accommodate.
-  This paper presents a brief overview of the state-of-the-art AI/ML techniques, followed by what Cloud Native technologies offer, covering the next challenges and gaps before discussing evolving solutions. The paper will equip engineers and business personnel with the knowledge to understand the changing Cloud Native Artificial Intelligence ecosystem and its opportunities.
+  クラウドネイティブ(CN)と人工知能(AI)は、今日最も重要な技術トレンドです。クラウドネイティブ[^1]技術は、アプリケーションを実行するためのスケーラブルで信頼性の高いプラットフォームを提供します。AIと機械学習(ML)の最近の進歩を考えると、AI/MLは着実にクラウドのワークロードの主流になりつつあります。CN技術はある範囲においてはAI/MLワークロードをサポートしている一方で、課題やギャップが残っており、イノベーションやより良い対応をする余地があります。
+  本稿では、最先端のAI/ML技術の概要を紹介し、次にCN技術が提供しているものを紹介します。本稿は、変化するクラウドネイティブ人工知能(CNAI)のエコシステムと今後の発展の機会(チャンス)を理解するための知識をエンジニアとビジネス担当者に提供します。
 type: whitepapers
 weight: 3
 ---
