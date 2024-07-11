@@ -8,156 +8,160 @@ type: whitepapers
 weight: 3
 ---
 
-## エグゼクティブサマリー
+## 要旨
 
-クラウドネイティブ（CN）と人工知能（AI）は今日におけるもっとも重要な技術トレンドです。クラウドネイティブ[^1]技術によって、アプリケーションを動かすためのスケーラブルで信頼性の高いプラットフォームが提供されています。最近のAIや機械学習（ML）の進歩によって、最も有力なクラウドワークロードとして着実に成長しています。CN技術は、AI/MLワークロードの特定の側面については容易にサポートしていますが、課題とギャップは残っており、イノベーションの機会や、より良い順応の機会が提供されています。
+クラウドネイティブ(CN)と人工知能(AI)は、今日最も重要な技術トレンドです。クラウドネイティブ[^1]技術は、アプリケーションを実行するためのスケーラブルで信頼性の高いプラットフォームを提供します。AIと機械学習(ML)の最近の進歩を考えると、AI/MLは着実にクラウドのワークロードの主流になりつつあります。CN技術はある範囲においてはAI/MLワークロードをサポートしている一方で、課題やギャップが残っており、イノベーションやより良い対応をする余地があります。
 
-このペーパーでは、最先端のAI/MLワークロードの簡潔な概要について提示しています。その後、CN技術によって提供されるものについて提示しています。また、発展中のソリューションの議論に先立っての、次の課題やギャップについてもカバーしています。このペーパーによって、エンジニアとビジネスパーソンの両方が、変わりつつある Cloud Native Artificial Intelligence (CNAI) のエコシステムとその機会を理解するための知識を得ることができます。
+本稿では、最先端のAI/ML技術の概要を紹介し、次にCN技術が提供しているものを紹介します。本稿は、変化するクラウドネイティブ人工知能(CNAI)のエコシステムと今後の発展の機会(チャンス)を理解するための知識をエンジニアとビジネス担当者に提供します。
 
-読者のバックグラウンドや興味に応じた読み進め方を提案します。マイクロサービス[^2]や Kubernetes (K8s) などのCN技術[^3]に触れていることは仮定しています。AIシステムのエンジニアリング経験のない方は、最初から最後まで読むことを提案します。AI/MLの導入やデリバリーの遍歴がより進んでいる方は、自身の役割（ペルソナ）[^4]に応じて、取り組んでいる課題や解決に関連するセクションを読むことを提案します。また、この文脈の中で、社会がどのような領域に投資していく必要があるかについても共有します。
+読者の背景や関心に応じた項目を読み進めてください。マイクロサービス[^2]やKubernetes(K8s)などのCN技術[^3]に触れていることを前提としています。AIシステムのエンジニアリング経験がない方には、最初から最後まで読むことをお勧めします。また、AI/MLの導入や提供が更に進んでいる方には、ユーザーペルソナ[^4]に従って、現在取り組んでいる、あるいは解決に関心のある課題に関連するセクションに飛ぶことをお勧めします。また、このコンテキストでは社会がどこに投資すべきかも共有しています。
 
-[TOC]
+[技術監督委員会]
 
-## Cloud Native Artificial Intelligence (CNAI) の紹介
+## クラウドネイティブ人工知能（CNAI）入門
 
-クラウドネイティブ技術とAI技術の集合体であるCNAIについて取り上げる前に、 それぞれの発展について簡単にみていきましょう。
+クラウドネイティブとAI技術の融合であるCNAIに入る前に、それぞれの進化を簡単に検証しておきましょう。
 
 ### クラウドネイティブの出現
 
-クラウドネイティブという用語は、2013年[^5]から広く知られ、使われるようになり、LXC[^6]からDocker[^7]や Kubernetes (K8s)[^8] に至るまでのコンテナ技術の発展にともなって、人気が高まっていきました。今日では、クラウドネイティブは、より広い範囲で、マイクロサービスデザインパターン（再利用性の高いモジュール設計と開発を促進し、デプロイ可能性、スケーラビリティ、回復性にも役立つ）を用いて構築されたバランスの良いシステムの意欲的な目標となっています。
+2013年以来広く知られ[^5]、使用されているクラウドネイティブ(CN)という用語は、LXC[^6]からDocker[^7]、Kubernetes(K8s)[^8]にいたるコンテナ技術の台頭とともに人気が高まりました。今日、クラウドネイティブは、より広義には、再利用性の高いモジュール設計と開発を促進するマイクロサービス設計パターンを使用して構築されたバランスの取れたシステムを目指すものであり、デプロイアビリティ、スケーラビリティ、耐障害性にも適しています。
 
 
 ---
 
 
-Cloud Native Computing Foundation はクラウドネイティブを以下のように定義しています[^9]：
+Cloud Native Computing Foundationは、クラウドネイティブを次のように定義しています[^9]
 
 
-> _クラウドネイティブ技術は、パブリッククラウド、プライベートクラウド、ハイブリッドクラウドなどの近代的でダイナミックな環境において、スケーラブルなアプリケーションを構築および実行するための能力を組織にもたらします。 このアプローチの代表例に、コンテナ、サービスメッシュ、マイクロサービス、イミュータブルインフラストラクチャ、および宣言型APIがあります。_
+> _クラウドネイティブ技術は、パブリック、プライベート、ハイブリッドクラウドなど、最新の動的環境でスケーラブルなアプリケーションを構築し、実行できるようにするものです。コンテナ、サービスメッシュ、マイクロサービス、不変のインフラ、宣言型APIが、この技術の一例です。_
 >
-> _これらの手法により、回復性、管理力、および可観測性のある疎結合システムが実現します。 これらを堅牢な自動化と組み合わせることで、エンジニアはインパクトのある変更を最小限の労力で頻繁かつ予測どおりに行うことができます。_
+> _これらの技術は、柔軟性があり、管理可能で、観測可能な疎結合システムを実現します。ロバストな自動化と組み合わせることで、エンジニアは最小限の労力で、インパクトの大きな変更を迅速かつ予測通りに行うことができます。_
 >
-> _Cloud Native Computing Foundation は、オープンソースでベンダー中立プロジェクトのエコシステムを育成・維持して、このパラダイムの採用を促進したいと考えてます。 私たちは最先端のパターンを民主化し、これらのイノベーションを誰もが利用できるようにします。_
+> _Cloud Native Computing Foundationは、オープンソースでベンダーニュートラルなプロジェクトのエコシステムを育成・維持することで、このパラダイムの採用を推進しています。私たちは最先端のパターンを民主化し、これらのイノベーションを誰もが利用できるようにしています。_
 
 ---
 
-Cloud Native Artificial Intelligence はクラウドネイティブの進化した拡張機能です。
+クラウドネイティブ人工知能は、クラウドネイティブの進化した延長線上にある
 
 ---
 
-> _Cloud Native Artificial Intelligence (CNAI) は、クラウドネイティブの原則を用いて、AIアプリケーションやAIワークロードを構築し、デプロイするためのアプローチとパターンについて言及しています。繰り返し可能でスケーラブルなAIに特化したワークフローを使用可能にすることで、AI実践者が自身のドメインに集中できるようになります。_
+> _クラウドネイティブ人工知能(CNAI)とは、クラウドネイティブの原則を利用してAIアプリケーションとワークロードを構築・展開するためのアプローチとパターンを指します。AIに特化した反復可能でスケーラブルなワークフローを実現することで、AI実務者は自分の専門分野に集中することができます。_
 
 ---
 
-Kubernetesは、プライベートクラウド、パブリッククラウド、ハイブリッドクラウドの提供を備えた、事実上のクラウドオペレーティングシステムへと進化してきました。K8sは、複数の種類のネットワーク、ストレージ、計算リソースを処理する分散オーケストレーターを実装します。さらに、K8sによって、GitOps[^11]のようなDevOps[^10]のベストプラクティスを実現するインターフェースを使うことができます。全てのクラウドサービスプロバイダ（CSP）は、いくつかの種類のサービスとしてのKubernetes（インフラへのアクセスを容易にする、AI/MLを含む様々な種類のワークロードを実行する）を提供しています。
+Kubernetesは、プライベートクラウド、パブリッククラウド、ハイブリッドクラウドを提供する、事実上のクラウドオペレーティングシステムへと進化しました。Kubernetesは、複数のタイプのネットワーク、ストレージ、および計算資源を処理する分散オーケストレーターを実装しています。さらにK8sは、GitOpsのようなDevOps[^10]のベストプラクティスを利用できるインターフェイスを提供しています[^11]。すべてのクラウドサービスプロバイダー(CSP)は、サービスとしてKubernetesのいくつかのフレーバーを持っており、AI/MLを含むさまざまなワークロードを実行するためのインフラや多数のサポートサービスへのアクセスを容易にしています。
 
 ### 人工知能の進化
 
-1956年[^12]に初めて用語として導入された人工知能とは、人間の知能を模倣する機械の能力のことです。数十年にわたって、人工知能は、音声認識、機械翻訳、画像処理、ゲームプレー、さらに優秀なJeopardyのプレイヤー[^13]などの活用に用いられてきました。しかし、近年、主に自然言語の理解のために適用される人工ニューラルネットワークやディープラーニングのおかげで、AIのマインドシェアはより大きく高まっています。AIは識別系と生成系の大きく２つに分類できます。
+1956年に始めて用語として導入された人工知能[^12]とは、人間の知能をシミュレートする機械の能力のことです。数十年にわたり、音声認識、機械翻訳、画像処理、ゲームプレイなどのアプリケーションで使用されています。さらにはジョパディプレイヤーとしても活躍しています[^13]。しかし、人工ニューラルネットワークとディープラーニングの技術革新のおかげで、AIはより最近、主に自然言語理解に応用され、爆発的な知名度を獲得しました。AIには主に、識別型(discriminative)と生成型(generative)の2つに分類されます。
 
-識別系のAIは、境界や分類の決定について学習しようとしており、「モデル」として知識を習得し、それは新規のデータの予測に用いられます。例えば、Eメールがスパムか否かを分類する、猫の画像と犬の画像を区別するなどです。識別系のAIは、一般的に、望ましい出力が明らかなタスクに用いられます（例．機械学習の１つの形態である教師あり学習など）。AIはシーケンスの予測に優れており、例として、文章の大部分を書き手の癖も含めて解析することで次に入力されるものを予測するなどがあります。
+識別AIは、判断の境界や分類を学習しようとするもので、その知識は「モデル」として取り込まれ、新しいデータを予測するために使われます。例えば、電子メールをスパムかそうでないかに分類したり、猫と犬の画像を区別したり、その他いろいろなことができます。識別AIは通常、(機械学習の一種である教師あり学習によって)望ましい出力がわかっているタスクに使用されます。AIはシーケンス予測に優れており、例えば、私たちの個人的な書き方の情報を含む既存の大量のテキストを分析することで、私たちが次に何を入力するかを高い確率で推測することができます。
 
-Generative AI learns latent structures or representations within data. It enables synthesizing new data using these structures or representations, such as creating stories, music, and visual art from word prompts.  Generative AI is used for tasks where the desired output is unknown, or the “correct” output is ill-defined. With Generative AI, AI has transcended into what humans consider creative, original, and sublime. Let us take a closer look at some of AI’s spectacular breakthroughs.
+生成AIは、データ内に潜在する構造や表現を学習します。例えば、言葉のプロンプトから物語や音楽、ビジュアルアートを創作するように、これらの構造や表現を使って新しいデータを合成することができます。生成AIは、望ましい出力が未知であったり、「正しい」出力が定義されていないようなタスクに使用されます。生成AIによって、AIは人間が創造的、独創的、崇高と考えるものへと超越しました。AIの目を見張るようなブレークスルーのいくつかを詳しく見てみましょう。
 
-Convolutional Neural Networks[^14] (CNNs) were first developed in the 1980s but were only widely used in the early 2000s. In recent years, CNNs have become increasingly popular thanks to their ability to learn from large datasets of images and perform well on various image processing tasks, such as object detection, image classification, and segmentation.
+畳み込みニューラルネットワーク(CNN)[^14]は1980年代に初めて開発されましたが、広く使われるようになったのは2000年代初頭のことです。近年、CNNは大規模な画像データセットから学習する能力を持ち、物体検出、画像分類、セグメンテーションなど、さまざまな画像処理タスクで優れた性能を発揮することから、ますます人気が高まっています。
 
-Transformers were developed by researchers from the University of Toronto and Google in 2017. Transformers use a specialized mechanism called scaled dot-product attention, which imbues them with a memory-like structure[^15]. Transformer-based models are very effective for natural language processing tasks, such as answering questions, summarizing text, and translation. Consequently, they are vital in most Large Language Models (LLM). The most well-known LLM is GPT, the model that powers the popular ChatGPT service.[^16] LLMs are trained on massive datasets. They take sequences of prompts, that can be long, to generate context-sensitive responses in addition to being able to be fine-tuned for specialized domains with additional data, be it current affairs, medicine, law, or others. Novel techniques for fine-tuning, such as Reinforcement Learning from Human Feedback (RLHF) and Direct Preference Optimization (DPO), have been developed to make LLMs even more compelling.
+トランスフォーマーは2017年にトロント大学とグーグルの研究者によって開発されました。トランスフォーマーは、スケールドドットプロダクトアテンション(scaled dot-product attention)と呼ばれる特殊なメカニズムを使用しており、記憶のような構造を持っています[^15]。トランスフォーマーに基づくモデルは、質問への回答、テキストの要約、翻訳などの自然言語処理タスクに非常に効果的です。そのため、ほとんどの大規模言語モデル(Large Language Models：LLM)には欠かせない存在です。最も有名なLLMはGPTであり、人気のあるChatGPTサービスを支えているモデルです[^16]。LLMは膨大なデータセットで訓練されます。LLMは、長いプロンプトのシーケンスを受け取り、文脈に応じた応答を生成します。さらに、時事問題、医学、法律など、追加データを用いて専門的な領域向けに微調整することも可能です。人間のフィードバックからの強化学習(RLHF)や直接優先最適化(DPO)のような微調整のための新しい技術は、LLMをさらに魅力的なものにするために開発されました。
 
-Research and innovation have enabled end-user interactions that are faster, more creative, and more accurate than ever before. Just as significant as the innovations in data science and software is the evolution of infrastructure to power _model inference_ (the process of computing results from AI models) and _model training_ (the process of building an AI model from data). With AI accelerator technology, AI practitioners can iterate faster to deliver higher-quality models in days and weeks versus months. Further, several traditional techniques employed by data scientists and statisticians are being re-evaluated to take advantage of the capabilities of CN systems.
+研究とイノベーションにより、エンドユーザーとのインタラクションはかつてないほど速く、より創造的で、より正確なものとなりました。データサイエンスとソフトウェアのイノベーションと同様に重要なのは、モデル推論(AIモデルから結果を計算するプロセス)とモデルトレーニング(データからAIモデルを構築するプロセス)を強化するインフラの進化です。AIアクセラレーター技術を使えば、AI実務者はより高速に反復作業を行い、数か月だった作業が数日や数週間で、より高品質なモデルを提供することができます。さらに、データサイエンティストや統計学者が採用してきたいくつかの伝統的な技術は、CNシステムの能力を活用するために再評価されつつあります。
 
-### Merging of Cloud Native and Artificial Intelligence
+### クラウドネイティブと人工知能の融合
 
-As mentioned in the previous section, AI is the broader concept that aims to create systems that can perform tasks akin to humans. Machine learning is a way to learn from and make informed predictions and decisions based on data. It can be thought of as yet another form of automation that involves using algorithms to learn and improve over time without explicit programming. Finally, Data Science, as a multidisciplinary field, melds techniques from statistics, mathematics, and computer science to enact a wide range of activities, from data analysis and interpretation to the application of machine learning algorithms. 
+前のセクションで述べたように、AIとは、人間と同様のタスクを実行できるシステムを作り出すことを目的とした、より広い概念です。機械学習は、データから学習し、情報に基づいた予測や意思決定を行う方法です。機械学習とは、データから学習し、データに基づいた予測や意思決定を行う方法であり、明示的なプログラミングを行うことなく、アルゴリズムを使用して学習し、時間をかけて改善します。これは自動化の一形態と考えることができます。最後に、データサイエンスは学際的な分野として、統計学、数学、コンピュータサイエンスの技術を融合し、データの分析や解釈から機械学習アルゴリズムの適用まで、幅広い活動を実施します。
 
-Thinking about it broadly, we could divide applications for AI, ML, and data science into two broad categories: namely **_Predictive AI_** and **_Generative AI_.** Predictive AI aims at predicting and analyzing existing patterns or outcomes (e.g., classification, clustering, regression, object detection,etc.). In contrast, generative AI aims at generating new and original content (e.g., LLMs, RAG[^17],etc.). As such, the algorithms and techniques underpinning predictive and generative AI can vary widely. 
+大まかに考えると、AI、ML、データサイエンスのアプリケーションは、 **_予測AI_** と **_生成AI_** の2つに大別できます。予測AIは、既存のパターンや結果を予測や分析することを目的としています(例えば、分類、クラスタリング、回帰、物体検出など)。対照的に、生成AIは、新しく独創的なコンテンツを生成することを目的としています(LLM、RAG[^17]など)。このように、予測AIと生成AIを支えるアルゴリズムと技術には大きな違いがあります。
 
 
 ![layered stack](https://github.com/zanetworker/ai-landscape/blob/main/pngs/layered_stack.png?raw=true)
 
 <center>
-Figure 1
+図1
 
-Cloud Native AI
+クラウドネイティブAI
 </center>
 
-Below is a sample set of areas where predictive and generative AI have distinct needs across computing, networking, and storage: 
+以下は、予測AIと生成AIが、コンピューティング、ネットワーキング、ストレージの各分野で異なるニーズを検出した分野の一例です。
 
 <table>
   <tr>
-   <td><strong>Challenges/Need</strong>
+   <td><strong>課題/ニーズ</strong>
    </td>
-   <td><strong>Generative AI </strong>
+   <td><strong>生成AI</strong>
    </td>
-   <td><strong>Predictive AI</strong>
+   <td><strong>予測AI</strong>
    </td>
   </tr>
   <tr>
-   <td><strong>Computational Power</strong>
+   <td><strong>計算力</strong>
    </td>
-   <td>Extremely high. 
+   <td>非常に高い
 <p>
-Requires specialized hardware.
+専用のハードウェアが必要
    </td>
-   <td>Moderate to high. 
+   <td>中程度から高い
 <p>
-General-purpose hardware can suffice.
+汎用のハードウェアで十分
    </td>
   </tr>
   <tr>
-   <td><strong>Data Volume and Diversity</strong>
+   <td><strong>データ量と多様性</strong>
    </td>
-   <td>Massive, diverse datasets for training.
+   <td>トレーニング用の膨大で多様なデータセット
    </td>
-   <td>Specific historical data for prediction.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Model Training and Fine-tuning</strong>
-   </td>
-   <td>Complex, iterative training with specialized compute.
-   </td>
-   <td>Moderate training.
+   <td>予測のための具体的な過去のデータ
    </td>
   </tr>
   <tr>
-   <td><strong>Scalability and Elasticity</strong>
+   <td><strong>モデルのトレーニングと微調整</strong>
    </td>
-   <td>Highly scalable and elastic infrastructure (variable and intensive computational demands) 
+   <td>専門的な計算による複雑な反復トレーニング
    </td>
-   <td>Scalability is necessary but lower elasticity demands. 
+   <td>適度なトレーニング
+   </td>
+  </tr>
+  <tr>
+   <td><strong>拡張性と柔軟性</strong>
+   </td>
+   <td>拡張性と柔軟性の高いインフラ（可変性があり集中的な計算が要求される）
+   </td>
+   <td>拡張性は必要だが、柔軟性の要求は低い
 <p>
-Batch processing or event-driven tasks. 
+バッチ処理またはイベント駆動タスク
    </td>
   </tr>
   <tr>
-   <td><strong>Storage and Throughput</strong>
+   <td><strong>ストレージとスループット</strong>
    </td>
-   <td>High-performance storage with excellent throughput. Diverse data types.
+   <td>優れたスループットの高性能ストレージ
 <p>
-Requires high throughput and low-latency access to data.
+多様なデータタイプ
+<p>
+データへのアクセスには高いスループットと低遅延が要求される
    </td>
-   <td>Efficient storage with moderate throughput. It focuses more on data analysis and less on data generation; data is mostly structured.
+   <td>中程度のスループットで効率的なストレージ
+<p>
+データ分析に重点を置き、データ生成はあまり行わない
    </td>
   </tr>
   <tr>
-   <td><strong>Networking</strong>
+   <td><strong>ネットワーキング</strong>
    </td>
-   <td>High bandwidth and low latency for data transfer and model synchronization (e.g., during distributed training).
+   <td>データ転送とモデル同期(分散型トレーニング中など)のための高帯域幅と低遅延
    </td>
-   <td>Consistent and reliable connectivity for data access.
+   <td>データアクセスのための一貫した信頼性の高い接続性
    </td>
   </tr>
 </table>
 
 
-In the coming sections, we will explore how to meet the needs that arise from either form, the challenges that come with it, and potential recommendations to employ when faced with such challenges.
+これからのセクションでは、どちらの形でも生じるニーズに応える方法と、それに伴う課題、そしてそうした課題に直面した際に採用できる方法について探っていきます。
 
 
-### What is Cloud Native Artificial Intelligence?
+### クラウドネイティブ人工知能とは何か？
 
-Cloud Native Artificial Intelligence allows the construction of practical systems to deploy, run, and scale AI workloads. CNAI solutions address challenges AI application scientists, developers, and deployers face in developing, deploying, running, scaling, and monitoring AI workloads on cloud infrastructure. By leveraging the underlying cloud infrastructure's computing (e.g., CPUs and GPUs), network, and storage capabilities, as well as providing isolation and controlled sharing mechanisms, it accelerates AI application performance and reduces costs. 
+クラウドネイティブ人工知能は、AIワークロードを展開、実行、拡張するための実用的なシステムの構築を可能にします。CNAIソリューションは、AIアプリケーション科学者、開発者、デプロイヤーが、クラウドインフラ上でAIワークロードを開発、デプロイ、実行、スケーリング、モニタリングする際に直面する課題に対処します。基盤となるクラウドインフラのコンピューティング(CPUやGPUなど)、ネットワーク、ストレージ機能を活用し、分離しつつ制御できる共有メカニズムを提供することで、AIアプリケーションのパフォーマンスを加速し、コストを削減します。
 
-Figure 2 (below) maps these enabling mechanisms between tooling and techniques.
+図2(下図)は、これらの実現メカニズムをツールと技術の観点でマッピングしたものです。
 
 <p style="text-align: right">
 
@@ -166,352 +170,354 @@ Figure 2 (below) maps these enabling mechanisms between tooling and techniques.
 ![relationships](https://github.com/zanetworker/ai-landscape/blob/main/pngs/relationships.png?raw=true)
 
 <center>
-Figure 2
+図2
 
-Enabling Tools and Techniques[^18]
+利用可能なツールや技術[^18]
 </center>
 
-#### Running AI On Cloud Native Infrastructure
+#### クラウドネイティブインフラでAIを動かす
 
-The value of Cloud Native for AI is highlighted by articles in the media published by cloud service providers and/or AI companies[^19] [^20]. The emergence of AI-related offerings by cloud providers and emerging start-ups in this space are crucial indicators of how Cloud Native principles can shape the systems necessary for the AI evolution. 
+クラウドサービスプロバイダーやAI企業が発表したメディア記事では、AIにとってのクラウドネイティブの価値が強調されています[^19] [^20]。この分野においてクラウドプロバイダーやスタートアップによるAI関連サービスが登場したことは、クラウドネイティブの原則がAIの進化に必要なシステムを形作ることができることを強調しています。
 
-Kubernetes is an orchestration platform that can be used to deploy and manage **_containers_**, which are lightweight, portable, self-contained software units. AI models can be packaged into containers and then deployed to K8s clusters. Containerization is especially crucial for AI models because different models typically require different and often conflicting dependencies. Isolating these dependencies within containers allows for far greater flexibility in model deployments. CN tooling allows for the efficient and scalable deployment of AI models, with ongoing efforts to tailor these for AI workloads specifically.
+Kubernetesは、 **_コンテナ_** のデプロイと管理に使用できるオーケストレーションプラットフォームであり、軽量でポータブルな自己完結型のソフトウェアユニットです。AIモデルはコンテナにパッケージ化され、K8sクラスタにデプロイされます。コンテナ化はAIモデルにとって特に重要です。異なるモデルは通常、異なる、そしてしばしば矛盾する依存関係を必要とするからです。これらの依存関係をコンテナにより分離することで、モデルのデプロイにおいてはるかに大きな柔軟性が生まれます。CNツールは、AIモデルの効率的でスケーラブルなデプロイを可能にしました。そして、AIワークロード専用にこれらを調整する取り組みが続けられています。
 
-The Kubernetes Scheduler[^21] continues to evolve[^22] [^23] [^24], particularly to better integrate and support sharing Graphics Processing Units (GPUs) that have become highly popular in speeding AI workloads. Beyond supporting applications sharing a GPU and handling multi-tenancy, efforts are underway to support leveraging remote pools of resources outside of Kubernetes.
+Kubernetesスケジューラー[^21]は進化を続けており[^22] [^23] [^24]、特にAIワークロードにおいて高速化の分野で高い人気を集めているGPU(Graphics Processing Unit)をより良く統合し、共有することをサポートしています。GPUを共有するアプリケーションをサポートしてマルチテナンシーを処理するだけでなく、Kubernetes外のリソースのリモートプールを活用するための取り組みも進行中です。
 
-High-quality data is needed to train and test AI models to obtain superior inference. Cloud Native infrastructure can access data through various methods, such as data lakes and warehouses. Many cloud providers offer block, object, and file storage systems that are perfect for providing low-cost, scalable storage. For example, the size of models can run into gigabytes. During the training phase, pulling the model’s checkpoints each time can cause a severe load on networking and storage bandwidth. Treating models as containerized artifacts opens the door for hosting them in OCI[^25] registries and enables caching. It further allows applying **_software supply chain_** best practices to models such as artifact signing, validation, attestation, and data provenance. Additionally, containerizing models/artifacts facilitate bundling in WebAssembly (WASM) binaries. WASM is a platform-independent, efficient CN approach to inference.
+優れた推論を得るためのAIモデルの訓練とテストには、高品質のデータが必要です。クラウドネイティブインフラは、データレイクやウェアハウスなど様々な方法でデータにアクセスできます。多くのクラウドプロバイダーは、ブロック、オブジェクト、ファイルストレージシステムを提供しており、低コストでスケーラブルなストレージを提供するのに最適です。例えば、モデルのサイズは数ギガバイトに達することもあります。トレーニング段階では、モデルのチェックポイントを毎回引き出すことにより、ネットワーキングとストレージの帯域幅に大きな負荷をかける可能性があります。コンテナ化されたアーティファクトとしてモデルを扱うことで、OCI[^25]レジストリにホスティングでき、キャッシュが可能になります。さらに、アーティファクトへの署名、検証、証明、データ実証など、 ***_ソフトウェアサプライチェーン_*** のベストプラクティスをモデルに適用することも可能になります。さらに、モデルやアーティファクトをコンテナ化することで、WebAssembly(WASM)バイナリへのバンドルが容易になります。WASMは、プラットフォームに依存しない、効率的な推論へのCNアプローチです。
 
-### Why Cloud Native Artificial Intelligence?
+### なぜクラウドネイティブ人工知能なのか？
 
-With its elastic, always-on infrastructure, the cloud has allowed enterprises, startups, and developers to prototype quickly, offer new services, scale solutions, and much more. It also does so cost-effectively through resource sharing. The average user no longer has to worry about ordering hardware or dealing with logistics like space, power, network connectivity, cooling, software licensing, and installation. AI has similar concerns – rapid prototyping, accessing storage, networking, and computing resources to tackle small and large-scale training and inference tasks.
+クラウドは弾力的で常時接続可能なインフラであるため、企業、スタートアップ、開発者は、迅速なプロトタイプの作成、新サービスの提供、ソリューションの拡張などを行うことができようになりました。また、リソースの共有により、コスト効率も向上しています。一般的なユーザーは、ハードウェアの注文や、スペース、電源、ネットワーク接続、冷却、ソフトウェアライセンス、インストールなどのロジスティクスを心配する必要がなくなりました。AIにも同様の懸念を抱いています。迅速なプロトタイピング、小規模・大規模のトレーニングや推論タスクに取り組むためのストレージ、ネットワーク、コンピューティングリソースへのアクセスについてです。
 
-### Using AI to Improve Cloud Native Systems
+### クラウドネイティブシステムの改善にAIを活用
 
-Whether packaged as observability tooling or leveraging LLM capabilities for natural language processing (NLP) of logs, AI-powered solutions/projects are entering the hands of operators and end-users to enhance their productivity and make their lives easier. One such open source Cloud Native Computing Foundation (CNCF) project is K8sGPT[^26], which leverages the pattern recognition and language capabilities of LLM, such as Bedrock, Cohere, and others, to aid K8s operators in their daily work. More significantly though, the symbiosis of CN and AI opens up the ecosystem to new and unforeseen opportunities. For example, we expect a rise in less technical users able to operate and manage complex systems.
+ログの自然言語処理(NLP)のためにLLMの機能を活用するにせよ、オブザーバビリティーツールとしてパッケージ化されるにせよ、AIを活用したソリューションやプロジェクトがオペレーターやエンドユーザーの手に渡り、生産性を向上させたり、生活をしやすくしたりしています。そのようなオープンソースのCloud Native Computing Foundation (CNCF)のプロジェクトの1つがK8sGPTです[^26]。K8sGPTは、Bedrock、CohereなどのLLMのパターン認識と言語機能を活用し、K8sオペレーターの日常業務を支援しています。しかし、より重要なのはCNとAIの共生が、エコシステムに新たな予期せぬ発展のチャンスをもたらすことです。例えば、複雑なシステムを操作・管理できる技術力の低いユーザーの増加が予想されています。
 
-## Challenges For Cloud Native Artificial Intelligence
+## クラウドネイティブ人工知能の課題
 
-It’s important to note that CNAI challenges will vary between the different personas[^27]. And, while Cloud Native’s flexible, scalable platform is a promising fit for AI workloads, AI’s scale and latency needs pose challenges and expose gaps in CN technologies while also presenting opportunities. We tease these out in the context of an end-to-end ML pipeline[^28], also referred to in the literature as MLOps[^29]. Issues with the traditional trade-offs of time and space, parallelism, and synchronization all surface, exposing ease-of-use gaps. To summarize, the ML Lifecycle looks as follows:
+CNAIの課題はペルソナによって異なることに注意が必要です[^27]。また、クラウドネイティブの柔軟でスケーラブルなプラットフォームはAIワークロードに有望である一方、AIのスケールとレイテンシーのニーズには課題があり、CN技術のギャップを露呈すると同時に、新たな発展のチャンスをもたらしています。文献ではMLOps[^29]とも呼ばれているエンドツーエンドのMLパイプライン[^28]に関する文脈でこれらを説明します。時間と空間、並列性、および同期といった伝統的なトレードオフの問題がすべて表面化し、使いやすさが犠牲にさらされます。要約すると、MLライフサイクルは以下のようになります。
 
 ![lifecycle](https://github.com/zanetworker/ai-landscape/blob/main/pngs/lifecycle.png?raw=true)
 
 <center>
-Figure 3.
+図3
 
-ML Lifecycle
+MLライフサイクル
 </center>
 
-The typical ML pipeline is comprised of the following concerns:
+典型的なMLパイプラインは以下のような構成になっています。
 
-* Data Preparation (collection, cleaning/pre-processing, feature engineering)
-* Model Training (model selection, architecture, hyperparameter tuning)
-* CI/CD, Model Registry (storage)
-* Model Serving
-* Observability (usage load, model drift, security)
+* データ準備(収集、クリーニング/前処理、特徴量エンジニアリング)
+* モデルトレーニング(モデル選択、アーキテクチャ、ハイパーパラメーターチューニング)
+* CI/CD、モデルレジストリ(ストレージ)
+* モデルサービング
+* オブザーバビリティー(使用負荷、モデルドリフト、セキュリティ)
 
-The data volumes involved in training, similarity search, and model size, particularly with LLMs, each drive memory and performance considerations. While CN handles access control and scheduling for CPUs, GPU allocation with adequate sharing is still evolving. The ML training phase is all about search, requiring tracking the performance of intermediate models to determine which to keep and how to tune model parameters further to obtain even greater accuracy. Security is more critical given the sensitivity of the handled data and the models' intrinsic value. Observability is vital to detect model drift, usage load, and more. Let us dive a little deeper into the challenges in each pipeline stage.  The reader is encouraged to consider additional challenges related to their domain and add to the conversation[^30].
+特にLLMの場合、学習、類似性検索、モデルサイズに関わるデータ量が多く、それぞれメモリとパフォーマンスを考慮する必要があります。CPUのアクセス制御とスケジューリングはCNが行うものの、GPUの共有時の適切な割り当てはまだ発展途上です。MLのトレーニング段階は探索がすべてであり、中間モデルのパフォーマンスを追跡して、どれを維持し、さらに高い精度を得るためモデルのパラメーターをどのように調整するかを決定する必要があります。取り扱われるデータの機密性とモデルの本質的価値を考えると、セキュリティはより重要です。オブザーバビリティーは、モデルのドリフトや使用負荷などを検出するために不可欠です。各パイプライン段階における課題をもう少し掘り下げてみましょう。読者は、自分のドメインに関連する更なる課題を検討し、会話に加えてみてください[^30]。
 
-### Data Preparation
+### データ準備
 
-As the first phase in an AI/ML pipeline, data preparation can present various challenges. These can be broadly grouped into three main categories: managing large data sizes, ensuring data synchronization during development and deployment, and adhering to data governance policies.
+AI/MLパイプラインの最初のフェーズであるデータ準備には様々な課題があります。これらは大まかに3つの主要なカテゴリーに分類することができます。大きなデータサイズの管理、開発時とデプロイ時の確実なデータ同期、データガバナンスポリシーの遵守です。
 
-#### Data Size
+#### データサイズ
 
-The demand for data to build better AI/ML models is increasing faster than Moore's Law, doubling every 18 months [^31]. Whether it's data management/handling, data processing, or data analysis, there is a rapid escalation in data demands for building AI/ML models. Therefore, distributed cloud-native computing and efficient data movement and storage become essential to bridge the gap between these computational demands and hardware capabilities.
+より優れた AI/MLモデルを構築するためのデータ需要は、ムーアの法則を上回るスピードで増加しており、18カ月ごとに倍増しています[^31]。データ管理/取扱い、データ処理、データ分析のいずれにおいても、AI/MLモデル構築のためのデータ需要は急速にエスカレートしています。したがって、分散型クラウドネイティブコンピューティングと効率的なデータ移動や保存は、こうした計算需要とハードウェア能力のギャップを埋めるために不可欠となります。
 
-#### Data Synchronization
+#### データ同期
 
-Data may need to be sourced from multiple disparate locations in different formats; the developer and production environments, more often than not, are different, and all this is in addition to handling the increased complexity arising from distributed computing, such as partitioning and synchronization. Let us take a closer look at the latter.
+データは複数の異なる場所から、異なるフォーマットで入手する必要があるかもしれません。開発環境と本番環境は、多くの場合異なるものであり、これらに加えて、パーティショニングや同期といった分散コンピューティングから生じる複雑性の増大にも対処する必要があります。後者について詳しく見てみましょう。
 
-In data processing systems like Spark, the industry-standard interface, SQL, plays a crucial role in providing users with a familiar uniform experience, whether they are prototyping locally or running large workloads in a distributed manner. However, ML workloads don’t have an industry-standard interface. Consequently, data scientists develop their ML Python scripts with small datasets locally, and then distributed systems engineers rewrite these scripts for distributed execution. If the distributed ML workloads do not function as expected, data scientists might need to debug the issues using their local Python scripts. This process is inefficient and often ineffective. This is true despite the availability of better observability tools and the reproducibility afforded by container technology.
+Sparkのようなデータ処理システムでは、業界標準のインターフェースであるSQLは、ローカルでプロトタイプを作成する場合でも、大規模なワークロードを分散して実行する場合でも、使い慣れた統一されたエクスペリエンスをユーザーに提供する上で重要な役割を果たしています。しかし、MLワークロードには業界標準のインターフェースがありません。その結果、データサイエンティストは、ローカルで小規模なデータセットを使ってMLのPythonスクリプトを開発し、分散システムエンジニアがこれらのスクリプトを分散実行用に書き換えます。分散されたMLワークロードが期待通りに機能しない場合、データサイエンティストはローカルのPythonスクリプトを使って問題をデバッグする必要があるかもしれません。このプロセスは非効率で、しばしば効果的ではありません。より優れたオブザーバビリティーツールや、コンテナ技術による再現性があるにもかかわらず、これが事実です。
 
-Potentially viable solutions exist for resolving this inconsistency between local development and production environments. The first is using an industry-standard interface to support the end-to-end ML lifecycle. For example, users can leverage APIs of native ML frameworks like PyTorch or TensorFlow to create training code and validate it by running it locally in a Python runtime. Then, users can easily reuse the same code and leverage the Python SDK from Kubeflow to run this code locally in a distributed fashion via Kind/Minikube or just as easily scale their training code by deploying it to a remote, large-scale Kubernetes cluster using the same Python SDK. Another option is to use a general-purpose distributed computing engine such as Ray, whose computational abstractions also enable users to run the same Ray scripts seamlessly in local and production environments.
+ローカルの開発環境と本番環境の間のこの矛盾を解決するための、実行可能な解決策は存在します。1つ目は、エンドツーエンドのMLライフサイクルをサポートする業界標準のインターフェースを使用することです。例えば、ユーザーはPyTorchやTensorFlowのようなネイティブのMLフレームワークのAPIを活用して学習コードを作成し、Pythonランタイムでローカルに実行して検証することができます。その後、ユーザーは簡単に同じコードを再利用し、KubeflowのPython SDKを活用して、Kind/Minikubeを介して分散方式を使ってローカルでこのコードを実行したり、同じPython SDKを使用してリモートの大規模Kubernetesクラスタにデプロイすることで、同様に簡単にトレーニングコードを拡張させることができます。もう一つの選択肢は、Rayのような汎用分散コンピューティングエンジンを使用することです。抽象化により、ユーザーは同じRayスクリプトをローカル環境と本番環境でシームレスに実行することもできます。
 
-Data volume is a cross-cutting issue. It also manifests in the training stage.
+データ量は広範囲にまたがる問題です。それはトレーニング段階でも顕在化します。
 
-#### Data Governance
+#### データガバナンス
 
-Data governance is crucial to building trust and ensuring responsible AI development. One should consider three critical pillars regarding data governance. 
+データガバナンスは、信頼を築き、責任あるAI開発を保証するために極めて重要です。データガバナンスに関しては、3つの重要な柱を考慮する必要があります。
 
-1. **_Privacy and Security_**: It is essential to navigate the complex landscape of data privacy regulations such as GDPR and CCPA. Robust security measures should be implemented to safeguard sensitive data used in AI models. Encryption, access controls, and regular vulnerability assessments should be used to protect valuable information.
-2. **_Ownership and Lineage_**: It is imperative to clearly define who owns and has access to the data throughout the AI lifecycle, from collection to use. Data lineage tracking tools should be utilized to understand how data flows through the system, ensuring transparency and accountability. Doing so helps to prevent unauthorized access and misuse of sensitive information.
-3. **_Mitigating Bias_**: AI models are only as good as the data they are trained on. Hence, it is essential to actively monitor and address potential biases in the data and algorithms. This includes using diverse datasets, employing fairness metrics, and continuously evaluating the model to ensure it delivers fair and ethical outcomes, including capturing its limitations. Model Cards[^32] are evolving to capture these.
+1. **_プライバシーとセキュリティ_**：GDPRやCCPAのような複雑なデータプライバシー規制を乗り切ることが不可欠です。AIモデルで使用される機密データを保護するために、強固なセキュリティ対策を実施する必要があります。暗号化、アクセス制御、定期的な脆弱性評価により貴重な情報を保護する必要があります。
+2. **_所有権とリネージ_**：AIのライフサイクルを通じて、データの収集から使用まで、データの所有者とアクセス権を明確に定義することが不可欠です。データの系統追跡(Data lineage tracking)ツールを活用して、データがシステム内をどのように流れているかを把握し、透明性と説明性を確保する必要があります。そうすることで、機密情報への不正アクセスや悪用を防ぐことができます。
+3. **_バイアスの軽減_**：AIモデルは、学習させたデータと同程度の性能しか持ちません。したがって、データとアルゴリズムに潜在するバイアスを積極的に監視し、対処することが不可欠です。例えば、多様なデータセットを使用すること、公平性の評価基準を採用すること、モデルの限界を把握することなど、公正で倫理的な結果を確実に出すためにモデルを継続的に評価することなどが含まれます。モデルカード[^32]は、これらを把握するために進化しています。
 
-Data privacy and security is a cross-cutting issue that requires consideration at every stage.
+データのプライバシーとセキュリティは、あらゆる段階での配慮を必要とする横断的な問題です。
 
-### Model Training
+### モデルトレーニング
 
-Model training data volumes have risen exponentially, resulting in a need for distributed processing and accelerators to achieve even more parallelism. Further training is an iterative multi-step process, which makes scaling a complex multi-component coordinated task. We review these aspects in greater detail in this section.
+モデルトレーニングのデータ量は指数関数的に増加しており、その結果、さらなる並列性を達成するための分散処理とアクセラレーターの必要性が生じています。さらにトレーニングは反復的な複数ステップのプロセスであるため、スケーリングは複雑な複数コンポーネントの調整タスクとなります。このセクションでは、これらの側面について詳しく説明します。
 
-#### Rising Processing Demands
+#### 高まる処理要求
 
-LLMs are rapidly pushing the boundaries to meet the growing AI/ML training and inference computing demands, and accelerators are becoming popular. These range from GPUs from multiple vendors with different capabilities to Google’s tensor processing units (TPUs), Intel’s Gaudi, and even field-programmable gate arrays (FPGAs). These varied compute resources need virtualization support, drivers, the ability to configure and share them, and CN scheduler enhancements. Further, these accelerators' limited availability and cost have prompted the exploration of multi-cloud resource banding, and even sky[^33] computing. 
+LLMは、AI/MLのトレーニングや推論コンピューティングの需要の高まりに対応するため、急速に限界に挑戦しており、アクセラレーターが普及しています。これらのアクセラレーターは、さまざまな機能を持つ複数のベンダーのGPUから、Googleのテンソル処理ユニット(TPU)、IntelのGaudi、さらにはフィールドプログラマブルゲートアレイ(FPGA)まで多岐にわたります。これらの多様な計算リソースには、仮想化サポート、ドライバ、コンフィギュレーションと共有機能、CNスケジューラーの機能強化が必要です。さらに、これらのアクセラレーターの可用性とコストは限られているため、マルチクラウドリソースバンディングや、sky[^33]コンピューティングの探求も促されています。
 
-Using CN technology for AI can be complex regarding GPU virtualization and dynamic allocation. Technologies, such as vGPUs, MIG, MPS (see glossary), and Dynamic Resource Allocation (DRA)[^34], enable multiple users to share a single GPU while providing isolation and sharing between containers in a pod. They can increase GPU utilization, which in turn reduces costs, in addition to allowing multiple workloads to benefit simultaneously from them. However, implementation requires careful orchestration and management, especially when allocating and deallocating resources dynamically. Close collaboration between the AI and CN engineering teams is necessary to ensure smooth and efficient integration. 
+CN 技術をAIに使用する場合、GPUの仮想化と動的割り当てが複雑になる可能性があります。vGPU、MIG、MPS(用語集を参照)、Dynamic Resource Allocation(DRA)[^34]などの技術は、ポッド内のコンテナ間の分離と共有を提供しながら、複数のユーザーが単一のGPUを共有することを可能にします。これらは、複数のワークロードが同時にGPUの恩恵を受けられるようにするだけでなく、GPUの利用率を高めてコストを削減することができます。しかし、実装には慎重なオーケストレーションと管理が必要であり、特にリソースを動的に割り当てたり、割り当てなかったりする場合には注意が必要です。スムーズで効率的な統合を実現するには、AIチームとCNエンジニアリングチームの緊密な連携が必要です。
 
-#### Cost Efficiency
+#### コスト効率
 
-The elasticity and scalability inherent in Cloud Native environments allow organizations to provision and scale resources dynamically based on fluctuating demands. This aspect also applies to AI tasks. However, resource proper sizing and reactive scheduling to meet varying workload demands are even more compelling in the context of accelerators such as GPUs, which are expensive and limited in supply. It drives the need to be able to**_ fractionalize GPUs_** to utilize them better. 
+クラウドネイティブ環境特有の柔軟性と拡張性により、組織は変動する需要に基づいて動的にリソースを供給し、拡張することができます。この側面はAIタスクにも当てはまります。しかし、変化するワークロードの需要に対応するためのリソースの適切なサイジングとリアクティブなスケジューリングは、高価で供給量が限られているGPUなどのアクセラレーターにおいては、さらに切実です。GPUをより有効に活用するために、 ***_GPUを分割できるようにする_*** 必要があるのです。
 
-Reducing the carbon footprint during model serving can be achieved using an autoscaling serving framework, which dynamically adjusts resources based on demand[^35]. KServe[^36],  an LF AI&Data Foundation project, provides such functionality. Sustainability[^37] can be significantly improved by various means, such as using smaller, more specialized models,  using a mixture of experts, and techniques such as compression and distillation. Distributing ML serving into geographical regions powered by renewable or cleaner energy sources can significantly reduce carbon footprint[^38]. 
+モデル配信中のカーボンフットプリントの削減は、需要に基づいて動的にリソースを調整する自動スケーリング配信フレームワークを使用して達成することができます[^35]。LF AI&Data FoundationのプロジェクトであるKServe[^37]は、そのような機能を提供しています。持続可能性[^38]は、より小さく、より専門化された混合専門家モデル(mixture of experts)の使用、圧縮や蒸留のような技術など、様々な手段によって大幅に改善することができます。地理的に、MLサービングを再生可能なエネルギー源やよりクリーンなエネルギー源から電力を供給される地域に分散させることで、二酸化炭素排出量を大幅に削減することもできます[^38]。
 
-Responsible development of ML models can include metadata on carbon footprints to aid in tracking and reporting the impact of model emissions on the environment. Additional tooling, such as _mlco2_[^39] and _codecarbon_[^40] exists, with limitations, to help predict the carbon footprint of new neural networks before physical training.
+MLモデルの責任ある開発には、カーボンフットプリントに関するメタデータを含めることで、モデルの排出が環境に与える影響の追跡と報告を支援することができます。mlco2[^39]やcodecarbon[^40]のような追加ツールは、制限はあるものの、物理的なトレーニングの前に新しいニューラルネットワークのカーボンフットプリントを予測するのに役立ちます。
 
-#### Scalability
+#### 拡張性
 
-AI/ML workflows are complex and characterized by diverse components that run in a distributed environment. In the context of training, this complexity is particularly exacerbated by the data volumes being handled and the need to support multiple rounds of training until model convergence. Coordinating the scaling of various microservices, with each encapsulating specific AI functionalities, demands intricate orchestration to ensure seamless communication and synchronization. Furthermore, the heterogeneity of AI models and frameworks complicates standardization, making creating generic scaling solutions applicable across various applications challenging. 
+AI/MLのワークフローは複雑で、分散環境で実行される多様なコンポーネントによって特徴付けられます。トレーニングにおいては、扱われるデータ量の多さと、モデルが収束まで複数回のトレーニングをサポートする必要があることによって、この複雑さが特に悪化します。それぞれが特定のAI機能をカプセル化したさまざまなマイクロサービスの規模を調整するには、シームレスな通信と同期を確保するための複雑なオーケストレーションが必要です。さらに、AIモデルとフレームワークの異種性が標準化を複雑にし、さまざまなアプリケーションに適用できる汎用的なスケーリングソリューションの作成を困難にしています。
 
-#### Orchestration/Scheduling
+#### オーケストレーション/スケジューリング
 
-As alluded to earlier, Cloud Native tools and projects simplify the orchestration and scheduling of AI workloads by leveraging the inherent features of containerization, microservices, and scalable cloud infrastructure. Complex AI workflows can be decomposed into modular components, making it easier to manage and scale specific functions independently. 
+前述したように、クラウドネイティブツールやプロジェクトは、コンテナ化、マイクロサービス、スケーラブルなクラウドインフラの固有の機能を活用することで、AIワークロードのオーケストレーションとスケジューリングを簡素化しています。複雑なAIワークフローをモジュール化されたコンポーネントに分解できるため、特定の機能を独立して管理・拡張することが容易になります。
 
-However, as mentioned earlier, GPUs are a precious and in-demand resource, and the ability to more efficiently manage their sharing and scheduling for GPU-based AI workloads is critical to the success of AI development teams. Well-tested tools for addressing advanced scheduling needs like bin packing, placement, resource contention, and pre-emption will be essential and foundational for cloud native AI to thrive. Better scheduling support is evolving in Kubernetes through efforts such as Yunikorn[^41], Volcano[^42], and Kueue[^43], the latter two addressing batch scheduling, which is particularly valuable for efficient AI/ML training. Training jobs benefit from gang (or group) scheduling[^44], as the container replicas belonging to the job need an all-or-nothing placement policy to function correctly, and those jobs are not easily scaled up or down. Gang scheduling support is an area of opportunity. 
+しかし、前述したように、GPUは貴重で需要の高いリソースであり、GPUベースのAIワークロードの共有とスケジューリングをより効率的に管理する能力は、AI開発チームの成功に不可欠です。ビンパッキング、配置、リソース競合、先取りなどの高度なスケジューリングニーズに対処するための十分にテストされたツールは、クラウドネイティブAIが成功するために不可欠であり、基礎となります。Kubernetesでは、Yunikorn[^41]、Volcano[^42]、Kueue[^43]といった取り組みを通じて、より優れたスケジューリングサポートが進化しており、後者2つはバッチスケジューリングに対応しています。トレーニングジョブは、ギャング(またはグループ)スケジューリング[^44]の恩恵を受けます。ジョブに属するコンテナレプリカが正しく機能するためには、オールオアナッシングの配置ポリシーが必要であり、これらのジョブは簡単にスケールアップまたはスケールダウンできないからです。ギャングスケジューリングのサポートには、新たな発展のチャンスが広がっています。
 
-#### Custom Dependencies
+#### 依存関係の管理
 
-AI applications often rely on specific frameworks and versions of libraries, and these dependencies may not be readily available or compatible with standard container images.
+AIアプリケーションは多くの場合、特定のフレームワークやライブラリのバージョンに依存しており、これらの依存関係は標準的なコンテナイメージではすぐに利用できなかったり、互換性がなかったりします。
 
-Since many AI workloads benefit from GPU acceleration, having the necessary GPU drivers and libraries to support running workloads on GPUs can be challenging, especially when dealing with different vendors and GPU architectures. For example, when running distributed training on NVIDIA devices, one can use NCCL, the NVIDIA collective communications library, to take advantage of optimized multi-GPU and multi-node communication primitives. Different versions of the library might lead to different performance. Reproducible builds, a good build hygiene practice for all software, require using versioned dependencies to avoid runtime incompatibilities and performance surprises. 
+多くのAIワークロードはGPUアクセラレーションの恩恵を受けるため、GPU上でのワークロード実行をサポートするために必要なGPUドライバやライブラリを用意することは、特に異なるベンダーやGPUアーキテクチャを扱う場合、困難な場合があります。例えば、NVIDIAデバイス上で分散型トレーニングを実行する場合、最適化されたマルチGPUおよびマルチノード通信プリミティブを利用するために、NVIDIA Collective Communications Library(NCCL)を使用することができます。ライブラリのバージョンが異なると、パフォーマンスが異なる可能性があります。ビルドが再現可能であることは、すべてのソフトウェアにとってのお手本であり、ランタイムの互換性がなかったりパフォーマンスが悪化するのを避けるために、バージョン依存関係を使用する必要があります。
 
-### Model Serving
+### モデルサービング
 
-Model serving differs chiefly from data processing and training because of load variability and often latency requirements. Further, there are considerations of service resiliency in addition to sharing infrastructure to reduce costs. Also, AI model characteristics are distinct, varying significantly across classical ML, DL, GAI LLMs, and, more recently, the multi-modal approaches (e.g., text to video). Different workloads necessitate varied support from ML infrastructure. For example, before the emergence of LLMs, model serving typically required only a single GPU. Some users opted for CPU-based inference if the workloads were not latency-sensitive. However, when serving LLMs, the performance bottleneck shifts from being compute-bound to memory-bound due to the autoregressive nature of the Transformer decoder[^45].
+モデルサービングは、負荷の変動や多くの場合レイテンシーが要求されるため、主にデータ処理やトレーニングとは異なります。さらに、コスト削減のためにインフラを共有することに加えて、サービスの回復力も考慮しなければなりません。また、AIモデルの特性はそれぞれ異なり、古典的なML、ディープラーニング(DL)、生成AI(GAI) LLM、さらに最近ではマルチモーダルアプローチ(テキストからビデオなど)によっても大きく異なります。作業負荷が異なれば、MLインフラから様々なサポートが必要となります。例えば、LLMが登場する以前は、モデルの処理に必要なGPUは1つだけでした。ワークロードがレイテンシーに敏感でなければ、CPUベースの推論を選択するユーザーもいました。しかし、LLMを提供する場合、トランスフォーマーデコーダーの自己回帰的な性質により、性能のボトルネックが計算依存からメモリ依存にシフトしています[^45]。
 
-This section explores how CN supports these facets and what challenges remain.
+このセクションでは、CNがこれらの側面をどのように支えているのか、またどのような課題が残っているのかを探ります。
 
-#### Microservice Architecture and Developer Experience
+#### マイクロサービス アーキテクチャと開発者の体験
 
-CN is based on microservice architecture. However, this may pose a challenge for AI, dealing with each stage in the ML pipeline as a separate microservice. Many components may make maintaining and synchronizing their outputs and hand-offs challenging. Even if users only want to play with these solutions on their laptops, they might still need to create tens of Pods. The complexity makes the infrastructure lack the flexibility to adapt to versatile ML workloads.
+CNはマイクロサービスアーキテクチャに基づいています。しかし、これはAIにとっては、MLパイプラインの各ステージを個別のマイクロサービスとして扱うことが課題となるかもしれません。多くのコンポーネントがあることで、その出力とハンドオフの維持と同期が困難になる可能性があります。ユーザーがラップトップ上でこれらのソリューションで遊びたいだけだとしても、何十ものポッドを作成する必要があるかもしれません。この複雑さにより、インフラは多様なMLワークロードに適応する柔軟性を欠くことになります。
 
-Second, the microservice-based ML infrastructure leads to a fragmented user experience. For example, in their daily workflows, AI/ML Practitioners may need to build container images, write custom resource YAML files, use workflow orchestrators, and so on instead of focusing solely on their ML Python scripts. This complexity also manifests as a steeper learning curve, requiring users to learn many systems outside their expertise and/or interest.
+第二に、マイクロサービスベースのMLインフラは、断片的なユーザーエクスペリエンスをもたらします。例えば、AI実務者は日々のワークフローの中で、MLのPythonスクリプトだけに集中するのではなく、コンテナイメージを構築したり、カスタムリソースのYAMLファイルを書いたり、ワークフローオーケストレーターを使ったりする必要があるかもしれません。この複雑さは学習の難しさとしても現れ、ユーザーは自分の専門外または興味外の多くのシステムを学ぶ必要があります。
 
-Third, the cost increases significantly when integrating each stage from different systems in the ML model lifecycle. The Samsara engineering blog[^46] mentions that its ML production pipelines were hosted across several microservices with separate data processing, model inference, and business logic steps. Split infrastructure involved complex management to synchronize resources, slowing the speed of development and model releases. Then, using Ray, Samsara built a unified ML platform that enhanced their production ML pipeline performance, delivering nearly a 50% reduction in total yearly ML inferencing costs for the company, stemming chiefly from resource sharing and eliminating serialization and deserialization across stages.
+第三に、MLモデルのライフサイクルで異なるシステムから各ステージを統合する場合、コストは大幅に増加します。Samsaraのエンジニアリングブログ[^46]によると、同社のMLプロダクションパイプラインは、データ処理、モデル推論、ビジネスロジックの各ステップが別々の複数のマイクロサービスにまたがってホストされていました。インフラが分割されているため、リソースを同期させるための複雑な管理が必要となり、開発とモデルリリースのスピードが低下していました。その後、SamsaraはRayを使用して、本番MLパイプラインのパフォーマンスを向上させる統合MLプラットフォームを構築し、主にリソースの共有とステージ間のシリアライズとデシリアライズの排除によって、同社の年間ML推論コストの合計を50％近く削減しました。
 
-These issues highlight the need for a unified ML infrastructure based on a general-purpose distributed computation engine like Ray. Ray can supplement the existing Cloud Native ecosystem, focusing on computation, allowing the Cloud Native ecosystem to concentrate on deployment and delivery. The Ray/KubeRay community has collaborated extensively with multiple Cloud Native communities, such as Kubeflow[^47], Kueue[^48], Google GKE[^49], and OpenShift[^50].
+これらの問題は、Rayのような汎用分散計算エンジンをベースとした統合MLインフラの必要性を浮き彫りにしています。Rayは既存のクラウドネイティブエコシステムを補完し、計算に集中することで、クラウドネイティブエコシステムはデプロイとデリバリーに集中することができます。Ray/KubeRayコミュニティは、Kubeflow[^47]、Kueue[^48]、Google GKE[^49]、OpenShift[^50]など、複数のクラウドネイティブコミュニティと広範囲に協力しています。
 
-#### Model Placement 
+#### モデル配置
 
-Users ideally like to deploy multiple, possibly unrelated, models for inference in a single cluster while also seeking to share the inference framework to reduce costs and obtain model isolation. Further, for resiliency, they want replicas in different failure zones.  Kubernetes provides affinity and anti-affinity mechanisms to schedule workloads in different topology domains (e.g., zone, node)[^51], but usability improvements can help users take advantage of these features.   
+ユーザーが理想とするのは、単一のクラスタに推論用の複数のモデル(場合によっては関連性のないモデル)を配置することであり、同時に推論フレームワークを共有することでコストを削減し、モデルの分離を図ることです。さらに、耐障害性を確保するために、異なる障害ゾーンにレプリカを配置したいとも考えています。Kubernetesは、異なるトポロジードメイン(ゾーン、ノードなど)でワークロードをスケジューリングするためのアフィニティメカニズムとアンチアフィニティメカニズムを提供しています[^51] 。ユーザビリティの向上は、ユーザーがこれらの機能を活用するのに役立ちます。
 
-#### Resource Allocation
+#### リソース配分
 
-Model serving requires handling, chiefly, the model parameters. The number of parameters and the representation size indicate the memory needed. Unless dealing with a trillion parameter LLM, these typically require only a portion of a GPU. This highlights the need to be able to fractionalize expensive accelerators like GPUs. The DRA project[^52], which is still in alpha, seeks to make GPU scheduling more flexible.
+モデルサービングは主にモデルのパラメーターを扱う必要があります。パラメーターの数とそれらの表現サイズは、必要なメモリ量を示しています。1兆近くのパラメーターを扱うLLMでない限り、通常GPUの一部しか必要しません。このことは、GPUのような高価なアクセラレーターを分割利用する必要性を浮き彫りにしています。まだアルファ版であるDRAプロジェクト[^52]は、GPUスケジューリングをより柔軟にすることを目指しています。
 
-Another consideration is response latency, which depends significantly on the use case. For instance, the response latency desired to detect objects on the road in an autonomous driving context is several orders lower than tolerable while creating an image or writing a poem. Additional serving instances may need to be launched for low-latency applications under high-load conditions. These could land on a CPU, GPU, or other computing resource if the desired latency can be honored. Support for such cascading opportunistic scheduling on available resources is still evolving in Kubernetes.
+もう一つの考慮のポイントは応答レイテンシーで、これはユースケースによって大きく異なります。例えば、自律走行中に道路上の物体を検出するために必要な応答レイテンシーは、画像を作成したり詩を書いたりするときに許容できるレイテンシーよりも数段低いです。高負荷状態の低レイテンシーアプリケーションには、追加のサービングインスタンスを立ち上げる必要があるかもしれません。これらのインスタンスは、CPU、GPU、または望ましいレイテンシーが確保できるその他のコンピューティングリソースによって対策できます。Kubernetesでは、利用可能なリソースに対するこのようなカスケード的なオポチュニスティックスケジューリングのサポートは、まだ発展途上です。
 
-Further, event-driven hosting is ideal for not wasting resources and keeping costs down. The Kubernetes Event Driven Autoscaling (KEDA[^53]) project is well-suited here, provided the model loading latency is tolerable to still deliver on the end-to-end service latency.  An opportunity here is to provide better support for model sharing by delivering models in an Open Container Initiative[^54] (OCI) format, an immutable file system that lends itself to sharing. Another solution is to use AI for CN, in particular, to predict use and proactively float or shut down serving instances to handle the expected load.
+さらに、イベント駆動ホスティングは、リソースを無駄にせず、コストを抑えるのに理想的です。Kubernetes Event Driven Autoscaling (KEDA)[^53]プロジェクトは、エンドツーエンドのサービスレイテンシーを実現するために、モデルの読み込みレイテンシーが許容可能であれば、このプロジェクトに適しています。共有に適した不変ファイルシステムであるOpen Container Initiative (OCI)[^54]フォーマットを使ったモデル共有のサポートの進化には新たなチャンスがあります。もう1つの解決策は、特にCNにAIを使用して、利用を予測し、予想される負荷に対処するために、サービングインスタンスをプロアクティブにフロートやシャットダウンすることです。
 
-### User Experience
+### ユーザーエクスペリエンス
 
-The hallmark of CN, aka containers, allows portability and reproducibility, while Kubernetes’ APIs and operators, like Kubeflow, simplify the deployment of the AI workloads, making them  “write once and run (virtually) anywhere'' in an easily scalable fashion. Once users transition from traditional batch systems on bare metal or virtualized environments to containers and Kubernetes, they appreciate the benefits of cloud technologies despite their initial adoption challenges. The learning curve, however, can be steep.
+CNの特徴であるコンテナは持ち運びを可能にしKubeflowのようなKubernetesのAPIとオペレーターは、AIワークロードのデプロイを簡素化し、簡単にスケーラブルで「一度書けば(事実上)どこでも実行」できるようにします。ユーザーがベアメタルや仮想化環境上の従来のバッチシステムからコンテナやKubernetesに移行すると、導入直後の利用時であっても、クラウド技術の利点を高く評価することができるでしょう。しかし、学習曲線は険しいかもしれません。
 
-Let’s consider AI training workloads. Configuring the runtime environment can be time-consuming, particularly when highly customizable libraries are used. The user has the option to use default settings for a plethora of environment variables, but these may yield inferior performance. Once optimized on a given Kubernetes platform for a particular training workload, there are no guarantees it will perform likewise on another platform or training task or container bundle with different libraries included. This affects workload portability and ease of use. 
+AIのトレーニングワークロードについて考えてみましょう。ランタイム環境の設定は、特に高度にカスタマイズ可能なライブラリーを使用する場合、時間がかかることがあります。ユーザーは、多数の環境変数をデフォルト設定のまま使用することもできますが、これではパフォーマンスが悪い可能性があります。特定のトレーニングワークロードを使ってKubernetesプラットフォームで最適化された場合には、別のプラットフォームやトレーニングタスク、または異なるライブラリが含まれるコンテナバンドルで同じように実行される保証はありません。これは、ワークロードの移植性と使いやすさに影響します。
 
-The previous paragraph looked at just one stage in an AI pipeline, typically multi-stage, spanning data preparation, training, tuning, serving, and fine-tuning. How can one provide a seamless user experience for AI practitioners who aren’t necessarily savvy with systems or cloud concepts and provide them with a streamlined product experience that eliminates friction in AI development? Giving ML practitioners user-friendly and well known SDKs written in Python that abstract away the complex details of Kubernetes can help increase the adoption of Cloud Native AI tools. Users would like to build ML models using PyTorch and TensorFlow and then quickly and easily deploy them to Kubernetes infrastructure by using simple Python SDKs without worrying about details such as packaging, building Docker images, creating Kubernetes custom resources (e.g., PyTorchJob, TFJob), and scaling those models using complex cloud native tools. A strong product development focus will be required to invent an open source product experience for the MLOps lifecycle, which is much more user friendly.
+前項までで、データ準備、トレーニング、チューニング、サービング、ファインチューニングにまたがる、通常は多段階に及ぶAIパイプラインの1段階だけを着目していました。システムやクラウドの概念に必ずしも精通していないAI実務者にシームレスなユーザーエクスペリエンスを提供し、AI開発の摩擦をなくす合理的な製品体験を提供するにはどうすればいいでしょうか。Kubernetesの複雑な詳細を簡略化することができる、ユーザーフレンドリーで、広く知られたPythonによるSDKをAI実務者に提供することで、クラウドネイティブAIツールの採用の増加に貢献することができます。ユーザーは、PyTorchやTensorFlowを使用してMLモデルを構築し、パッケージング、Dockerイメージの構築、Kubernetesカスタムリソース(PyTorchJob、TFJobなど)の作成、複雑なクラウドネイティブツールを使用したモデルのスケーリングなどの詳細を気にすることなく、シンプルなPython SDKを使用して、迅速かつ簡単にKubernetesインフラにデプロイしたいと考えています。よりユーザーフレンドリーなMLOpsライフサイクルのためのオープンソース製品エクスペリエンスを発明するためには、強力な製品開発に焦点を当てる必要があるでしょう。
 
-Integrating tools like JupyterLab, which contains space for an IDE-like experience with useful APIs that may exist in AI/ML tools available today (ex., Kubeflow Katib API), would allow ML practitioners to more quickly iterate on their AI development with fewer context switches across multiple user interfaces. JupyterLab’s extensible nature gives ML practitioners a workspace to build, deploy, and monitor AI/ML workloads within a familiar tool without learning new tools and interfaces. It is even possible to use JupyterLab to schedule workflows of code developed in individual AI/ML Notebooks using GUI workflow building tools like Elyra coupled with Kubeflow Pipelines.
+JupyterLabのようにツールを統合することで、IDEのようなエクスペリエンスと、現在利用可能なAI/MLツールに存在する有用なAPI(例：Kubeflow Katib API)を利用することができ、ML実務者は複数のユーザーインターフェイスにまたがるコンテキストの切り替えを減らし、より迅速なAI開発サイクルを回すことができます。JupyterLabの拡張可能な性質は、新しいツールやインターフェースを学ぶことなく、使い慣れたツールの中でAI/MLワークロードを構築、デプロイ、監視するワークスペースをML実務者に提供します。Kubeflow Pipelinesと組み合わせてElyraのようなGUIワークフロー構築ツールを使用して、個々のAI/MLノートブックで開発されたコードのワークフローをスケジュールするためにJupyterLabを使用することも可能です。
 
-Big Data, inside and outside the enterprise, is a mainstay of AI. It is essential to consider how to bridge the gap between the Big Data and ML ecosystems. For example, modern Generative AI models require large amounts of data for training. Still, the tools for loading large amounts of data from formats like Iceberg into training frameworks like PyTorch require enhancement, with tools like TorchArrow[^55] and PyIceberg[^56] demonstrating early promise. Tools used for large-scale data preparation, like Spark, aren’t well connected to the tools in the ML ecosystem. Extra overhead is required to prepare data, build features, store features to disk, and then read those features back into memory for use in training workloads. Solutions like RayData[^57] or a data caching microservice built upon Arrow Flight RPC may significantly improve the Input/Output overhead involved with the first phases of training workloads.
+企業内外のビッグデータはAIの主役です。ビッグデータとMLのエコシステムのギャップをどのように埋めるかを検討することが不可欠です。例えば、最新の生成AIモデルは、学習に大量のデータを必要とします。しかし、IcebergのようなフォーマットからPyTorchのような学習フレームワークへ大量のデータをロードするためのツールは強化が必要であり、TorchArrow[^55]やPyIceberg[^56]のようなツールで初期の有効性が示されています。Sparkのような大規模なデータ準備に使われるツールは、MLエコシステムのツールとうまく接続されていません。データを準備し、特徴量を構築し、特徴量をディスクに保存し、そしてトレーニングワークロードで使用するためにそれらの特徴量をメモリに読み戻すには、余分なオーバーヘッドが必要となります。RayData[^57]のようなソリューションや、Arrow Flight RPCに基づいて構築されたデータキャッシングマイクロサービスは、トレーニングワークロードの最初のフェーズに関連する入出力のオーバーヘッドを大幅に改善する可能性があります。
 
-ML tools are complex, and users typically need help to deploy them on Kubernetes. It is nontrivial to identify and deploy appropriate drivers for GPUs and make them compatible with a user’s AI/ML workloads. The upgrade path for existing ML workloads should be simplified and improved, similar to other Kubernetes control plane components. Users should get clear guidelines on how to keep their AI workloads resilient to Kubernetes upgrades and cluster downtime.
+MLツールは複雑であり、Kubernetesにデプロイするには通常、ユーザーによるサポートが必要です。GPUの適切なドライバを特定してデプロイし、ユーザーのAI/MLワークロードと互換性を持たせることは簡単ではありません。既存のMLワークロードのアップグレードの手順は、他のKubernetesのコントロールプレーンコンポーネントと同様に、簡素化や改善が必要です。ユーザーは、Kubernetesのアップグレードやクラスタのダウンタイムに対して、AIワークロードの耐性を維持する方法についての明確なガイドラインも必要としています。
 
-Another aspect that affects the ease of use is multi-tenancy, using quotas and namespaces. Non-admin users need help to figure out the system resources available to them. Typically, administrators provide tools (e.g., Grafana dashboards) for observability; when these are lacking, non-expert/non-admin users are left in the lurch.
+使いやすさに影響するもうひとつの側面は、クォーターやネームスペースを使ったマルチテナンシーです。管理者でないユーザーが、利用可能なシステムリソースを把握するためには助けが必要です。通常、管理者はオブザーバビリティーツール(例えば、Grafanaダッシュボード)を提供しています。これらが欠けている場合、非熟練者/非管理者ユーザーは窮地に立たされます。
 
-Finally, debugging is challenging, made more so in distributed environments and even more so when the processing pipeline comprises multiple complex services. Hardware and software failure might be more or less explicit and easy to identify to a cloud user, but an AI practitioner may need help to see the complete picture of failure. For example, NCCL termination errors can be vague with any of a multitude of possible causes, each requiring investigation.  The user may need to parlay the error message to an administrator for further assistance.
+最後に、デバッグは困難であり、分散環境ではさらに難しく、処理パイプラインが複数の複雑なサービスで構成されている場合はなおさら難しくなります。ハードウェアやソフトウェアの障害は、クラウドユーザーにとっては多かれ少なかれ明確で特定しやすいかもしれませんが、AI実務者が障害の全体像を把握するには手助けが必要でしょう。例えば、NCCLの終了エラーは、多くの可能性のうち、どれが原因かが曖昧である場合があり、それぞれに調査が必要です。ユーザーはエラーメッセージを管理者に伝え、さらなる支援を求める必要があるかもしれません。
 
-### Cross-Cutting Concerns
+### 横断的な懸念
 
-In the previous sections, we addressed challenges specific to a stage in the AI pipeline. But others are common to all stages and all software applications, spanning reference implementations, observability, security, and more. For instance, right-sizing resources are valid for processing data, training, or serving. It has resource utilization, cost, and sustainability ramifications. Let us dive a little deeper into them. 
+前のセクションでは、AIパイプラインの各ステージに特有の課題を取り上げました。しかし、リファレンス実装、オブザーバビリティー、セキュリティなど、すべてのステージとすべてのソフトウェアアプリケーションに共通する課題もあります。例えば、リソースの適切なサイジングは、データ処理、トレーニング、サービングに有効です。これはリソースの利用率、コスト、持続可能性に影響します。もう少し深く掘り下げてみましょう。
 
-#### Reference Implementation
+#### リファレンス実装
 
-Neither cloud nor AI are easy studies, and getting them to work together after making choices from many tools and projects is non-trivial. Adoption needs to be improved by requiring a reference implementation that meets a majority of simple use cases. Kind for Kubernetes did wonders to help developers get started on their laptops. Jupyter Notebook did likewise for the budding AI/ML developer. We need something similar for an AI/ML pipeline that runs in the cloud. 
+クラウドもAIも簡単な学問ではなく、多くのツールやプロジェクトの中から選択し、それら連携させることは簡単ではありません。採用においては概ねシンプルなユースケースと一致するリファレンス実装を要求することで、改善する必要があります。Kind for Kubernetesは、開発者がラップトップで作業を開始するのに大いに役立ちました。Jupyter Notebookは、新進のAI/ML開発者にとっても同様でした。クラウド上で動作するAI/MLパイプラインにも同様のものが必要です。
 
-#### Right-sizing Resource Provisioning
+#### リソース供給の適正化
 
-AI/ML workloads are resource intensive, especially with LLMs with their billions or trillions of parameters.  As discussed earlier, accelerators like GPUs are expensive and in short supply, and it is essential to use the proper size allocation to save resources and control costs. We need to be able to not only timeslice GPUs but also slice or partition them into fractional sections and allocate them judiciously as required by different workloads. In conjunction with the above back-end effort, there is a need for front-end support to request GPU sub-units and configure them while launching workloads.
+AI/MLのワークロードは、特に数十億から数兆のパラメーターを持つLLMでは、リソースを大量に消費します。前述したように、GPUのようなアクセラレーターは高価で供給不足であり、リソースを節約しコストを抑制するためには、適切なサイズの割り当てで使用することが不可欠です。GPUをタイムスライスするだけでなく、分割セクションにスライスまたは区分し、異なるワークロードの要求に応じて適切に割り当てることができるようにする必要があります。上記のバックエンドの取り組みと同時に、GPUサブユニットを要求し、ワークロードを起動しながらそれらを設定するフロントエンドのサポートも必要です。
 
-To address this need, Kubernetes introduced a new API, **_Dynamic Resource Allocation (DRA)_**[^58] [^59], as alpha in v1.26. The API provides more flexibility to manage specialized hardware resources, in particular:
+このニーズに対応するため、Kubernetesはv1.26のアルファ版で新しいAPI、 **_Dynamic Resource Allocation(DRA)_** [^58] [^59]を導入しました。このAPIは、特に特殊なハードウェアリソースを管理するための柔軟性を提供します。
 
 
-* Network-attached resources
-* Arbitrary parameters for resource requests
-* Arbitrary, resource-specific setup and cleanup actions
-* Custom matching resource requests with available resources, including handling optional requests.
-* The DRA  API offers several advantages compared to existing approaches:
-    * Custom hardware can be added by developing and deploying DRA drivers without needing to modify the core Kubernetes codebase
-    * Vendors can define resource parameters
-    * Resources can be shared between containers and pods
+* ネットワーク接続リソース
+* リソース要求の任意パラメーター
+* 任意のリソース固有のセットアップとクリーンアップアクション
+* リソース要求と利用可能なリソースとのカスタムマッチング
+* DRA APIには、既存のアプローチと比較していくつかの利点があります。
+   * Kubernetesのコアとなるコードベースを変更することなく、DRAドライバを開発してデプロイすることで、カスタムハードウェアを追加できる
+   * ベンダーはリソースパラメーターを定義できる
+   * コンテナとポッド間でリソースを共有できる
 
-#### Cost Control
+#### コスト管理
 
-AI/ML can quickly become a budget black hole. Automating resource allocation and scaling processes to optimize AI cloud costs is essential. Microservices can be scaled individually as needed. Further, it lends itself well to using the Kubernetes auto-scaling feature that will further help right sizing the number of active instances and thus the infrastructure costs. Last, **_Spot Instances_** can be leveraged with policies that capture balancing risk with meeting Service Level Agreements (SLAs).
+AI/MLはすぐに予算のブラックホールになりかねません。AIクラウドのコストを最適化するためには、リソース割り当てとスケーリングプロセスの自動化が不可欠です。マイクロサービスは必要に応じて個別にスケーリングできます。さらに、Kubernetesの自動スケーリング機能を利用することで、アクティブインスタンス数の適正化、ひいてはインフラコストの適正化に役立ちます。最後に、 ***_スポットインスタンス_*** は、サービスレベルアグリーメント(SLA)を満たしながらリスクをバランスさせるポリシーでの活用ができます。
 
 
-#### Observability
+#### オブザーバビリティ
 
-Observability is valuable across the AI/ML pipeline. CN offers tools like OpenTelemetry[^60] and Prometheus[^61] that can monitor load, number of accesses, response latency, and more. It is vital to monitor model performance and health in production environments. It is crucial to keep track of model drift to ensure the accuracy and reliability of your AI system. For example, facial recognition systems may experience degradation as more people wore masks during the COVID-19 pandemic. Similarly, a housing price predictor model may diverge from reality due to external factors such as natural disasters or changes in interest rates. Therefore, monitoring your AI models continuously is essential to detect any performance issues and make necessary adjustments.
+オブザーバビリティーはAI/MLパイプライン全体で価値があります。CNはOpenTelemetry[^60]やPrometheus[^61]のようなツールを提供しており、負荷、アクセス数、応答レイテンシーなどを監視することができます。本番環境でモデルのパフォーマンスと健全性を監視することは極めて重要です。AIシステムの精度と信頼性を確保するためには、モデルの偏差を追跡することが極めて重要です。例えば、顔認識システムは、COVID-19のパンデミック時にマスクを着用する人が増えることにより性能低下する可能性がありました。同様に、住宅価格予測モデルは、自然災害や金利の変化などの外部要因によって現実から乖離する可能性があります。したがって、AIモデルを継続的にモニタリングすることは、パフォーマンスの問題を検出し、必要な調整を行うために不可欠です。
 
-Infrastructure monitoring is essential, especially with long running workloads. As AI training workloads run, anomalies in GPUs and networking may happen at times. Examples are errors in the GPU memory or unreachable nodes, which may result in the job crashing. 
+インフラ監視は、特に長時間稼働するワークロードでは不可欠です。AIトレーニングのワークロードが実行されると、GPUやネットワークに異常が発生することがあります。例えば、GPUメモリのエラーや到達不能なノードがあり、その結果ジョブがクラッシュすることがあります。
 
-However, issues that are not immediately identifiable may arise: for instance, training performance may start to degrade without any apparent hardware fault being reported. In these cases, only deep diagnostics could identify the issues. Current metrics do not expose results from deep diagnostics. Therefore, providing tools to detect, avoid, and handle infrastructure issues before, during, and after running AI training jobs becomes crucial.
+また、すぐに発生しない問題が起きる場合もあります。例えば、明らかなハードウェア障害が報告されないまま、トレーニングのパフォーマンスが低下し始めるような場合です。このような場合、深層診断だけが問題を特定できます。現在のメトリクスでは、深層診断の結果は公開されていません。したがって、AIトレーニングジョブの実行前、実行中、実行後にインフラの問題を検出、回避、対処するツールを提供することが重要になります。
 
-#### Disaster Recovery and Business Continuity
+#### 災害復旧と事業継続
 
-All production services must be resilient, with backups. AI services are no different. Failed or slow to respond services can cause reputational damage and loss of revenue. Developing a comprehensive disaster recovery plan is essential, which may include data backup, running instances in multiple availability zones, and running multiple instances. Policies can help with these. 
+すべてのプロダクションサービスは、バックアップによって柔軟性を持たなければなりません。AIサービスも同様です。サービスに障害が発生したり、対応が遅れたりすると、風評被害や収益の損失を招く可能性があります。データのバックアップ、複数のアベイラビリティゾーンでのインスタンスの実行、複数のインスタンスの実行など、包括的な災害復旧計画の策定が不可欠です。ポリシーはこれらを支援することができます。
 
-#### Security and Compliance Audits
+#### セキュリティおよびコンプライアンス監査
 
-All outward facing services, particularly Model Serving instances, need firewall protection, access control, and more. And like any other service, your AI/ML workloads must follow security best practices. These include penetration testing, vulnerability scanning, and compliance checks of the workload domain, such as health care, finance, etc.
+すべての外部向けサービス、特にモデルサービングインスタンスには、ファイアウォール保護、アクセス制御などが必要です。また、他のサービスと同様に、AI/MLワークロードはセキュリティのベストプラクティスに従わなければなりません。これには、侵入テスト、脆弱性スキャン、医療、金融などのワークロード領域のコンプライアンスチェックなどが含まれます。
 
-Tools like Grype[^62] and Trivy[^63] can scan containerized workloads for vulnerabilities.
+Grype[^62]やTrivy[^63]のようなツールは、コンテナ化されたワークロードの脆弱性をスキャンすることができます。
 
-Kyverno[^64] and policy enforcement services can ensure containerized workloads are running at the lowest privilege necessary with minor capabilities needed.
+Kyverno[^64]やポリシー実施サービスは、コンテナ化されたワークロードが必要最小限の機能で必要最小限の権限で実行されていることを確認することができます。
 
-An additional layer of security is possible using confidential computing[^65] or Trusted Execution Environments (TEE). These hardware-supported environments provide encrypted memory, data integrity protection, and testability. TEEs protect the data and workload from other infrastructure users while in use. AMD, Intel, NVIDIA, and IBM have TEE offerings, and they are becoming available in public clouds. Protecting sensitive data such as health care and financial information and ML models are prime use cases.
+機密コンピューティング[^65]や信頼された実行環境(TEE)を使用することで、さらに一層のセキュリティ対策が可能です。これらのハードウェアがサポートする環境は、暗号化されたメモリ、データ整合性保護、およびテスタビリティを提供します。TEEは、使用中のデータとワークロードを他のインフラユーザーから保護します。AMD、Intel、NVIDIA、IBMはTEEを提供しており、パブリッククラウドでも利用できるようになってきています。医療や金融情報、MLモデルなどの機密データの保護は、主要なユースケースです。
 
-#### Sustainability
+#### 持続可能性
 
-AI/ML model training has always been resource intensive, especially with Large Language Models like GPT-3. Training emissions are comparable to multiple transcontinental flights, while inference emissions add up due to high query volumes[^66]. The industry's trend towards oversized models for market dominance leads to inefficiencies, contributing to energy and resource consumption[^67]. More transparency and standardization in reporting the environmental impacts of a model are challenges. 
+AI/MLモデルのトレーニングは、特にGPT-3のような大規模言語モデルでは、常にリソースを消費してきました。学習による排出量は複数回の大陸横断フライトに匹敵し、推論による排出量は大量のクエリにより、さらに増加します[^66]。市場優位性を求めてモデルを大型化する業界の傾向は非効率を招き、エネルギーと資源の消費を助長しています[^67]。モデルの環境影響を報告する際の透明性や標準化の改善が課題です。
 
-Recently, there have been efforts to increase transparency with LLama[^68], while some insights are becoming available concerning water usage for cooling servers running LLMs, like ChatGPT. ChatGPT’s carbon footprint is significant, given its millions of users.
+最近では、ChatGPTのようなLLMを稼動させているサーバーを冷却するための水の使用量に関するいくつかの見識が示される始めている一方で、LLamaを用いた透明性の改善の取り組みも行われています[^68]。ChatGPTの二酸化炭素排出量は、数百万人のユーザーを考えると、重要です。
 
-The drive for sustainability presents opportunities for innovation. DeepMind’s BCOOLER and smaller, more efficient models like DistilBERT and FlexGen show promise in reducing AI/ML energy consumption[^69]. Adopting best practices like efficient ML architectures, optimized processors, and locating cloud computing infrastructure in energy-efficient locations can curb the carbon footprint of ML training. Google has been successful in controlling the energy consumption of its machine learning systems. 
+持続可能性の推進は、イノベーションの機会をもたらします。DeepMindのBCOOLERや、DistilBERTやFlexGenのようなより小さい効率的なモデルではAI/MLによるエネルギー消費の削減を約束しています[^69]。効率的なMLアーキテクチャ、最適化されたプロセッサ、エネルギー効率の高い場所へのクラウドコンピューティングインフラの設置といったベストプラクティスを採用することで、MLトレーニングの二酸化炭素排出量を抑制することができます。グーグルは、機械学習システムのエネルギー消費の抑制に成功しています。
 
-#### Education for Kids
+#### 子供のための教育
 
-Today, technology education mainly focuses on traditional programming languages without AI or computer assistance. Schools typically don’t use modern IDEs that support refactoring, templating, or API assistance and will have students code on a contained website for ease of setup. They also don’t teach the use of AI coding assistance technologies like Github’s Copilot, even though this will become the standard mode of development in the future. Most students aren’t even aware this technology exists.
+今日、技術教育は主に、AIやコンピュータによる支援を伴わない従来のプログラミング言語に焦点を当てています。学校は通常、リファクタリング、テンプレート化、APIアシストをサポートする最新のIDEを使用せず、セットアップを容易にするために、学生に自前のウェブサイト上でコーディングさせています。また、将来の標準的な開発モードになるにもかかわらず、GithubのCopilotのようなAIのコーディング支援技術の使用も教えていません。ほとんどの学生は、この技術が存在することすら知らないのです。
 
-Schools actively dissuade students from using AI technologies like ChatGPT and Copilot due to concerns about cheating. This prevents students from learning how to use AI technologies to augment their work and excel effectively. Because schools paint AI technology in a negative light, studious students get scared off from using it, and the students looking for a way to avoid doing their homework are more likely to use AI.
+学校は、不正行為への懸念から、ChatGPTやCopilotのようなAI技術を生徒に積極的に使わせないようにしています。そのため、生徒たちはAI技術を使って仕事を補強したり、効果的に活用する方法を学ぶことができません。学校はAI技術に否定的なイメージを与えているため、勉強熱心な生徒はAIを使うことを怖がり、宿題をやらずに済む方法を探している生徒がAIを使う可能性が高くなります。
 
-The challenges mentioned above provided us insight into areas of concern when it comes to implementing CNAI systems. Fortunately, CN tooling is facing many challenges head-on. We next consider opportunities that stem from these challenges.
+上記の課題は、CNAIシステムを導入する際に懸念される事象について示しています。幸いなことに、CNツールは多くの課題に正面から向き合っています。次に、これらの課題から派生する新たなチャンスについて考察します。
 
-## Path Forward with Cloud Native Artificial Intelligence
+## クラウドネイティブ人工知能で前進する道
 
-This section provides a forward looking approach to taking the initiative to implement CNAI. We begin with recommendations (or actions), then enumerate existing yet evolving solutions (i.e., CNAI software), and finally consider opportunities for further development.
+本セクションでは、CNAIを率先して導入するための前向きなアプローチを提供します。まず推奨事項(または行動)から説明し、次に既存の、まだ発展途上のソリューション(すなわちCNAIソフトウェア)を列挙し、最後にさらなる発展の機会を検討します。
 
-### Recommendations
+### 推奨事項
 
-#### Flexibility
+#### 柔軟性
 
-Sometimes, the variety of options regarding AI can become overwhelming. Fortunately, thanks to many, popular tools and techniques remain valid in this new world. From REST interfaces for interface to cloud based resources and services, CN technologies work well today and will continue to work well as new offerings evolve.
+AIに関するさまざまな選択肢に圧倒されることがあります。幸いなことに、多くの人々のおかげで、人気のツールや技術はこの新しい世界でも有用であり続けています。RESTインターフェイスからクラウドベースのリソースやサービスまで、CN技術は現在も活用できる状態であり、新しいサービスが進化しても活用し続けることができるでしょう。
 
-#### Sustainability
+#### 持続可能性
 
-Improving the accountability of AI workload environmental impact is crucial for ecological sustainability, particularly in the cloud native landscape. This can be achieved by supporting projects, methodologies, and taxonomy that help clarify, classify, and catalyze AI workload on ecological sustainability. Additionally, integrating cloud native technologies to optimize AI workload scheduling, autoscaling, and tuning is necessary. Furthermore, advocating for adopting standardized methodologies in environmental impact assessments is vital. It is also important to promote the development and use of energy-efficient AI models and foster transparency in model development and usage, primarily through cloud native stacks such as Kubeflow. Finally, emphasizing the importance of purposeful and efficient AI usage will help minimize unnecessary computational loads.
+AIワークロードが環境に与える影響の説明性を向上させることは、特にクラウドネイティブの世界において、生態系の持続可能性の維持に極めて重要です。これは、生態系の持続可能性に関するAIワークロードの明確化、分類、触媒を支援するプロジェクト、方法論、分類法をサポートすることで達成できます。さらに、AIワークロードのスケジューリング、オートスケール、チューニングを最適化するためにクラウドネイティブ技術を統合することも必要です。さらに、環境影響評価における標準化された方法論の採用を提唱することが不可欠です。また、エネルギー効率の高いAIモデルの開発と利用を促進し、主にKubeflowのようなクラウドネイティブスタックを通じて、モデルの開発と利用における透明性を促進することも重要である。最後に、目的を持った効率的なAI利用の重要性を強調することで、不必要な計算負荷を最小限に抑えることができます。
 
-#### Custom Platform Dependencies
+#### カスタムプラットフォームの依存関係
 
-We recommend ensuring the Cloud Native environment has the required GPU drivers and supports GPU acceleration for AI workloads. This is crucial as AI applications often depend on specific frameworks and library versions that may not be easily accessible or compatible with standard container images. This will help with the challenge of having various vendors and GPU architectures.
+クラウドネイティブ環境に必要なGPUドライバが準備されており、AIワークロードのためのGPUアクセラレーションをサポートしていることを確認することをお勧めします。AIアプリケーションは特定のフレームワークやライブラリバージョンに依存することが多く、標準的なコンテナイメージに簡単にアクセスできなかったり、互換性がなかったりする場合があるため、これは非常に重要です。これは、さまざまなベンダーやGPUアーキテクチャを持つという課題を解決するのに役立ちます。
 
-#### Reference Implementation
+#### リファレンス実装
 
-Given the number and complexity of the tools involved in AI development, it may be advisable to consider the value of a Cloud Native, OpenTofu-based reference implementation of a user-friendly combination of various tools that can provide a product-like experience for any team around the world to get started doing AI/ML in the Cloud quickly. Combining the best available open source tools for data preparation, feature store, training, tuning, model registry, and serving can help teams get started doing machine learning quickly and scale up their work efficiently using the power of the Cloud. Consider the value/power of combining a sophisticated set of technologies into a functional and scalable distribution to serve such a purpose. (e.g. JupyterLab, Kubeflow, PyTorch, Spark/Ray/Trino, Iceberg, Feast, MLFlow, Yunikorn, EKS/GKE, S3/GCS, etc.). Such a reference implementation may be extremely valuable for advancing open and responsible AIML development powered by Cloud-based technologies.
+AI開発に関わるツールの数と複雑さを考えると、クラウドでAI/MLを素早く始めるために、世界中のどのチームにも製品のような体験を提供できる様々なツールが使いやすく組み合わされているクラウドネイティブである、OpenTofuベースのリファレンス実装の価値を検討することが望ましいかもしれません。データ準備、特徴量ストア、トレーニング、チューニング、モデル登録、およびサービングに利用可能な最高のオープンソースツールを組み合わせることで、チームは機械学習を迅速に開始し、クラウドのパワーを使用して作業を効率的にスケールアップすることができます。このような目的のために、洗練された一連の技術を機能的でスケーラブルなディストリビューションに組み合わせることの価値とパワーを考えてみましょう。(例えば、JupyterLab、Kubeflow、PyTorch、Spark/Ray/Trino、Iceberg、Feast、MLFlow、Yunikorn、EKS/GKE、S3/GCSなど)。このようなリファレンス実装は、クラウドベースの技術によるオープンで責任あるAI/ML開発を推進する上で、非常に価値があると思われます。
 
-#### Industry Acceptance of Terminology
+#### 業界用語の受け入れ
 
-As AI becomes ubiquitous, it becomes increasingly complex in some dimensions but simpler in others. For example, terminology evolves, providing businesses with more effortless conversations about AI (e.g., terms such as “repurpose” to reuse existing content). This also applies to more technical terms, such as RAG, Reason, and Refinement.
+AIがユビキタスになるにつれて、ある側面ではますます複雑になる一方で、ある側面ではよりシンプルになっています。例えば、専門用語が進化し、AIについてより簡単に会話できるようになっています(例えば、既存のコンテンツを再利用することを意味する「repurpose」のような用語)。これは、RAG、Reason、Refinementといった、より専門的な用語にも当てはまります。
 
-### Evolving Solutions for AI/ML
+### 進化するAI/MLソリューション
 
-The following are just a few examples of specific tools or technologies that have become options to enable AI, including CNAI.
+以下は、CNAIを含むAIを実現するための選択肢となった具体的なツールや技術のほんの一例です。
 
-#### Orchestration - Kubeflow
+#### オーケストレーション - Kubeflow
 
-Kubeflow is an example of a CNAI tool supporting ML Operations (MLOps). Using technologies such as Kubernetes, stateless architectures, and distributed systems, Kubeflow helps AI/ML communities adopt Cloud Native tools more efficiently. The successful adoption of Kubeflow highlights the successful integration of Cloud Native technologies for AI/ML/data science. Kubeflow has been highly progressive in its ability to apply machine learning concepts to elastic substrates provided by Kubernetes, with many other projects following suit[^70]. Kubeflow follows Kubernetes best practices and applies them to the AI/ML space, such as declarative APIs, composability, and portability. Kubeflow implements individual microservices for every stage of the ML lifecycle. For example, Kubeflow Training Operator is used for distributed training, Katib is used for hyperparameter tuning fine-tuning, and Kubeflow KServe is used for model serving. That allows users to integrate individual Kubeflow components into their ML infrastructure or use Kubeflow as an end-to-end ML platform. 
+Kubeflowは、MLオペレーション(MLOps)をサポートするCNAIツールの一例です。Kubernetes、ステートレスアーキテクチャ、分散システムなどの技術を使用して、KubeflowはAI/MLコミュニティーがクラウドネイティブツールの導入を効率化しています。Kubeflowの成功した採用事例は、AI/ML/DLのためのクラウドネイティブ技術の統合の成功を強調しています。Kubeflowは、Kubernetesが提供する伸縮性のある基盤に機械学習のコンセプトを適用する能力において非常に先進的であり、他の多くのプロジェクトもこれに追随しています[^70]。KubeflowはKubernetesのベストプラクティスに従い、AI/MLの領域に宣言型API、コンポーザビリティ、移植性などを適用しています。Kubeflowは、MLライフサイクルの各段階に個別のマイクロサービスを実装しています。例えば、Kubeflow Training Operatorは分散型トレーニングに、Katibはハイパーパラメーターチューニングの微調整に、Kubeflow KServeはモデルサービングに使用されています。これにより、ユーザーは個々のKubeflowコンポーネントをMLインフラに統合したり、エンドツーエンドのMLプラットフォームとしてKubeflowを利用したりすることができます。
 
-#### Context - Vector Databases
+#### コンテキスト – ベクトルデータベース
 
-LLMs are trained with vast volumes of, typically, publicly available data at a point in time. We interact with them via prompts. But to make the responses more valuable without the user having to enter longer or multiple prompts and possibly retrieve more domain-specific responses, it is helpful to “enrich” the prompt. This is where vector databases come in. They are giant, indexed stores of vectors, a mathematical representation of data in numerical form. Embeddings are a specific vector representation of each additional piece of data, often proprietary, domain specific, or newer, that aims to capture relationships and similarities (**context**) between the data they represent. The user-provided LLM prompt is transformed using the same embedding used by the vector database, and the resulting vector is then used to find similar vectors in the database. They are then merged to provide additional **_context _**before feeding into the LLM to generate a response. Multi-modal GenAI systems would handle prompts that might be text, images, audio, or other, with the embedding ability to handle diverse input.
+LLMは、ある時点で、一般に公開されている膨大な量のデータを使って訓練されます。私たちはプロンプトを通じてLLMと対話しますが、その際、ユーザーが長いプロンプトや複数のプロンプトを入力することなく、より価値のある回答やドメインに特価した回答を得るためには、プロンプトを「充実」させることが有用です。そこでベクトルデータベースの出番です。ベクトルデータベースは、ベクトル(数値で表現されたデータの数学的表現)のインデックスがつけられた巨大なストレージです。エンベディングは、追加された各データの特定のベクトル表現です。多くの場合、独自の、ドメイン固有の、または、より新しいもので、データ間の関係や類似性(**_コンテキスト_**)を表現することを目的としています。ユーザーから提供されたLLMプロンプトは、ベクトルデータベースで使用されているのと同じエンベディングを使用して変換され、得られたベクトルはデータベース内の類似したベクトルを見つけるために使用されます。そして、LLMに入力して応答を生成する前に、追加の **_コンテキスト_** を提供するためにマージされます。マルチモーダルGenAIシステムは、テキスト、画像、音声、またはその他のプロンプトを扱うことができ、多様な入力を処理する埋め込み能力を持ちます。
 
-Vector databases can be purpose-built or traditional databases with extensions to handle vectors more specifically. Instances may vary in their choice of indexing scheme, distance metric used to compute similarity, and whether and what data compression technique they employ.  Some offerings include Redis[^71], Milvus[^72], Faiss[^73], and Weaviate[^74]. 
+ベクトルデータベースは、専用に構築されたものもあれば、従来のデータベースをベクトルをより特別に扱うために拡張したものもあります。インデックス作成方式、類似度を計算するための距離メトリクス、データ圧縮技術の有無など、その種類はさまざまです。Redis[^71]、Milvus[^72]、Faiss[^73]、Weaviate[^74]などの種類があります。
 
-#### Observability - OpenLLMetry
+#### オブザーバビリティー - OpenLLMetry
 
-OpenLLMetry[^75] is a project that builds on top of OpenTelemetry[^76] to enable thorough and vendor-neutral instrumentation for LLM Observability. Because Generative AI is not debuggable in the traditional sense (i.e., you can’t “just step through the code”), developers must turn towards Observability tools and practices to improve their use of Generative AI over time. This data is also often the source of evaluations and fine-tuning workflows.
+OpenLLMetry[^75]はOpenTelemetry[^76]の上に構築されたプロジェクトで、LLMオブザーバビリティーのための徹底してベンダーに依存しない計測を可能にします。生成AIは従来の感覚でのデバッグができない(つまり、”コードをステップスルーする”ことができない)ため、開発者は生成AIの使用を長期的に改善するために、オブザーバビリティーツールやプラクティスに目を向けなければなりません。このデータはまた、しばしば評価やワークフローの微調整のために使用されます。
 
-### Opportunities
+### 今後のチャンス
 
-#### CNCF Project Landscape
+#### CNCFプロジェクトの状況
 
-Several Linux Foundation (LF) groups, including CNCF, LF AI[^77] & Data, AI Alliance[^78], and more,  provide a hub for AI projects that both AI and cloud engineers can use. Existing tools, such as the Cloud Native Landscape[^79], give a bird's eye view into the CN ecosystem. The following figure lists established and evolving projects grouped by their functional area. 
+CNCF、LF AI[^77] & Data、AI Allianceなどのパートナー[^78]など、いくつかのLinux Foundation(LF)グループは、AIエンジニアとクラウドエンジニアの両方が利用できるAIプロジェクトのハブを提供しています。クラウドネイティブランドスケープ(Cloud Native Landscape)[^79]などの既存のツールは、CNエコシステムを俯瞰することができます。次の図は、確立されたプロジェクトと発展中のプロジェクトを機能分野別に分類したものです。
 
 
 ![ladscape](https://github.com/zanetworker/ai-landscape/blob/main/pngs/mindmap.png?raw=true)
 <center>
-Figure 4
+図4
 
-ML Tool to Task Mind Map
+MLツールからタスクへのマインドマップ
 </center>
 
-#### CNAI for Kids and Students
+#### 子供と学生のためのCNAI
 
-Kids already use AI assistive technologies like ChatGPT daily and have no idea how they work. The underpinnings of modern AI, like discriminative and generative AI algorithms, are a black box that kids and even technology savvy parents don’t understand, so it is difficult to take an interest in it. Rather than just taking LLMs like ChatGPT for granted, students’ education should include the basics of neural networks and machine learning algorithms to explain how AI technologies work and how to use them better in their future careers.
+子供たちはすでにChatGPTのようなAI支援技術を毎日使っていますが、それがどのように機能するのか知りません。識別AIアルゴリズムや生成AIアルゴリズムのような現代AIの基盤は、子供たちやテクノロジーに精通した親でさえ理解できないブラックボックスであり、興味を持つことは難しいです。ChatGPTのようなLLMをただ鵜呑みにするのではなく、学生の教育にはニューラルネットワークや機械学習アルゴリズムの基礎を盛り込み、AI技術がどのように機能し、将来のキャリアでどのように活用できるかを説明する必要があります。
 
-The Cloud Native community and successful programs like CNCF Kids Day[^80] at KubeCon provide educational opportunities on Cloud Native and AI technologies. Introducing kids to AI technologies early will also prevent the diversity, equity, and inclusion issues plaguing computer science. AI is an equalizing technology because people of every race, sexual orientation, and socioeconomic status can experience AI/ML daily and help improve this technology with the proper training and education.
+クラウドネイティブコミュニティーや、KubeConでのCNCF Kids Day[^80]のような成功事例では、クラウドネイティブやAI技術に関する教育の機会を提供しています。子供たちに早くからAI技術を紹介することは、コンピュータサイエンスを悩ませている多様性、公平性、インクルージョンの問題を防ぐことにもなります。あらゆる人種、性的指向、社会経済的地位の人々がAI/MLを日々体験し、適切な訓練と教育によってこの技術の改善に貢献することができるためAIは平等化に貢献する技術であるともいえます。
 
-The AI/ML revolution is analogous to the dot-com era, where web technology became ubiquitous, and even ordinary workers embraced this technology to improve their business. As AI/ML technology becomes ubiquitous in society, we must ensure that students keep pace with the advances in AI and Cloud Native technologies.
+AI/ML革命は、ウェブ技術がユビキタスになり、一般労働者までもがビジネスを改善するためにこの技術を取り入れたドットコム時代に似ています。AI/ML技術が社会にユビキタスになるにつれ、学生たちがAIやクラウドネイティブ技術の進歩に遅れないようにしなければなりません。
 
-#### Participation
+#### 参加
 
-As AI grows, more opportunities for education and involvement happen. There is room for AI specialists (e.g., Ph.D. in ML to Data Scientists) and AI generalists (e.g., operators and end-users). Educational programs such as MOOCs[^81] and certifications have emerged to focus on AI tooling and techniques on all fronts. Professional societies (e.g., ACM[^82] and IEEE[^83]) and meetups provide chances to meet in person to learn and discuss challenges. Industry groups such as the CNCF[^84], along with Linux Foundation AI, AI Alliance[^85], and others, provide the ability to coordinate projects and protocols at scale.
+AIが成長するにつれ、教育やかかわりあう機会が増えます。AIスペシャリスト(MLの博士号取得者やデータサイエンティストなど)やAIのジェネラリスト(オペレーターやエンドユーザーなど)の活躍の場があります。MOOCs[^81]や認定資格のような教育プログラムは、あらゆる面でAIのツールや技術に焦点を当てるために出現しました。専門家の協会(ACM[^82]やIEEE[^83]など)やミートアップは、実際に会って学び、課題について議論する機会を提供しています。CNCF[^84]、Linux Foundation AI*、AI Alliance[^85]などの業界団体は、プロジェクトやプロトコルを大規模に調整する能力を提供しています。
 
-#### Trust and Safety / Safety By Design
+*訳注：この”Linux Foundation AI”は、”Linux Foundation”または”LF AI & DATA”と思われる。
 
-As we build AI and Cloud Native technology, there is a significant risk of unintended consequences and negative impacts. These can be due to unintentional design issues causing adverse impacts on vulnerable groups, for example, recommending algorithms that inadvertently promote hate-based, violent, extremist material. They can also be due to individuals or groups' malicious use of systems and/or tools to harm deliberately, such as using Generative AI tools to create misinformation and disinformation campaigns or individuals purposely fine-turning LLMs to produce child sexual abuse material[^86].
+#### 信頼と安全/セーフティバイデザイン
 
-AI and Cloud Native technology are also at the core of the tooling used by Trust and Safety: “The field and practices employed by digital services to manage content and conduct scans for risks to users and others, mitigate online or other forms of technology-facilitated abuse, advocate for user rights, and protect brand safety.”.[^87] Systems have been built to deliver every part of the Trust and Safety cycle[^88] including identifying and assessing potentially violent behavior, triaging and prioritizing cases, making and recording enforcement decisions, selecting and applying interventions, and gathering threat intelligence. Apart from being central to the safety and health of the internet, these systems can have significant negative impacts if designed without due consideration.
+AIやクラウドネイティブ技術を構築する際、意図しない結果や悪影響を及ぼす重大なリスクがあります。これらは、例えば、憎悪に基づく暴力的で過激な題材を不用意に宣伝するアルゴリズムを推奨するなど、意図しない設計上の問題によって、社会的弱者に悪影響を及ぼす可能性があります。また、生成AIツールを使って誤報や偽情報キャンペーンを行ったり、LLMを意図的に微調整して児童性的虐待の資料を作成したりするなど、個人やグループが意図的にシステムやツールを悪意を持って使用し、故意に危害を加えることもあります[^86]。
 
-Responsible technology is about reducing harm from technology, diversifying the tech pipeline, and ensuring that technology aligns with the public interest. It explores and actively considers tech's values, unintended consequences, and negative impacts to manage and mitigate risk and harm. As we build AI and Cloud Native technology, we must consider these potential ethical and human rights impacts, optimizing freedom of expression, the right to privacy, the right to life, liberty, and the security of person[^89], and other fundamental universal human rights. 
+AIとクラウドネイティブ技術は、Trust and Safety、即ち「コンテンツを管理し、ユーザーや他者に対するリスクを把握し、オンラインなどの技術による虐待を緩和し、ユーザーの権利を守り、ブランドの安全を守るための、デジタルサービスが採用する分野と実践」[^87]で使用されるツールの中核です。暴力的な可能性のあるふるまいの特定と評価、案件の選別と優先順位付け、強制執行の決定と記録、介入策の選択と適用、脅威情報の収集など、Trust and Safetyサイクル[^88]のあらゆる部分を実現するために、システムが構築されています。これらのシステムは、インターネットの安全性や健全性の中核であることとは別に、十分な配慮なしに設計された場合、重大な悪影響を及ぼす可能性があります。
 
-The World Economic Forum states: “Safety by Design puts user safety and rights at the center of the design and development of online products and services”[^90]. This proactive and preventative approach focuses on embedding safety into the culture and leadership of an organization. It emphasizes accountability and aims to foster more positive, civil, and rewarding online experiences for everyone.
+責任ある技術とは、技術による危害を減らし、技術パイプラインを多様化し、技術が公共の利益に合致するようにすることです。リスクと危害を管理し軽減するためには、技術の価値、意図しない結果、悪影響を探り、積極的に考慮する必要があります。AIやクラウドネイティブ技術を構築する際、こうした潜在的な倫理的・人権的影響を考慮し、表現の自由、プライバシーの権利、生命、自由、人の安全に対する権利[89]、その他の基本的普遍的人権を最適化しなければなりません。
 
-There is a growing field of experts to help with these development best practices, such as the Global Internet Forum to Counter Terrorism (GIFCT)[^91], The Tech Coalition[^92], and the Internet Society[^93]. All Tech is Human curated list of experts in this sector and can provide links to critical resources[^94]. The AI Alliance[^95] initiative (IBM, Meta, and 50+ institutions) focuses on advancing open innovation and science in AI to propose alternatives to closed AI systems and advance the field of responsible AI (ethics, trust, safety). OpenAI[^96], the organization behind ChatGPT, was initially founded as a non-profit focusing on guaranteeing safety and fairness in AI.
+世界経済フォーラムでは「セーフティバイデザインは、ユーザーの安全と権利を、オンライン製品やサービスの設計と開発の中心に据えるものである。」[^90]と説明されています。この積極的で予防的なアプローチは、安全を組織の文化やリーダーシップに根付かせることに重点をおいています。説明性を重視し、すべての人にとってより前向きで、市民的で、やりがいのあるオンライン体験を促進することを目的としています。
 
-#### The Emergence of a New Engineering Discipline
+テロ対策に関するグローバルインターネットフォーラム(GIFCT)[^91]、Tech Coalition[^92]、the Internet Society[^93]などの開発のベストプラクティスを支援する専門家の分野も広がっています[^94]。AI Alliance[^95]の取り組み(IBM、Metaなど50以上の機関)は、閉鎖的なAIシステムに代わるものを提案し、責任あるAI(倫理、信頼、安全)の分野を前進させるため、AIにおけるオープンイノベーションと科学の推進に焦点を当てています。ChatGPTを支える組織であるOpenAI[^96]は当初、AIにおける安全性と公平性の保証に焦点を当てた非営利団体として設立されました。
 
-In the last two decades, we have seen how the tech industry has been creating and changing engineering job roles rapidly, depending on their responsibilities. We have witnessed the rise of roles such as DevOps Engineer, SRE Engineer, and Infrastructure Engineer. We foresee the MLDevOps or AI engineer[^97] becoming the glue between Data Science, Infrastructure and Development in the next few months or years. It's important to know that this industry area is developing, and the role titles can fluctuate; only time will tell. Different terms may also become a reality. In the future, that role will need to focus more on AI tooling, infra, and deploying AI chains and agents.
+#### 新しい工学分野の出現
 
-## Artificial Intelligence for Cloud Native
+過去20年間、私たちは、技術業界がエンジニアの職責に応じて、急速にエンジニアの職能を創出し、変化させてきた様子を見てきました。私たちは、DevOpsエンジニア、SREエンジニア、インフラエンジニアといった役割の台頭を目の当たりにしてきました。私たちは、MLDevOpsやAIエンジニア[^97]が、今後数カ月から数年のうちに、データサイエンス、インフラ、開発の間のつなぎ役になることを予見しています。この業界領域は発展途上であり、役割の名前は変化する可能性があることを知っておくことが重要でしょう。また、異なる用語が現れるかもしれません。将来的には、その役割は、AIツール、インフラ、AIチェーンとエージェントの展開により重点を置くことになっていくでしょう。
 
-This paper has focused mainly on Cloud Native supporting AI development and usage. But AI can enhance Cloud Native in many ways – from anticipating load and better resource scheduling, particularly with multiple optimization criteria involved, such as power conservation, increased resource utilization, reducing latency, honoring priorities, enhancing security, understanding logs and traces, and much more.
+## クラウドネイティブのための人工知能
 
-#### Natural Language Interface for Cluster Control
+本稿では主に、AIの開発と利用をサポートするクラウドネイティブに焦点を当ててきました。しかし、AIは様々な方法でクラウドネイティブを強化することができます。特に、省電力、リソース利用率の向上、待ち時間の短縮、優先順位の遵守、セキュリティの強化、ログやトレースの理解など、複数の最適化基準が関係します。
 
-At Cloud Native AI + HPC Day in Chicago in 2023[^98] Kubernetes Controllers with a natural language interface were demonstrated to tackle cluster-related tasks. It used an LLM in that back-end that comprehended user requests and translated them to Kubernetes API calls. It further supported launching chaos tests to ascertain service resiliency, scan for CVEs, and more. It is a precursor to more intuitive orchestration and management of Kubernetes clusters and, in time, lowers the learning curve for administrators and site reliability engineers.
+#### クラスタ制御のための自然言語インターフェース
 
-#### Security
+2023年にシカゴで開催されたCloud Native AI + HPC Day[^98]では、自然言語インターフェースを備えたKubernetes Controllersがクラスタ関連のタスクに取り組むデモが行われました。そのバックエンドではLLMが使用され、ユーザーリクエストを理解し、Kubernetes API呼び出しに変換していました。さらに、サービスの回復力を確認したり、CVEをスキャンしたりするためのカオステストの開始もサポートしました。これは、Kubernetesクラスターのより直感的なオーケストレーションと管理への先駆けであり、やがて管理者やサイトの信頼性エンジニアの学習を容易にする取り組みです。
 
-Machine learning can analyze massive datasets to rapidly identify patterns and predict potential threats or weaknesses in the system. Integrating AI in red teaming[^99] accelerates identifying security gaps and allows organizations to strengthen their defenses against emerging cyber threats.
+#### セキュリティ
 
-ML models that detect anomalous network behavior can just as easily be used in clusters to protect workloads or across a fleet of clusters for edge deployments.
+機械学習は、膨大なデータセットを分析してパターンを迅速に特定し、システムの潜在的な脅威や弱点を予測することができます。レッドチーム[^99]にAIを組み込むことで、セキュリティ課題の特定を加速し、組織は新たなサイバー脅威に対する防御を強化することができます。
 
-#### Smarter Orchestration/Scheduling 
+異常なネットワーク動作を検出するMLモデルは、ワークロードを保護するためにクラスタ内でも、エッジ展開のためのクラスタ群全体でも、同じように簡単に使用することができます。
 
-AI can analyze historical cluster usage over the day/week/month to identify workload patterns and resource availability, to understand when and how to deploy workloads, whether to scale them horizontally or vertically, when to consolidate workloads on a few nodes to put others into quiescence for power savings or even drop them from the cluster to reduce costs.
+#### よりスマートなオーケストレーション/スケジューリング
 
-ML-driven models can optimize task sequencing, automate decision-making processes, and enhance the overall efficiency of workload management. A natural language interface facilitates the whole orchestration and scheduling process. These enhancements would make it easier for organizations to manage and schedule complex workflows in dynamic cloud environments. Processor power models are being built to help plan and optimize for reduced power consumption.
+AIは、1日/1週間/1か月のクラスタ使用履歴を分析し、ワークロードのパターンとリソースの可用性を特定することで、ワークロードをいつ、どのように展開するか、水平または垂直にスケールさせるか、いつワークロードを少数のノードに集約し、他のノードを休止状態にして電力を節約するか、あるいはクラスタから削除してコストを削減するかを理解することができます。
 
-#### AI Integration Efforts in Flight and Under Exploration
+ML駆動モデルは、タスクの順序付けを最適化し、意思決定プロセスを自動化し、ワークロード管理の全体的な効率を高めることができます。自然言語インターフェースは、オーケストレーションとスケジューリングのプロセス全体を簡単化します。このような機能強化により、組織は動的なクラウド環境における複雑なワークフローの管理とスケジューリングが容易になります。プロセッサーの消費電力モデルは、消費電力削減のための計画と最適化を支援するために構築されています。
 
-* Fine-tuned custom LLMs to analyze logs.
-* MLOps pipeline to capture and maintain data provenance.
-* AI semantic conventions to CNCF projects like OpenTelemetry[^100].
-* AI-powered development environments (IDEs) are used to develop and deploy AI applications.
+#### 取り組み中および探査中のAI統合の取り組み
 
-We expect to report on advances in this space in the not-too-distant future.
+* カスタムLLMを微調整してログを分析
+* MLOpsパイプラインでデータの出所を把握し、メンテンナンスする
+* OpenTelemetry[^100]のようなCNCFプロジェクトでのAIの意味的規約
+* AIを搭載した開発環境(IDE)のAIアプリケーション開発・デプロイへの使用
 
-
-## Conclusion
-
-Combining Artificial Intelligence (AI) and Cloud Native technologies offers an excellent opportunity for organizations to develop unprecedented capabilities. With the scalability, resilience, and ease of use of Cloud Native infrastructure, AI models can be trained and deployed more efficiently and at a grander scale. This white paper delves into the intersection of these two areas, discussing the current state of play, the challenges, the opportunities, and potential solutions for organizations to take advantage of this potent combination.
-
-While several challenges remain, including managing resource demands for complex AI workloads, ensuring reproducibility and interpretability of AI models, and simplifying user experience for non-technical practitioners, the Cloud Native ecosystem is continually evolving to address these concerns. Projects like Kubeflow, Ray, and KubeRay pave the way for a more unified and user-friendly experience for running AI workloads in the cloud. Additionally, ongoing research into GPU scheduling, vector databases, and sustainability offers promising solutions for overcoming limitations.
-
-As AI and Cloud Native technologies mature, organizations embracing this synergy will be well-positioned to unlock significant competitive advantages. The possibilities are endless, from automating complex tasks and analyzing vast datasets to generating creative content and personalizing user experiences. By investing in the right talent, tools, and infrastructure, organizations can leverage the power of AI and Cloud Native technologies to drive innovation, optimize operations, and deliver exceptional customer experiences.
+この分野での進歩については、そう遠くない将来に報告することができるでしょう。
 
 
-## Authors
+## 結論
+
+人工知能(AI)とクラウドネイティブ(CN)技術の組み合わせは、企業が前例のない能力を開発する絶好の機会を提供しています。クラウドネイティブインフラの拡張性、回復力、使いやすさを利用すれば、AIモデルをより効率的に、より大規模にトレーニングしたりデプロイしたりすることができます。このホワイトペーパーでは、この2つの領域の交点を深堀りし、組織がこの強力な組み合わせを活用するための現状、課題、機会、潜在的なソリューションについて議論してきました。
+
+複雑なAIワークロードのリソース需要の管理、AIモデルの再現性と解釈可能性の確保、技術者でない実務者のユーザーエクスペリエンスの簡素化など、いくつかの課題が残る一方で、クラウドネイティブエコシステムはこれらの懸念に対処するために継続的に進化しています。Kubeflow、Ray、KubeRayのようなプロジェクトは、クラウドでAIワークロードを実行するための、より統一されたユーザーフレンドリーな体験への道を開きます。さらに、GPUスケジューリング、ベクトルデータベース、持続可能性に関する現在進行中の研究は、制限を克服するための有望なソリューションを提供するでしょう。
+
+AIとクラウドネイティブ技術が成熟するにつれ、このシナジーを取り入れる組織は、大きな競争優位性を解き放つことでできるでしょう。複雑なタスクの自動化や膨大なデータセットの分析から、クリエイティブなコンテンツの生成やユーザーエクスペリエンスのパーソナライズまで、その可能性は無限大です。適切な人材、ツール、インフラに投資することで、組織はAIとクラウドネイティブ技術の力を活用し、イノベーションを推進し、オペレーションを最適化し、卓越した顧客体験を提供することができるでしょう。
+
+
+## 著者
 
 Adel Zaalouk
 Alex Jones
@@ -537,64 +543,53 @@ Shawn Wilson
 Tom Thorley
 Victor Lu
 
-## Appendix
+## 付録
 
-### Glossary
+### 用語集
 
 #### CNCF Glossary[^101]
 
-#### LLM
+#### AI実務者
 
- "LLM" stands for "Large Language Model." Large language models are artificial intelligence models trained on vast amounts of text data to understand and generate human-like text. LLMs are a subset of machine learning models specifically designed for natural language processing (NLP) tasks.
+本稿では、MLエンジニア、データサイエンティスト、データエンジニアを指しています(ただし、これらに限定しているわけではありません)。データエンジニアは、関連データの操作、機械学習モデルの作成、最適化を主な職務とします。
 
-#### MLOps
+#### 開発者
+本稿では、ソフトウェアエンジニア、フロントエンドエンジニア、バックエンドエンジニア、フルスタックエンジニア、ソフトウェアアーキテクト、ソフトウェアテスターを指しています(ただし、これらに限定しているわけではありません)。ユーザーインターフェース、マイクロサービス、バックエンドソフトウェアを含むソフトウェアの作成とテストを主な職務とします。
 
-MLOps, short for machine learning operations, refers to the practices, methodologies, and tools used to streamline and automate machine learning models' deployment, monitoring, and management in production environments. MLOps aims to bridge the gap between machine learning development and operations, ensuring that ML models are deployed efficiently, reliably, and at scale. It involves a combination of software engineering principles, DevOps practices, and specialized tools to automate the end-to-end ML lifecycle, including data preparation, model training, model deployment, monitoring, and maintenance. MLOps helps organizations accelerate their ML projects, improve model performance, and maintain consistency and reliability across the ML pipeline.
+#### デプロイヤー
 
-#### LLMOps
-
-LLMOps, which stands for Large Language Model Operations, encompasses the operational aspects tailored specifically for Large Language Models (LLMs). In essence, LLMOps is the adaptation of MLOps principles and tools to the unique requirements of LLM-powered applications, encompassing their entire lifecycle from development to deployment and maintenance.
-
-#### vGPU
-
-vGPU, or Virtual Graphics Processing Unit, technology enables multiple virtual machines (VMs) to share a single physical GPU (Graphics Processing Unit). This technology efficiently utilizes GPU resources in virtualized environments such as cloud computing, data centers, and virtual desktop infrastructure (VDI).
-
-#### MIG
-
-Multi-Instance GPU technology is an innovation that allows a single physical GPU (Graphics Processing Unit) to be partitioned into multiple more minor instances, each operating as an independent GPU with its own resources and capabilities. This technology enhances GPU utilization and flexibility in data center and cloud computing environments.
-
-#### MPS
-
-MPS stands for Multi-Process Service in the context of GPU computing. MPS technology allows multiple GPU-accelerated applications or processes to share a single physical GPU while maintaining isolation and efficient resource utilization.
+本稿では、DevOpsエンジニア、サイト信頼性エンジニア、インフラエンジニア、インフラアーキテクト、アプリケーション管理者、クラスタ管理者を指しています(ただし、これらに限定しているわけではありません)。開発時、ステージング時、本番を含む複数の環境へのソフトウェアとクラウドインフラのデプロイを主な職務とします。
 
 #### DRA
 
-DRA stands for Dynamic Resource Allocation. It is an API abstraction of general resource claim and provisioning for Pods, allowing 3rd party vendors to provide HW/SW resources on demand without having to rewrite the Kubernetes core API.
+DRAはDynamic Resource Allocationの略。一般的なリソースの要求とポッドの提供をAPIで抽象化したもので、KubernetesのコアAPIを書き換えることなく、サードパーティーベンダーがオンデマンドでHW/SWリソースを提供できるようにします。
 
-#### RAG
+#### LLM
 
-In the context of AI, RAG stands for "Retrieval-Augmented Generation." It's a model architecture combining retrieval-based and generative models to produce text. 
+LLMとは大規模言語モデル(Large Language Model)の略。大規模言語モデルとは、人間のようなテキストを理解し生成するために、膨大な量のテキストデータで学習された人工知能モデルです。LLMは、自然言語処理(NLP)タスクのために特別に設計された機械学習モデルのサブセットです。
 
-RAG's generation process is augmented with a retrieval mechanism that helps the model access relevant information from an extensive database or knowledge base. This retrieval component allows the model to incorporate external knowledge into the generation process, improving the quality and relevance of the generated text.
+#### LLMOps
 
-#### AI Practitioners
+LLMOpsとは、Large Language Model Operationsの略で、大規模言語モデル(LLM)に特化した運用面全般を意味します。本質的には、LLMOpsはLLMを利用したアプリケーション特有の要件に対し、MLOpsの原則とツールを適応させたものであり、開発からデプロイ、メンテナンスまでのライフサイクル全体を含んでいます。
 
-In the context of this paper, it refers to (not limited to) ML Engineers, Data Scientists, Data Engineers, roles whose primary responsibilities include manipulating relevant data, creating, and optimizing machine learning models.
+#### MIG
 
-#### Developers
+Multi-Instance GPU技術の略で、1つの物理GPU(グラフィックスプロセッシングユニット)を複数のインスタンスに分割し、それぞれが独自のリソースと機能を持つ独立したGPUとして動作することを可能にする革新的な技術です。この技術により、データセンターおよびクラウドコンピューティング環境におけるGPUの利用率と柔軟性が向上します。
 
-In the context of this paper, it refers to (not limited to), Software Engineers, Frontend Engineers, Backend Engineers, Full Stack Engineers, Software Architects, and Software Testers. The roles whose primary responsibility include writing and testing software including user interfaces, microservices, and backend software.
+#### MLOps
 
-#### Deployers
+MLOpsとは、機械学習オペレーションの略で、本番環境における機械学習モデルのデプロイ、モニタリング、管理を合理化したり自動化したりするために使用されるプラクティス、方法論、ツールを指します。MLOpsは、機械学習の開発と運用のギャップを埋めることを目的とし、MLモデルが効率的で、信頼性が高く、大規模にデプロイされることを保証します。ソフトウェアエンジニアリングの原則、DevOpsプラクティス、専用ツールを組み合わせて、データの準備、モデルトレーニング、モデルのデプロイ、モニタリング、メンテナンスなど、エンドツーエンドのMLライフサイクルを自動化します。MLOpsは、組織がMLプロジェクトを加速し、モデルのパフォーマンスを向上させ、MLパイプライン全体の一貫性と信頼性を維持するのに役立ちます。
 
-In the context of this paper, it refers to (not limited to), DevOps Engineers, Site Reliability Engineers, Infrastructure Engineers, Infrastructure Architects, Application Administrators, Cluster Administrators. The roles whose primary responsibility include deploying software and cloud infrastructure to multiple environments including development, staging and production.
+#### MPS
 
-### References
+MPSとは、GPUコンピューティングにおけるマルチプロセスサービスの略です。MPS技術は、分離と効率的なリソース利用を維持しながら、GPUによって高速化する複数のアプリケーションまたはプロセスが単一の物理GPUを共有することを可能にします。
+
+### 参考文献
 
 [^1]: https://github.com/cncf/toc/blob/main/DEFINITION.md
 [^2]: https://en.wikipedia.org/wiki/Microservices
 [^3]: https://landscape.cncf.io/guide
-[^4]: (https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/personas-for-an-ml-platform.html
+[^4]: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/personas-for-an-ml-platform.html
 [^5]: First release of Docker March 20, 2013.
 [^6]: https://en.wikipedia.org/wiki/LXC
 [^7]: https://en.wikipedia.org/wiki/Docker_(software)
@@ -692,3 +687,5 @@ In the context of this paper, it refers to (not limited to), DevOps Engineers, S
 [^99]: https://en.wikipedia.org/wiki/Red_team
 [^100]: https://github.com/open-telemetry/semantic-conventions/issues/327 
 [^101]: https://glossary.cncf.io/
+
+引用：[Cloud Native Artificial Intelligence Whitepaperの参考訳](https://www.cncf.io/reports/cloud-native-artificial-intelligence-whitepaper-jp/)（The Linux Foundation Japan提供）
