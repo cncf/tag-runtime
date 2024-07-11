@@ -91,6 +91,7 @@ TAGs Runtime and Observability are the current host of this WG, while future ext
 * [Ronald Petty](https://github.com/ronaldpetty)
 * [Adel Zaalouk](https://github.com/zanetworker)
 * [Alex Jones](https://github.com/AlexsJones) (interim)
+* [Anup Ghatage](https://github.com/Ghatage)
 
 # Communications
 
