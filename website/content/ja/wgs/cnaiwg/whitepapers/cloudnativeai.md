@@ -195,7 +195,7 @@ Kubernetesスケジューラー[^21]は進化を続けており[^22] [^23] [^24]
 
 ## クラウドネイティブ人工知能の課題
 
-CNAIの課題はペルソナによって異なることに注意が必要です[^27]。また、クラウドネイティブの柔軟でスケーラブルなプラットフォームはAIワークロードに有望である一方、AIのスケールとレイテンシーのニーズには課題があり、CN技術のギャップを露呈すると同時に、新たな発展のチャンスをもたらしています。文献ではMLOps[^29]とも呼ばれているエンドツーエンドのMLパイプライン[^28]に関する文脈でこれらを説明します。時間と空間、並列性、および同期といった伝統的なトレードオフの問題がすべて表面化し、使いやすさが犠牲にさらされます。要約すると、MLライフサイクルは以下のようになります。
+CNAIの課題はペルソナによって異なることに注意が必要です[^27]。また、クラウドネイティブの柔軟でスケーラブルなプラットフォームはAIワークロードに有望である一方、AIのスケールとレイテンシーのニーズには課題があり、CN技術のギャップを露呈すると同時に、新たな発展のチャンスをもたらしています。文献ではMLOps[^28]とも呼ばれているエンドツーエンドのMLパイプライン[^29]に関する文脈でこれらを説明します。時間と空間、並列性、および同期といった伝統的なトレードオフの問題がすべて表面化し、使いやすさが犠牲にさらされます。要約すると、MLライフサイクルは以下のようになります。
 
 ![lifecycle](https://github.com/zanetworker/ai-landscape/blob/main/pngs/lifecycle.png?raw=true)
 
@@ -613,8 +613,8 @@ MPSとは、GPUコンピューティングにおけるマルチプロセスサ�
 [^25]: https://opencontainers.org/
 [^26]: https://k8sgpt.ai/
 [^27]: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/personas-for-an-ml-platform.html
-[^28]: https://www.ibm.com/topics/machine-learning-pipeline
-[^29]: https://docs.databricks.com/en/machine-learning/mlops/mlops-workflow.html
+[^28]: https://docs.databricks.com/en/machine-learning/mlops/mlops-workflow.html
+[^29]: https://www.ibm.com/topics/machine-learning-pipeline
 [^30]: https://cloud-native.slack.com/archives/C05TYJE81SR
 [^31]: https://www.intel.com/content/www/us/en/newsroom/resources/moores-law.html
 [^32]: https://iapp.org/news/a/5-things-to-know-about-ai-model-cards/
