@@ -32,7 +32,7 @@ description: "TEST"
 
 ## ミーティング
 
-毎月の第1,第3木曜日8:00 PT ([居住地の時刻に変換](https://dateful.com/convert/pacific-time-pt?t=08)).
+毎月の第1、第3木曜日の太平洋時間(PT)午前8時 ([居住地の時刻に変換](https://dateful.com/convert/pacific-time-pt?t=08)).
 
 ミーティングは[CNCFカレンダー](https://www.cncf.io/calendar/)と[CNCFコミュニティカレンダー](https://community.cncf.io/tag-runtime/)に掲載されます。
 
