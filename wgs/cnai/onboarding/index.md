@@ -50,7 +50,7 @@ As a group we are trying to converge into a roadmap to produce useful artifacts 
 
 ## Step 6: Join the Weekly Calls
 
-Last but not least, do try to attend the weekly calls held on Thursdays to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
+Last but not least, do try to attend the weekly calls to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details which also includes the date/time for AI working group meetings: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
 
 ## Step 7: Join the mailing list
 
