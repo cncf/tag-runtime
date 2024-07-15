@@ -39,7 +39,7 @@ description: "TEST"
 * [Zoomミーティング](https://zoom.us/j/9890721462?pwd=N2xyRkZaN2JWZkNmS3EzbE1HVnhEQT09) (パスコード: 77777)
 * [過去のミーティングの録画](https://www.youtube.com/@cncftagruntime173/videos)
 
-## リーダー
+## リード
 
 - [Danielle Tal](https://github.com/miao0miao) (チェア)
 - [Ricardo Aravena](https://github.com/raravena80) (チェア)
