@@ -20,6 +20,7 @@ description: "TEST"
 このTAGはクラウドアプリケーションユーザーや開発者向けにガイダンスを提供し、フィードバックを収集します。
 また、TAGの技術領域でCNCFプロジェクトへのガイダンスと調整を行ないます。
 
+
 - [TAG チャーター](https://github.com/cncf/toc/blob/main/tags/runtime-charter.md)
 - [コミュニティイベント](https://community.cncf.io/tag-runtime/)
 - Slackチャンネル: [#tag-runtime](https://cloud-native.slack.com/messages/CPBE97SMU)
