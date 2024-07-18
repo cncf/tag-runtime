@@ -28,7 +28,7 @@ Based on the notes, identify a topic of interest that aligns with your expertise
 If you found an area you are interested in,  feel free to bring it up.  There is really a wide scope within cloud native AI.  Example process for new topic could go like the following:
 
 * Start something (a doc, code, share a project, etc).
-* Share with the community (e.g. in Slack).
+* Share with the community (e.g. in Slack - https://cloud-native.slack.com#wg-artificial-intelligence).
 * Set a tentative target date and deliverables.
 * Gather critical mass (Some things could be done solo)
 * Execute (hopefully with critical mass).
@@ -48,9 +48,13 @@ As a group we are trying to converge into a roadmap to produce useful artifacts 
 * Use the content we produce + the white paper as data for our [use-case / reference architecture recommender LLM](https://cloud-native.slack.com/archives/C05TYJE81SR/p1712235144103149). Also use it for the CNAI [knowledge LLM](https://docs.google.com/document/d/1L-gP001biKswpLTX6X0iC2QfLZHBESPpa-VA3KfbhXU/edit).
 * In parallel we are working on the CNAI Radar and the CNAI sub-landscape.
 
-## Step 6: Join the Weekly Calls
+## Step 6: Join the Twice Monthly Online Meetings
 
-Last but not least, do try to attend the weekly calls to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details which also includes the date/time for AI working group meetings: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
+Last but not least, do try to attend the twice montly meetings to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details which also includes the date/time for AI working group meetings: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
+
+We currently meet the 2nd and 4th Friday at 8 am pst.
+
+Join Slack at https://cloud-native.slack.com then channel #wg-artificial-intelligence.
 
 ## Step 7: Join the mailing list
 
