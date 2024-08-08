@@ -109,14 +109,20 @@ running the a component if it can not satisfy the imports.
 - Static files: Virtual file system - https://github.com/bytecodealliance/wasi-virt?tab=readme-ov-file#filesystem or specialized component that could be provided to do further customization
 
 ## Implementations
-No current implementations but the following projects have interest:
 
-- containerd/runwasi
-- Warg
-- Spin
+**Implemented**
+
+- cargo-component
+- containerd
 - wasmCloud
+- wasm-pkg-tools (wkg)
 
-Open a PR to add your project!
+**Interested**
+
+- componentize-dotnet
+- Spin
+
+If your project has implemented this as well or is interested, please open a PR to add it to the list!
 
 ## Prior Discussions
 
