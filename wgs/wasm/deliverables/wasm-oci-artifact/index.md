@@ -114,13 +114,13 @@ running the a component if it can not satisfy the imports.
 
 - cargo-component
 - containerd
+- Spin
 - wasmCloud
 - wasm-pkg-tools (wkg)
 
 **Interested**
 
 - componentize-dotnet
-- Spin
 
 If your project has implemented this as well or is interested, please open a PR to add it to the list!
 
