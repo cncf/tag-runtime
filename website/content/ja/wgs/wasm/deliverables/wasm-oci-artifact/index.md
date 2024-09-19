@@ -1,5 +1,5 @@
 ---
-title: Wasm OCI Artifact layout
+title: Wasm OCIアーティファクトレイアウト
 ---
 
 # Wasm OCI Artifact layout
@@ -109,20 +109,14 @@ running the a component if it can not satisfy the imports.
 - Static files: Virtual file system - https://github.com/bytecodealliance/wasi-virt?tab=readme-ov-file#filesystem or specialized component that could be provided to do further customization
 
 ## Implementations
+No current implementations but the following projects have interest:
 
-**Implemented**
-
-- cargo-component
-- containerd
+- containerd/runwasi
+- Warg
 - Spin
 - wasmCloud
-- wasm-pkg-tools (wkg)
 
-**Interested**
-
-- componentize-dotnet
-
-If your project has implemented this as well or is interested, please open a PR to add it to the list!
+Open a PR to add your project!
 
 ## Prior Discussions
 

@@ -1,5 +1,5 @@
 ---
-title: Charter
+title: チャーター
 toc_hide: false
 list_pages: true
 weight: 1
@@ -34,7 +34,7 @@ As a method of focusing the efforts of the WG, TAGs Runtime and Observability as
 * Identify current end user requirements, restrictions, and gaps of deploying and running AI workflows in cloud native space
 * Help the community identify the relevant data to create relevant model outputs for the cloud native ecosystem. For example, a model output for a service that helps migrate workloads to Kubernetes or a model output for a service that allows troubleshooting security gaps in a cloud-native environment.
 * Community outreach and engagement with AI developers and cloud providers, focusing on the integration and management of AI & Data in CNCF communities and projects.
-* Fostering collaboration with various AI entities, initiatives, activities, and endeavors; including AI & Data within the Linux Foundation, and those that might be external to the CNCF, concentrating on AI challenges to the cloud native field and solutions to address those challenges; evaluate AI usage with CNCF projects and community.  
+* Fostering collaboration with various AI entities, initiatives, activities, and endeavors; including AI & Data within the Linux Foundation, and those that might be external to the CNCF, concentrating on AI challenges to the cloud native field and solutions to address those challenges; evaluate AI usage with CNCF projects and community.
 * AI Monitoring/Observability. AI workload run time metrics collection and feedback to the cloud-native orchestrator for GPU/CPU and HW accelerator resource adjustment, scale up/down,  scale out/in, etc.
 
 ## Out of Scope
@@ -94,7 +94,7 @@ TAGs Runtime and Observability are the current host of this WG, while future ext
 
 # Communications
 
-* Community Meeting (Pacific Time): Second & Fourth Friday of the month. 8am - 9am PT
+* Community Meeting (Pacific Time): Second & Fourth Thursday of the month. 10am - 11am PT
 * Zoom: [https://zoom.us/j/9890721462](https://zoom.us/j/9890721462) PW: 77777
 * Meeting Notes and Agenda: <https://bit.ly/cloudnative-ai-working-group>
 * CNCF Slack: #wg-artificial-intelligence

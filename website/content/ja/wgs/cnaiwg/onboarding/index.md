@@ -1,5 +1,5 @@
 ---
-title: Onboarding
+title: オンボーディング
 toc_hide: false
 list_pages: true
 weight: 2
@@ -9,16 +9,15 @@ Welcome to the CNAI working group. If you are confused, or want to contribute, h
 
 ## Step 1: Read the White Paper
 
-Start by reading the [white paper](https://tag-runtime.cncf.io/wgs/cnaiwg/whitepapers/cloudnativeai/) on Cloud-Native AI to gain a comprehensive understanding of problems/opportunities and the foundation work done by the working group.
+Start by reading the [white paper](https://tag-runtime.cncf.io/whitepapers/cloudnativeai/) on Cloud-Native AI to gain a comprehensive understanding of problems/opportunities and the foundation work done by the working group.
 
 ## Step 2: Check the Most Recent Posts on the WG Blog
 
-Review the [most recent posts](https://tag-runtime.cncf.io/blog/) on the Cloud-Native AI blog for updates and announcements.
+Review the [most recent posts](https://tag-runtime.cncf.io/blog/) on the Cloud-Native AI blog for updates and announcements. For example:
 
 ## Step 3: Explore Previous Discussions
 
-* Look into the [notes](https://docs.google.com/document/d/1tS6gL5qjGLaHDtAChssqJhBVm8BIpopUA3Ddzm9LHwg/edit) from previous discussions to get a sense of the group's activities and interests. Videos are also available for a deeper dive, if desired.
-* Check the latest discussions in the #wg-artificial-intelligence channel on [CNCF Slack](https://slack.cncf.io/).
+Look into the [notes](https://docs.google.com/document/d/1tS6gL5qjGLaHDtAChssqJhBVm8BIpopUA3Ddzm9LHwg/edit) from previous discussions to get a sense of the group's activities and interests. Videos are also available for a deeper dive, if desired.
 
 ## Step 4: Identify an Existing Topic of Interest
 
@@ -29,7 +28,7 @@ Based on the notes, identify a topic of interest that aligns with your expertise
 If you found an area you are interested in,  feel free to bring it up.  There is really a wide scope within cloud native AI.  Example process for new topic could go like the following:
 
 * Start something (a doc, code, share a project, etc).
-* Share with the community (e.g. in Slack - https://cloud-native.slack.com#wg-artificial-intelligence).
+* Share with the community (e.g. in Slack).
 * Set a tentative target date and deliverables.
 * Gather critical mass (Some things could be done solo)
 * Execute (hopefully with critical mass).
@@ -49,13 +48,9 @@ As a group we are trying to converge into a roadmap to produce useful artifacts 
 * Use the content we produce + the white paper as data for our [use-case / reference architecture recommender LLM](https://cloud-native.slack.com/archives/C05TYJE81SR/p1712235144103149). Also use it for the CNAI [knowledge LLM](https://docs.google.com/document/d/1L-gP001biKswpLTX6X0iC2QfLZHBESPpa-VA3KfbhXU/edit).
 * In parallel we are working on the CNAI Radar and the CNAI sub-landscape.
 
-## Step 6: Join the Twice Monthly Online Meetings
+## Step 6: Join the Weekly Calls
 
-Last but not least, do try to attend the twice montly meetings to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details which also includes the date/time for AI working group meetings: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
-
-We currently meet the 2nd and 4th Friday at 8 am pst.
-
-Join Slack at https://cloud-native.slack.com then channel #wg-artificial-intelligence.
+Last but not least, do try to attend the weekly calls held on Thursdays to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
 
 ## Step 7: Join the mailing list
 

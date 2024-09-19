@@ -80,9 +80,9 @@ Create a [github issue](https://github.com/cncf/tag-runtime/issues/new) for an e
 
 | Name                | Email                       |  GitHub                                              | Company                                 |
 |---------------------|-----------------------------|------------------------------------------------------|-----------------------------------------|
-| Nikhita Raghunath   | `nikhitaraghunath@gmail.com`| [@nikhita](https://github.com/nikhita)               | [VMware](https://www.vmware.com)        |
 | Cathy Zhang         | `cathy.h.zhang@intel.com`   | [@cathyhongzhang](https://github.com/cathyhongzhang) | [Intel](https://www.intel.com)          |
 | Davanum Srinivas    | `davanum@gmail.com`         | [@dims](https://github.com/dims)                     | [AWS](https://aws.amazon.com)           |
+| Karena Angell       | `karena.angell@gmail.com`   | [@angellk](https://github.com/angellk)               | [RedHat](https://www.redhat.com)        |
 
 ### Chairs, in alphabetical order
 
