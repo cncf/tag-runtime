@@ -117,10 +117,11 @@ running the a component if it can not satisfy the imports.
 - Spin
 - wasmCloud
 - wasm-pkg-tools (wkg)
+- componentize-dotnet
 
 **Interested**
 
-- componentize-dotnet
+- [go wasm tools](https://github.com/ydnar/wasm-tools-go)
 
 If your project has implemented this as well or is interested, please open a PR to add it to the list!
 
