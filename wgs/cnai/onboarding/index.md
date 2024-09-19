@@ -18,7 +18,7 @@ Review the [most recent posts](https://tag-runtime.cncf.io/blog/) on the Cloud-N
 ## Step 3: Explore Previous Discussions
 
 * Look into the [notes](https://docs.google.com/document/d/1tS6gL5qjGLaHDtAChssqJhBVm8BIpopUA3Ddzm9LHwg/edit) from previous discussions to get a sense of the group's activities and interests. Videos are also available for a deeper dive, if desired.
-* Check the latest discussions in the #wg-artificial-intelligence channel on [CNCF Slack](https://slack.cncf.io/).
+* Check the latest discussions in the #wg-artificial-intelligence channel on [CNCF Slack](https://cloud-native.slack.com/archives/C05TYJE81SR).
 
 ## Step 4: Identify an Existing Topic of Interest
 
