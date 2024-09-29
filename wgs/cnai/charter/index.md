@@ -1,105 +1,184 @@
 ---
-title: Charter
-toc_hide: false
-list_pages: true
+title: Charter & Mission
 weight: 1
 ---
 # Introduction
 
-AI is poised to reshape the dynamics of cloud software architecture, cloud resource orchestration, and cloud native services management in ways we are still exploring. Deployment, management and monitoring of AI workloads in the cloud might be the initial undertaking many cloud stakeholders engage with other moving targets being identified and evaluated for future roadmap.
+In recent years, the landscape of AI workloads has become more diverse, partly driven by the rapid advancement of Large Language Models and the proliferation of augmented retrieval use cases. This transformative landscape has prompted researchers and industry professionals to explore and develop approaches for effectively addressing the specific needs of these workloads. However, adopting AI workloads is still hindered by the absence of a unified approach, best practices, shared knowledge, and suitable tools to get the job done, which remains an obstacle to adopting AI at scale.
 
-It is also recognized that cloud native infrastructure is profoundly influenced by the constraints and rapid emergence of AI workloads and technologies within cloud native architectures. It is a responsibility of the WG to identify cloud functionality, performance, security and sustainability gaps brought by AI workloads, and construct mechanisms to judiciously assess and guide on this progress, focusing on enabling cloud native projects and infrastructure that support AI workloads and services.
 
-# Mission Statement
+![alt text](logo.png)
 
-This WG is committed to advocating for, developing, supporting, and assessing initiatives focused on addressing the new needs brought by AI to the cloud, which includes cloud resource orchestration and life cycle management of AI workloads, enabling cloud native infrastructure that serves AI services, and enabling AI in CNCF communities and projects such as Kubernetes. Foster rich community knowledge to facilitate innovation and development.
+# CNAI Mission
 
-# Responsibilities & Deliverables
+The group's mission is to streamline the integration of artificial intelligence within cloud-native ecosystems, equipping the community with robust frameworks, tools, and best practices that not only ensure scalable, secure, and efficient AI deployments but also simplify bringing product-ready AI workloads to market. We aim to make AI technologies accessible and comprehensible, empowering developers and organizations to innovate and enhance their capabilities within versatile cloud-native environments.
 
-## Background
+![alt text](cnai.png)
 
-We recognize that:
+The group addresses the challenge of demystifying AI for a broader audience and ensuring that AI technologies can be effectively deployed, managed, scaled, and secured in cloud-native architectures. Additionally, the group explores how AI can amplify and enhance the user experience for cloud-native technologies.
 
-* There is no singular barometer or test for the ethical completeness of AI. In turn, AI is a broad domain that covers the life cycle of AI models.
-* There needs to be more existing documentation that has relevance to the emergent AI technologies of the past two years, specifically those of general-purpose large language models.
-* The rising volume of community-generated data necessitates enhanced management, especially those utilized by generative AI. AI is a multifaceted domain, encompassing diverse forms of training, reinforcement, and modeling.
-* The CNCF communities and projects, such as MLOps, are witnessing a growing demand for enabling AI capabilities.
+# In-Scope
 
-## Alignment to TAGs Runtime and Observability
+* **Identifying End-User Requirements:** Pinpoint current needs, restrictions, and gaps faced by end users when deploying and running AI workflows in the cloud-native space.  
+* **Community Engagement:** Foster outreach and collaboration with AI developers and cloud providers, focusing on integrating and managing AI and data within CNCF communities and projects.  
+* **Collaboration with AI Entities:** Encourage collaboration with various AI entities, initiatives, and endeavors, including those within the Linux Foundation and external to CNCF, to address AI challenges in the cloud-native field.
 
-As a method of focusing the efforts of the WG, TAGs Runtime and Observability as a supporting body would bring natural alignment to projects within the groups ordinary scope. The principal examples of this include the fusion of AI workloads and Kubernetes and data-driven architecture for AI-induced actions. This integration point also extends to the observable nature of both AI training and workloads within Kubernetes, bringing it directly into the focus of the observability TAG.
+# Out of Scope
 
-## In-Scope
+* Providing legal advice in any jurisdiction.  
+* Forming an umbrella organization beyond the CNCF.  
+* Establishing compliance and standards bodies outside the CNCF space.  
+* Focusing on technologies outside the CNCF's cloud-native definition.  
+* Developing new AI algorithms or models.
 
-* Identify current end user requirements, restrictions, and gaps of deploying and running AI workflows in cloud native space
-* Help the community identify the relevant data to create relevant model outputs for the cloud native ecosystem. For example, a model output for a service that helps migrate workloads to Kubernetes or a model output for a service that allows troubleshooting security gaps in a cloud-native environment.
-* Community outreach and engagement with AI developers and cloud providers, focusing on the integration and management of AI & Data in CNCF communities and projects.
-* Fostering collaboration with various AI entities, initiatives, activities, and endeavors; including AI & Data within the Linux Foundation, and those that might be external to the CNCF, concentrating on AI challenges to the cloud native field and solutions to address those challenges; evaluate AI usage with CNCF projects and community.  
-* AI Monitoring/Observability. AI workload run time metrics collection and feedback to the cloud-native orchestrator for GPU/CPU and HW accelerator resource adjustment, scale up/down,  scale out/in, etc.
+# CNAI Deliverables
 
-## Out of Scope
+The CNAI Working Group will work to:
 
-* Providing any form of legal advice in any jurisdiction.
-* Form an umbrella organization beyond the CNCF
-* Establish a compliance and standards body beyond the CNCF space
-* Focus outside of cloud native technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
-* Development of new AI algorithms or models
+* **Produce Detailed Content:** Create blogs, white papers, and user guides.  
+* **Develop Practical Tools:** Simplify knowledge acquisition and offer custom recommendations for cloud-native AI deployments.  
+* **Enhance Community Collaboration:** Engage in meetups, conferences, hackathons, and gather feedback from users and communities.  
+* **Foster Collaboration:** Unite the best ideas within the community to produce new contributions.  
+* **Provide Comprehensive Documentation:** Help new members contribute and collaborate effectively through onboarding materials, charters, and roadmaps.
+
+![alt text](activities.png)
+
+These artifacts are intended for developers, IT professionals, and business stakeholders planning to deploy AI workloads at scale. The outcomes are designed to provide educational and practical resources that improve the implementation and understanding of AI, promote best practices, and showcase real-world use cases.
+
+# Definition of Success
+
+Success is defined by the broad adoption of the working group's contributions and the establishment of self-sustaining practices within the community. A more concrete definition will follow as the group evolves and can measure its impact.
+
+# Strategy & Deliverables
+
+Towards our mission to streamline the integration of artificial intelligence within cloud-native ecosystems, we will produce artifacts in the following categories:
+
+## Content Production
+
+We will produce content such as white papers, blog posts, KubeCon talks, and interviews to:
+
+* Highlight the benefits, challenges, and use cases of AI, making it more accessible.  
+* Showcase real-world examples of AI applications, providing valuable insights and practical advice.
+
+**Content Ideas/examples:**
+
+* Impact of cloud-native AI on businesses.  
+* AI's impact on sustainability and responsible AI/ML application development.  
+* Securing AI in a cloud-native context, and using AI to secure the cloud-native eco-system.  
+* Evolution of the cloud-native ecosystem to address scheduling and batch workload issues.  
+* Improving inference speed.  
+* Evaluating AI/ML applications.  
+* Monitoring, observing, and signaling issues for AI/ML.
+
+## Projects & Initiatives
+
+We will produce AI applications to demonstrate CNAI's capabilities and continue our mission of streamlining AI with cloud-native technologies.
+
+**Examples:**
+
+* **CNAI News Summarizer LLM:** An AI-powered tool that provides concise summaries of news articles.  
+* **Use-Case Guide LLM:** An interactive guide offering personalized AI application recommendations.  
+* **Deployment Showcases:** Demonstrations of deploying AI workloads on cloud-native platforms.  
+* **CNAI Landscape:** Mapping existing projects in the cloud-native AI space.  
+* **CNAI Radar:** Tracking the latest trends, technologies, and players in AI.
+
+## Documentation/Guidance
+
+To foster community growth, we aim to create guiding materials:
+
+* **Onboarding Guides:** Overviews of the CNAI Working Group and how to get involved.  
+* **Mission/Charters:** Clear objectives and expected outcomes for each subgroup.  
+* **Roadmaps:** Outlining short-term and long-term goals for alignment and transparency.
+
+## Community Outreach & Feedback Gathering
+
+We will promote the group's achievements and gather feedback to enhance our impact:
+
+- **User Research:** Regular feedback collection to remain responsive to community needs.  
+- **Events:** Organizing meetups, conferences, and hackathons.  
+- **Collaboration Opportunities:** Encouraging members to work together on projects, blogs, or talks.
 
 ## Example Deliverables to Community
 
-### Educate and Inform: End Users, and projects
+**Educate and Inform**
 
-* Whitepaper of current end user requirements, restrictions, and gaps of deploying and running AI in Cloud native space.
-* Current landscape of cloud native solutions for AI workflows
-* Surveys on the evolving landscape of managing community-generated data within the realm of AI, particularly focusing on building cloud native infrastructures serving AI services.
-* Reports on new trends in the AI industry and how cloud native is influenced or being influenced by them. For example, the explosion of LLM and Generative AI usage in 2023.
-* Curate a "Distinguished Speaker" series of talks and interviews that may inform the working group's collaborative workstreams, and to provide accessible educational materials for the larger community found in the CNCF to generate interest and grow working group membership.
+* Whitepapers on end-user requirements and gaps in deploying AI in cloud-native spaces.  
+* Current landscape analyses of cloud-native solutions for AI workflows.  
+* Surveys on managing community-generated data within AI.  
+* Reports on new AI industry trends affecting cloud-native technologies.  
+* A "Distinguished Speaker" series for educational outreach.
 
-### Tooling supporting & evaluation: AI-ready cloud native solutions, ontology, and integrations
+**Tooling Support & Evaluation**
 
-* Reviews, inputs, and recommendations for proposed initiatives aimed at enabling AI in CNCF communities and projects, notably in areas like MLOps.
-* API specifications or guideline solutions for gaps identified in the Cloud Native AI whitepaper. For example, a common inference API or large scale AI ML deployments.
-* Ontology of Kubernetes resources that can be used for AI ML models.
-* Literature review of cloud native data security and privacy implications.
+* Reviews and recommendations for initiatives enabling AI in CNCF projects.  
+* API specifications or guidelines for identified gaps.  
+* Ontologies of Kubernetes resources for AI/ML models.  
+* Literature reviews on data security and privacy in cloud-native environments.
 
-# Audiences
+**Audiences**
 
-* Education - the audience is end users, developers, stakeholders
-* Project intelligence - the audience is TOC/CNCF Community
-* External collaboration - organizations, initiatives, activities, and efforts outside of the Cloud Native Computing Foundation (CNCF) (e.g. OpenSSF, Academic and other research groups, etc).
+* **Education:** End users, developers, stakeholders.  
+* **Project Intelligence:** TOC/CNCF Community.  
+* **External Collaboration:** Organizations and initiatives outside CNCF (e.g., OpenSSF, academic groups).
+
+# Alignment with other Tags
+
+To better understand and utilize the the impact of AI on the cloud-native eco-system, it is within the scope of the AI WG to reach out and align with the rest of the TAGs to make sure there is topic coverage and to implement an AI strategy across the ecosystem in tandem with the rest of the TAGs and working groups.
+
+# Tracking our Work
+
+The work for the working group is currently tracked using GitHub projects: [CNCF Projects](https://github.com/orgs/cncf/projects/38).
+
+# FAQs
+
+**How is CNAI different from other CNCF and AI-related WGs/Tags?**
+
+The CNAI Working Group focuses on the interconnection between AI applications and cloud-native technologies. Unlike groups that address specific technical problems, CNAI explores broader integration challenges to streamline AI workloads within the cloud-native ecosystem. We address both technical concerns (e.g., reference architectures, best practices) and business concerns (e.g., ROI, responsible deployments).
+
+**What is the relationship between the AI Alliance and CNAI?**
+
+The AI Alliance fosters open innovation across the AI landscape, focusing on collaboration and trust in AI technologies. CNAI, on the other hand, concentrates on integrating AI within cloud-native environments, providing the necessary tooling and best practices for scalable and secure AI deployments. Our missions are complementary, advancing the overall AI field.
+
+**What is the relationship between the OPEA and CNAI?**
+
+OPEA offers reference architectures for building LLM and Generative AI applications. CNAI can leverage OPEA's frameworks to provide end-to-end guidance for deploying these architectures using cloud-native tooling, ensuring effective scaling and deployment.
+
+**What are other groups or SIGs that are related to this group?**
+
+* sig-apps  
+* Batch-wg (CNCF)  
+* wg-batch (Kubernetes)  
+* wg-serving (Kubernetes)  
+* Accelerator-Management (Kubernetes)
 
 # TOC Liaisons
 
-* [Cathy Zhang](https://github.com/cathyhongzhang)
-* [Emily Fox](https://github.com/TheFoxAtWork)
+* Cathy Zhang  
+* Emily Fox
 
 # TAG Liaisons
 
-TAGs Runtime and Observability are the current host of this WG, while future extension to its own TAG is on the roadmap.
+TAGs Runtime and Observability are the current hosts of this Working Group, with plans for future extension to its own TAG.
 
-* [Ricardo Aravena](https://github.com/raravena80) (Runtime)
-* [Alolita Sharma](https://github.com/alolita) (Observability)
-* [Matt Young](https://github.com/halcyondude) (Observability)
+* **Runtime Liaison:**  
+  * Ricardo Aravena  
+* **Observability Liaisons:**  
+  * Alolita Sharma  
+  * Matt Young
 
 # WG Leadership
 
-## Tech leads
-
-* [Cathy Zhang](https://github.com/cathyhongzhang)
-* [Ricardo Aravena](https://github.com/raravena80)
-* [Huamin Chen](https://github.com/rootfs)
-* [Ronald Petty](https://github.com/ronaldpetty)
-* [Adel Zaalouk](https://github.com/zanetworker)
-* [Alex Jones](https://github.com/AlexsJones) (interim)
+* Cathy Zhang  
+* Ricardo Aravena  
+* Huamin Chen  
+* Ronald Petty  
+* Adel Zaalouk  
+* Alex Jones (Interim)
 
 # Communications
 
-* Community Meeting (Pacific Time): Second & Fourth Friday of the month. 8am - 9am PT
-* Zoom: [https://zoom.us/j/9890721462](https://zoom.us/j/9890721462) PW: 77777
-* Meeting Notes and Agenda: <https://bit.ly/cloudnative-ai-working-group>
-* CNCF Slack: #wg-artificial-intelligence
-* Mailing list: <https://lists.cncf.io/g/cncf-tag-runtime>
-
-# Operations
-
-AI WG operations are consistent with standard WG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
+* **Community Meetings:** Second & Fourth Friday of the month, 8 AM \- 9 AM PT  
+* **Zoom:** [https://zoom.us/j/9890721462](https://zoom.us/j/9890721462) (Password: 77777\)  
+* **Meeting Notes and Agenda:** [CNAI Working Group Notes](https://bit.ly/cloudnative-ai-working-group)  
+* **CNCF Slack:** `#wg-artificial-intelligence`  
+* **Mailing List:** [cncf-tag-runtime](https://lists.cncf.io/g/cncf-tag-runtime)
