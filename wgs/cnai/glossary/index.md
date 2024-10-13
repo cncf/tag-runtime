@@ -55,39 +55,106 @@ In the context of AI, RAG stands for "Retrieval-Augmented Generation." It's a mo
 
 RAG's generation process is augmented with a retrieval mechanism that helps the model access relevant information from an extensive database or knowledge base. This retrieval component allows the model to incorporate external knowledge into the generation process, improving the quality and relevance of the generated text.
 
-## AI Practitioners
+## Personas in the Cloud Native AI Landscape
 
-In the context of this paper, it refers to (not limited to) ML Engineers, Data Scientists, Data Engineers, roles whose primary responsibilities include manipulating relevant data, creating, and optimizing machine learning models.
+### Data Engineers
 
-## Developers
+* **Role:** Handle data collection, preprocessing, and storage, ensuring high-quality, reliable data for training and inference.
+* **Quotes/Mottos:**
+  * "I make data science easier."
+  * "I'm the unsung hero that does all the data plumbing – after all, bad data in, bad data out."
 
-In the context of this paper, it refers to (not limited to), Software Engineers, Frontend Engineers, Backend Engineers, Full Stack Engineers, Software Architects, and Software Testers. The roles whose primary responsibility include writing and testing software including user interfaces, microservices, and backend software.
+### AI Engineers
 
-## Deployers
+* **Role:** Handle model selection, fine-tuning, and integration of AI components into larger systems.
+* **Quotes/Mottos:**
+  * "I build the brains behind the applications."
+  * "I make sure the models are accurate and efficient."
 
-In the context of this paper, it refers to (not limited to), DevOps Engineers, Site Reliability Engineers, Infrastructure Engineers, Infrastructure Architects, Application Administrators, Cluster Administrators. The roles whose primary responsibility include deploying software and cloud infrastructure to multiple environments including development, staging and production.
+### AI Application Developers (Coders)
 
-## Data engineers
+* **Role:** Focus on developing AI applications and using AI to improve existing applications.
+* **Quotes/Mottos:**
+  * "I bring AI to life in real-world applications."
+  * "I'm building the future of software with AI."
 
-- **Role**: Responsible for data collection, preprocessing, and storage, ensuring that high-quality, reliable data is available for training and inference.
-- **Quotes/Mottos**: “I make data science easier”, “I am the unsung hero that does all the data plumbing, after all bad data in bad data out”
+### Platform Engineers
 
-## Data scientists
+* **Role:** Create and maintain an Internal Developer Platform to improve developer productivity. They help organizations enforce security and compliance through automated pipelines and help developers find and connect to pre-approved AI models and APIs.
+* **Quotes/Mottos:**
+  * "I empower developers to build and deploy faster and safer."
+  * "I'm the architect of the developer experience."
 
-- **Role**: define the problem, explore data, select appropriate models/algorithms, train the models, and evaluate model performance.
-- **Quotes/Mottos**: “I solve business problems”, “I don’t want to learn about infrastructure if I don’t have too”
 
-## Platform engineers
+### Security Architect/Engineer
 
-- **Role**: Create scalable and efficient infrastructure to support large-scale machine learning workflows, including cloud platforms and distributed computing systems.
-- **Quotes/Mottos**: “I abstract complexity and build APIs to make the lives of data engineers and data scientists easier”
+* **Role:** Focus on protecting AI systems from threats and vulnerabilities. Implement measures to safeguard data, models, and infrastructure.
+* **Quotes/Mottos:**
+  * "I'm the guardian of AI security."
+  * "I make sure AI systems are safe and trustworthy."
 
-## Site reliability engineers
+### AI Ethicists
 
-- **Role**: focus on maintaining system reliability, monitoring performance, and implementing automated processes for deploying and monitoring machine learning models in production.
-- **Quotes/Mottos**: “I keep it all running 99.99999999% of the time”
+* **Role:** Ensure responsible AI practices, particularly in design and deployment stages.
+* **Quotes/Mottos:**
+  * "I advocate for ethical AI development and deployment."
+  * "I ensure AI benefits humanity."
 
-## Hardware architects
+### Compliance Officers
 
-- **Role**: contribute by designing and optimizing hardware accelerators, such as GPUs and TPUs, to improve machine learning tasks’ computational efficiency and speed.
-- **Quotes/Mottos**: “I make those models run fast”
+* **Role:** Ensure AI systems comply with regulations and governance standards.
+* **Quotes/Mottos:**
+  * "I navigate the legal and regulatory landscape of AI."
+  * "I make sure AI systems are compliant and responsible."
+
+### Prompt Engineers
+
+* **Role:** Specialize in crafting effective prompts for generative AI models.
+* **Quotes/Mottos:**
+  * "I speak the language of AI."
+  * "I unlock the creative potential of language models."
+
+### AI Safety Researchers
+
+* **Role:** Focus on ensuring the safety and ethical implications of generative AI models.
+* **Quotes/Mottos:**
+  * "I build guardrails for responsible AI."
+  * "I ensure AI remains beneficial to humanity."
+
+### MLOps Engineers
+
+* **Role:** Focus on the operationalization of machine learning models.
+* **Quotes/Mottos:**
+  * "I bridge the gap between models and production."
+  * "I ensure machine learning models are ready for the real world."
+
+### AI Product Managers
+
+* **Role:** Oversee the development of AI products from conception to launch.
+* **Quotes/Mottos:**
+  * "I guide AI products from idea to impact."
+  * "I ensure our AI solutions meet market needs."
+
+### AI Researchers
+
+* **Role:** Explore AI techniques that may not be immediately applicable to products.
+* **Quotes/Mottos:**
+  * "I push the boundaries of what AI can do."
+  * "I explore today what will be mainstream AI tomorrow."
+
+### Data Scientists
+
+* **Role:** Define the problem, explore data, select appropriate models/algorithms, train models, and evaluate model performance.
+* **Quotes/Mottos:**
+  * "I solve business problems."
+  * "I don't want to learn about infrastructure if I don't have to.""
+
+### Site Reliability Engineers
+
+* **Role:** Focus on maintaining system reliability, monitoring performance, and implementing automated processes for deploying and monitoring machine learning models in production.
+* **Quotes/Mottos:** "I keep it all running 99.99999999% of the time."
+
+### Hardware Architects
+
+* **Role:** Design and optimize hardware accelerators (e.g., GPUs and TPUs) to improve machine learning tasks' computational efficiency and speed.
+* **Quotes/Mottos:** "I make those models run fast."
