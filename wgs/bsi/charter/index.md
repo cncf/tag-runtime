@@ -1,5 +1,6 @@
 ---
 title: Cloud Native Batch System Initiative Working Group Charter
+weight: 1
 ---
  
 ## Introduction
