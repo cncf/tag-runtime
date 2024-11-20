@@ -25,7 +25,7 @@ description: "TEST"
 - [コミュニティイベント](https://community.cncf.io/tag-runtime/)
 - Slackチャンネル: [#tag-runtime](https://cloud-native.slack.com/messages/CPBE97SMU)
     - [CNCF Slackにご自身を招待する](https://slack.cncf.io/)
-- [メーリングリスト](https://lists.cncf.io/g/cncf-runtime/topics)
+- [メーリングリスト](https://lists.cncf.io/g/cncf-tag-runtime)
 
 <p class="mt-5"><img src="/images/man-using-laptop.jpg" alt="Man working on computer"></p>
 
