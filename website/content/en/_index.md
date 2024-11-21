@@ -26,7 +26,7 @@ technical domains.
 - [Community events](https://community.cncf.io/tag-runtime/)
 - Slack channel: [#tag-runtime](https://cloud-native.slack.com/messages/CPBE97SMU)
     - [Invite yourself to the CNCF Slack](https://slack.cncf.io/)
-- [Mailing list](https://lists.cncf.io/g/cncf-runtime/topics)
+- [Mailing list](https://lists.cncf.io/g/cncf-tag-runtime)
 
 <p class="mt-5"><img src="/images/man-using-laptop.jpg" alt="Man working on computer"></p>
 
