@@ -22,7 +22,7 @@ The TAG produces guidance for and gathers feedback from cloud app users and
 developers and provides guidance and coordination to CNCF projects in the TAG's
 technical domains.
 
-- [TAG Charter](https://github.com/cncf/toc/blob/main/tags/runtime-charter.md)
+- [TAG Charter](https://github.com/cncf/toc/blob/main/tags/tag-charters/runtime-charter.md)
 - [Community events](https://community.cncf.io/tag-runtime/)
 - Slack channel: [#tag-runtime](https://cloud-native.slack.com/messages/CPBE97SMU)
     - [Invite yourself to the CNCF Slack](https://slack.cncf.io/)
