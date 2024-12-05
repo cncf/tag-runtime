@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes and AI: 5 Talks You don't want to Miss at KubeCon India 2024"
-date: 2024-012-06
+date: 2024-12-06
 author: Sudhanshu Prajapati
 ---
 
