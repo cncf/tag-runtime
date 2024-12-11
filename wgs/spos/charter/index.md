@@ -66,16 +66,18 @@ This WORKING GROUP follows the [standard operating guidelines](https://github.co
 ## Chairs
 - [Danielle Tal](https://github.com/miao0miao)
 - [Sean McGinnis](https://github.com/stmcginnis)
+- [Mauro Morales](https://github.com/mauromorales)
+
 
 ## Technical Leaders
 - [Thilo Fromm](https://github.com/t-lo)
 
 ## Communication
 
-- **Community Meeting:** Biweekly, 1st and 3rd Thursday of the Month at 2:00 PM UTC [(convert to your timezone)](https://dateful.com/convert/coordinated-universal-time-utc?t=2pm)
+- **Community Meeting:** Monthly, 1st Thursday of the Month at 2:00 PM UTC [(convert to your timezone)](https://dateful.com/convert/coordinated-universal-time-utc?t=2pm)
 - **Zoom Link for the meeting:**  [Click here](https://zoom.us/my/cncftagruntime?pwd=N2xyRkZaN2JWZkNmS3EzbE1HVnhEQT09) , Passcode: 77777
 - **Meeting Notes and Agenda:** [Click here](https://docs.google.com/document/d/1MeFwrnOeleTazqmZe16p0fEFLiLPgtCIAAOFIatWNsg/)
-- **CNCF Slack:** [#wg-sp-os](https://communityinviter.com/apps/cloud-native/cncf)
+- **CNCF Slack:** [#wg-sp-os](https://slack.cncf.io/#wg-sp-os)
 - **Mailing list:** https://lists.cncf.io/g/cncf-tag-runtime
 - **Meeting recordings:** [youtube channel](https://www.youtube.com/watch?v=zjvfHmb37tQ&list=PL6wYrb-bYwC_1pcrKc4NdilT6YeyqFtB7&ab_channel=CNCFTAGRuntime)
 
