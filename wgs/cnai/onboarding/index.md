@@ -33,7 +33,7 @@ If you found an area you are interested in,  feel free to bring it up.  There is
 * Set a tentative target date and deliverables.
 * Gather critical mass (Some things could be done solo)
 * Execute (hopefully with critical mass).
-* Share the outcome (community, kubecon, other conferences, etc)
+* Share the outcome (community, Kubecon, other conferences, etc)
 
 As a group we are trying to converge into a roadmap to produce useful artifacts for the community. Here is a proposal on roadmap/approach:
 
@@ -51,7 +51,7 @@ As a group we are trying to converge into a roadmap to produce useful artifacts 
 
 ## Step 6: Join the Twice Monthly Online Meetings
 
-Last but not least, do try to attend the twice montly meetings to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details which also includes the date/time for AI working group meetings: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
+Last but not least, do try to attend the twice monthly meetings to stay connected with the group, engage in discussions, and contribute to existing or new projects/initiatives. Add the CNCF calendar for call details which also includes the date/time for AI working group meetings: [https://www.cncf.io/calendar/](https://www.cncf.io/calendar/).
 
 We currently meet the 2nd and 4th Friday at 8 am pst.
 
@@ -59,4 +59,4 @@ Join Slack at https://cloud-native.slack.com then channel #wg-artificial-intelli
 
 ## Step 7: Join the mailing list
 
-Most of the discussion is happening on a slack, but the mailing list is an additional veneue where asynchronus discussions can happen as well. You can subscribe [here](https://lists.cncf.io/g/wg-artificial-intelligence).
+Most of the discussion is happening on a slack, but the mailing list is an additional venue where asynchronous discussions can happen as well. You can subscribe [here](https://lists.cncf.io/g/wg-artificial-intelligence).
