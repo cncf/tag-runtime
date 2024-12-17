@@ -33,7 +33,7 @@ If you found an area you are interested in,  feel free to bring it up.  There is
 * Set a tentative target date and deliverables.
 * Gather critical mass (Some things could be done solo)
 * Execute (hopefully with critical mass).
-* Share the outcome (community, Kubecon, other conferences, etc)
+* Share the outcome (community, KubeCon + CloudNativeCon, other conferences, etc)
 
 As a group we are trying to converge into a roadmap to produce useful artifacts for the community. Here is a proposal on roadmap/approach:
 
