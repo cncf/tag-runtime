@@ -123,7 +123,7 @@ We will promote the group's achievements and gather feedback to enhance our impa
 
 # Alignment with other Tags
 
-To better understand and utilize the the impact of AI on the cloud-native eco-system, it is within the scope of the AI WG to reach out and align with the rest of the TAGs to make sure there is topic coverage and to implement an AI strategy across the ecosystem in tandem with the rest of the TAGs and working groups.
+To better understand and utilize the impact of AI on the cloud-native ecosystem, it is within the scope of the AI WG to reach out and align with the rest of the TAGs to make sure there is topic coverage and to implement an AI strategy across the ecosystem in tandem with the rest of the TAGs and working groups.
 
 # Tracking our Work
 
