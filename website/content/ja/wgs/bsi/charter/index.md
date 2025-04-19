@@ -59,11 +59,14 @@ This Batch System Initiative Working Group follows the [standard operating guide
 by the TOC unless otherwise stated here.
 
 - TOC Liaisons: Ricardo Rocha (ricardo.rocha@cern.ch)
-- SIG Chairs: Klaus Ma (klaus1982.cn@gmail.com), Weiwei Yang (abvclouds@gmail.com), Alex Scammon (alex@gr-oss.io)
+- SIG Chairs: 
+  - Marlowe Warnicke (catblade+batch@gmail.com)
+  - Abhishek Malvankar (abhishekmalvankar9@gmail.com)
+  - Alex Scammon (alex@gr-oss.io)
 
 ## Communities
 
 - Meeting Schedule: Twice a month on the 1st and 3rd Thu at 8am PDT/PST
 - [Meeting Invite](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=aTBka2F2aWt2ZTM0aTZuaG40MXRhdHM2dHNfMjAyMzA5MTFUMTUwMDAwWiBjXzY1MjRkNjA2OWI0YjczZDY1NGE2ZGFkYmFjNmQzMWRhMmU3NzZkOWNhMGRkZGY4OGFiMTJlMjZiODc1NzBhODJAZw&tmsrc=c_6524d6069b4b73d654a6dadbac6d31da2e776d9ca0dddf88ab12e26b87570a82%40group.calendar.google.com&scp=ALL)
-- Mailing list: cncf-tag-runtime@lists.cncf.io
+- Mailing list: cncf-wg-bsi@googlegroups.com 
 - Slack channel:  https://cloud-native.slack.com/archives/C02Q5DFF3MM
