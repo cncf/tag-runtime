@@ -64,7 +64,7 @@ by the TOC unless otherwise stated here.
 
 - TOC Liaisons: Ricardo Rocha (ricardo.rocha@cern.ch)
 - SIG Chairs: 
-  - Klaus Ma (klaus1982.cn@gmail.com)
+  - Marlowe Warnicke (catblade+batch@gmail.com)
   - Abhishek Malvankar (abhishekmalvankar9@gmail.com)
   - Alex Scammon (alex@gr-oss.io)
 
