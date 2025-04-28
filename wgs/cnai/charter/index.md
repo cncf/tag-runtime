@@ -150,6 +150,7 @@ OPEA offers reference architectures for building LLM and Generative AI applicati
 * wg-batch (Kubernetes)  
 * wg-serving (Kubernetes)  
 * Accelerator-Management (Kubernetes)
+* otel-genai-instrumentation (OpenTelemetry)
 
 # TOC Liaisons
 
